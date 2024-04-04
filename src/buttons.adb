@@ -13,6 +13,8 @@ package body buttons is
       shuffleDeck;
       drawPileLocation := -1;
       DiscardPile.Set_Text("");
+      Stock.Set_Text("[*]");
+      Btn_Draw.Set_Visible(True);
    end New_Game_Callback;
 
    procedure Quit_Callback (Button : access Gtk_Button_Record'Class) is

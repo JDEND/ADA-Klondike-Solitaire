@@ -69,7 +69,7 @@ procedure main is
       Gtk_New(Cntr_Blank, "");
       Attach_Defaults(Table_Main, Cntr_Blank, 4,6,1,11);
 
-      Gtk_New(Stock, "[*]");
+      Gtk_New(Stock, "");
       Attach_Defaults(Table_Main, Stock, 2,3,1,2);
       Gtk_New(DiscardPile, "");
       Attach_Defaults(Table_Main, DiscardPile, 3,4,1,2);
@@ -89,6 +89,10 @@ procedure main is
 
       -- Show all widgets
       Show_All(Window_Main);
+      --disables draw button until new game is started
+      Btn_Draw.Set_Visible(False);
+      --initializes card deck
+      initDrawPile;
 
       -- Start the main loop
       Gtk.Main.Main;

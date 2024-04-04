@@ -43,14 +43,13 @@ package body CardTable is
    --sets flipped back to false, and prepares for next draw 04/03/24 - GV6507
    procedure resetStock is
    begin
-      
+      ada.Text_IO.Put_Line("there");
    end;
    
    --Deals cards when new game button is pressed 04/03/24 - GV6507
    procedure dealCards is
    begin
-      
-      
+      ada.Text_IO.Put_Line("Here");
    end;
    
    

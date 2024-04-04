@@ -13,7 +13,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U main%b		main.adb		5d3d8e01 NE OO SU IL
+U main%b		main.adb		e1293a65 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W buttons%s		buttons.adb		buttons.ali
@@ -48,7 +48,7 @@ D buttons.ads		20240403204029 e8b17322 buttons%s
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
 D cards.ads		20240402235118 46fa6e46 cards%s
-D cardtable.ads		20240403212718 c7418127 cardtable%s
+D cardtable.ads		20240403212733 8b4dc47f cardtable%s
 D deck.ads		20240321223612 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
@@ -118,7 +118,7 @@ D interfac.ads		20230707070819 5ab55268 interfaces%s
 D i-c.ads		20230707070819 5421119b interfaces.c%s
 D i-cstrin.ads		20230707070819 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
-D main.adb		20240403212653 4b1c0eec main%b
+D main.adb		20240404132506 bb04ffd0 main%b
 D pango.ads		20240229103412 e51ea573 pango%s
 D pango-attributes.ads	20240229103412 21c09ee4 pango.attributes%s
 D pango-context.ads	20240229103412 ab3b8a9f pango.context%s
@@ -169,6 +169,7 @@ G r c none [main standard 20 11 none] [attach_defaults gtk__table 149 14 none]
 G r c none [main standard 20 11 none] [gtk_new gtk__label 207 14 none]
 G r c none [main standard 20 11 none] [on_clicked gtk__button 491 14 none]
 G r c none [main standard 20 11 none] [show_all gtk__widget 3104 14 none]
+G r c none [main standard 20 11 none] [set_visible gtk__widget 2303 14 none]
 G r c none [main standard 20 11 none] [main gtk__main 197 14 none]
 X 1 ada.ads
 16K9*Ada 20e8 89|1w6 1r15
@@ -179,7 +180,7 @@ X 15 buttons.ads
 19U14*Draw_Callback 89|88r27
 25p4*Btn_NewGame{65|74P9} 89|56m15 56r15 57r35 86r7
 26p4*Btn_Quit{65|74P9} 89|59m15 59r15 60r35 87r7
-27p4*Btn_Draw{65|74P9} 89|62m15 62r15 63r35 88r7
+27p4*Btn_Draw{65|74P9} 89|62m15 62r15 63r35 88r7 92r7
 X 19 cardtable.ads
 5K9*CardTable 38e14 89|16w6 16r21
 11p4*DiscardPile{68|201P9} 89|74m15 74r15 75r35
@@ -209,7 +210,7 @@ X 48 glib-object.ads
 676V13*Convert{41P9} 45|59i21 46|50i21
 X 56 gtk.ads
 41K9*Gtk 79e8 89|8r6 8r22 9r6 9r21 10r6 10r21 11r6 11r20 12r6 12r21 13r6
-. 13r22 14r6 14r22 39r7 50r44 52r45 94r7
+. 13r22 14r6 14r22 39r7 50r44 52r45 95r7
 X 65 gtk-button.ads
 71K13*Button 613e15 89|8w10 8r26
 74P9*Gtk_Button(73R9)
@@ -229,9 +230,9 @@ X 68 gtk-label.ads
 201P9*Gtk_Label(200R9) 89|26r12 27r17 30r15 31r13 32r13 33r12
 207U14*Gtk_New 89|66s7 69s7 72s7 74s7 77s7 79s7 81s7 83s7
 X 69 gtk-main.ads
-33K13*Main 327e13 89|11w10 11r24 39r11 94r11
+33K13*Main 327e13 89|11w10 11r24 39r11 95r11
 62U14*Init 89|39s16
-197U14*Main 89|94s16
+197U14*Main 89|95s16
 X 76 gtk-table.ads
 62K13*Table 326e14 89|12w10 12r25
 65P9*Gtk_Table(64R9) 89|23r18
@@ -243,6 +244,7 @@ X 79 gtk-widget.ads
 351P9*Gtk_Widget(350R9)
 438V13*Convert{104|67M9} 45|58i21 46|49i21
 439V13*Convert{351P9} 45|59i21 46|50i21
+2303U14*Set_Visible 89|92R16
 2701U14*Override_Background_Color 89|50R18 52R19
 3104U14*Show_All 89|91R7
 X 80 gtk-window.ads
@@ -252,7 +254,7 @@ X 80 gtk-window.ads
 353U14*Set_Default_Size 89|44R7
 843U14*Set_Title 89|43R7
 X 89 main.adb
-20U11*main 20b11 100l5 100t9
+20U11*main 20b11 101l5 101t9
 22p4 Window_Main{80|93P9} 42m15 42r15 43r17 44r24 45r24 49r11 52r7 91r16
 23p4 Table_Main{76|65P9} 48m15 48r15 49r24 50r7 57r23 60r23 63r23 67r23 70r23
 . 73r23 75r23 78r23 80r23 82r23 84r23
@@ -262,7 +264,7 @@ X 89 main.adb
 31p4 hearts{68|201P9} 79m15 79r15 80r35
 32p4 spades{68|201P9} 81m15 81r15 82r35
 33p4 clubs{68|201P9} 83m15 83r15 84r35
-36U14 Main 36b14 95l8 95t12 99s4
+36U14 Main 36b14 96l8 96t12 100s4
 X 91 pango-attributes.ads
 41P9*Pango_Attribute<40|153P9>
 52V13*Convert{104|67M9} 46|49i21

@@ -15,7 +15,7 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U cardtable%b		cardtable.adb		1c580d0e OO PK
+U cardtable%b		cardtable.adb		018bb6b5 OO PK
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.discrete_random%s
@@ -24,7 +24,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 W system%s		system.ads		system.ali
 Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
 
-U cardtable%s		cardtable.ads		1ce57acc EE OO PK
+U cardtable%s		cardtable.ads		50e93f94 EE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.discrete_random%s
@@ -48,8 +48,8 @@ D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
 D cards.ads		20240402235118 46fa6e46 cards%s
-D cardtable.ads		20240403212718 c7418127 cardtable%s
-D cardtable.adb		20240403212706 040804ab cardtable%b
+D cardtable.ads		20240403212733 8b4dc47f cardtable%s
+D cardtable.adb		20240404131902 55d7fa48 cardtable%b
 D deck.ads		20240321223612 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
@@ -161,6 +161,8 @@ G c Z s s [TfoundationBIP cardtable 25 4 none]
 G c Z s b [initdrawpile cardtable 32 14 none]
 G c Z s b [shuffledeck cardtable 33 14 none]
 G c Z s b [swapcard cardtable 34 14 none]
+G c Z s b [resetstock cardtable 35 14 none]
+G c Z s b [dealcards cardtable 36 14 none]
 G c Z b b [random cardtable__rand 52 13 16_4]
 G c Z b b [reset cardtable__rand 54 14 16_4]
 G c Z b b [reset cardtable__rand 55 14 16_4]
@@ -176,7 +178,7 @@ G r c none [initdrawpile cardtable 32 14 none] [initializedeck deck 6 14 none]
 G r s suit [shuffledeck cardtable 33 14 none] [suitIP cards 15 9 none]
 G r s suit [swapcard cardtable 34 14 none] [suitIP cards 15 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 16|3r6 17|1r6 2r6 17r6
+16K9*Ada 20e8 16|3r6 17|1r6 2r6 17r6 46r7 52r7
 X 5 a-numeri.ads
 16K13*Numerics 32e17 16|3r10 17|1r10 17r10
 X 6 a-nudira.ads
@@ -187,13 +189,14 @@ X 6 a-nudira.ads
 X 7 a-nudira.adb
 53V16 Random[106|83]{integer} 107|392b13[17|16]
 X 10 a-textio.ads
-57K13*Text_IO 727e16 17|2w10
+57K13*Text_IO 727e16 17|2w10 46r11 52r11
+508U14*Put_Line 17|46s19 52s19
 X 15 cards.ads
-1K9*cards 30e10 16|1w6 15r40 25r39 17|36r21
-15R9*suit<5R9> 19e14 16|15r46 25r45 17|36r27
+1K9*cards 30e10 16|1w6 15r40 25r39 17|35r21
+15R9*suit<5R9> 19e14 16|15r46 25r45 17|35r27
 X 16 cardtable.ads
-5K9*CardTable 38l5 38e14 17|3b14 58l5 58t14
-7a4*drawPile{18|3A9} 17|11m7 38r22 39m7 39r26 40m7
+5K9*CardTable 38l5 38e14 17|3b14 56l5 56t14
+7a4*drawPile{18|3A9} 17|11m7 37r22 38m7 38r26 39m7
 9i4*drawPileLocation{integer}
 11p4*DiscardPile{65|201P9}
 12p4*Stock{65|201P9}
@@ -211,17 +214,19 @@ X 16 cardtable.ads
 28a4*spadesFoundation{25A9}
 29a4*clubsFoundation{25A9}
 32U14*initDrawPile 17|8b14 12t7
-33U14*shuffleDeck 17|24b14 32t7
-34U14*swapCard 34>23 34>40 17|29s10 35b14 41t7
-34i23 index{integer} 17|35b23 38r31 39r16
-34i40 swapLocation{integer} 17|35b40 39r35 40r16
+33U14*shuffleDeck 17|24b14 31t7
+34U14*swapCard 34>23 34>40 17|29s10 34b14 40t7
+34i23 index{integer} 17|34b23 37r31 38r16
+34i40 swapLocation{integer} 17|34b40 38r35 39r16
+35U14*resetStock 17|44b14 47t7
+36U14*dealCards 17|50b14 53t7
 X 17 cardtable.adb
 15I12 randomRange{integer} 17r35 20r8
 16K12 Rand[6|44] 18r8
 19r4 G{6|50R9[16]} 27r16 28r22
 20i4 X{15I12} 28m10 29r22
 26i11 i{integer} 29r19
-36r7 tempSwapVar{15|15R9} 38m7 40r33
+35r7 tempSwapVar{15|15R9} 37m7 39r33
 X 18 deck.ads
 2K9*Deck 16|2w6 7r15 17|10r7 11r19 18|10e9
 3A9*cardDeck(15|15R9)<integer> 16|7r20
