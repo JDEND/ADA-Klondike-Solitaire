@@ -25,7 +25,10 @@ b__main.ali
 -shared-libgcc
 -shared-libgcc
 -shared-libgcc
+-lgnarl-10
 -lgnat-10
+-lrt
+-lpthread
 -ldl
 [RUN PATH OPTION]
 /usr/lib/gcc/x86_64-linux-gnu/10/adalib/

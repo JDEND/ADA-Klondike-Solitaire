@@ -1,5 +1,3 @@
-with Ada.Numerics.Discrete_Random;
-with Ada.Text_IO;
 package body CardTable is
 
    --initDrawPile creates a deep copied array from the current card deck,

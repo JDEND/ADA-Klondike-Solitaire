@@ -15,8 +15,6 @@ with Gtk.Window; use Gtk.Window;
 
 with CardTable; use CardTable;
 
-
-
 procedure main is
    -- Define your variables here
    Window_Main : Gtk_Window;
@@ -24,7 +22,6 @@ procedure main is
 
    --Blank Space
    Blank : Gtk_Label;
-   Cntr_Blank : Gtk_Label;
 
    --Pile Placeholders
    diamonds : Gtk_Label;
@@ -57,17 +54,18 @@ procedure main is
       attach_defaults(Table_Main, Btn_NewGame, 10, 11, 1, 2);
 
       Gtk_New(Btn_Quit, "Quit");
-      Attach_Defaults(Table_Main, Btn_Quit, 9,11,10,11);
+      Attach_Defaults(Table_Main, Btn_Quit, 10,11,18,22);
 
       Gtk_New(Btn_Draw, "Draw");
       Attach_Defaults(Table_Main, Btn_Draw, 1,2,1,2);
+
+      Gtk_New(Btn_Return, "Reset Draw");
+      Attach_Defaults(Table_Main, Btn_Return, 4,5,1,2);
 
       --Add placeholders
       Gtk_New(Blank, "");
       Attach_Defaults(Table_Main, Blank, 1,10,2,10);
 
-      Gtk_New(Cntr_Blank, "");
-      Attach_Defaults(Table_Main, Cntr_Blank, 4,6,1,11);
 
       Gtk_New(Stock, "");
       Attach_Defaults(Table_Main, Stock, 2,3,1,2);
@@ -83,16 +81,27 @@ procedure main is
       Gtk_New(clubs, "clubs");
       Attach_Defaults(Table_Main, clubs, 9,10,1,2);
 
+      --initializes card deck
+      initDrawPile;
+      initializeTable;
+      for i in 0..18 loop
+         for j in 0..6 loop
+            Attach_Defaults(Table_Main, tableau(i,j), Guint(j+1), Guint(j+2),
+                            Guint(i+2), Guint(i+3));
+         end loop;
+      end loop;
+
       Btn_NewGame.On_Clicked(New_Game_Callback'Access);
       Btn_Quit.On_Clicked(Quit_Callback'Access);
       Btn_Draw.On_Clicked(Draw_Callback'Access);
+      Btn_Return.On_Clicked(Return_Callback'Access);
 
       -- Show all widgets
       Show_All(Window_Main);
       --disables draw button until new game is started
       Btn_Draw.Set_Visible(False);
-      --initializes card deck
-      initDrawPile;
+      Btn_Return.Set_Visible(False);
+
 
       -- Start the main loop
       Gtk.Main.Main;

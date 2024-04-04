@@ -9,7 +9,6 @@ package body buttons is
       --future 04/02/24 - GV6507
       startTime := Clock;
       --  Put_Line(Image(startTime));
-      initDrawPile;
       shuffleDeck;
       drawPileLocation := -1;
       DiscardPile.Set_Text("");

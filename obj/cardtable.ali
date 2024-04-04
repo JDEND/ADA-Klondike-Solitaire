@@ -5,6 +5,8 @@ A -march=x86-64
 P SS ZX
 
 RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
 RV NO_IO
 RV NO_STANDARD_STORAGE_POOLS
@@ -15,25 +17,42 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U cardtable%b		cardtable.adb		018bb6b5 OO PK
+U cardtable%b		cardtable.adb		e0e4eade OO PK
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+U cardtable%s		cardtable.ads		ea844774 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.synchronized_queue_interfaces%s
+W ada.containers.unbounded_synchronized_queues%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.discrete_random%s
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-W system%s		system.ads		system.ali
-Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
-
-U cardtable%s		cardtable.ads		50e93f94 EE OO PK
-W ada%s			ada.ads			ada.ali
-W ada.numerics%s	a-numeri.ads		a-numeri.ali
-W ada.numerics.discrete_random%s
+Z ada.unchecked_deallocation%s
 W cards%s		cards.adb		cards.ali
 W deck%s		deck.adb		deck.ali
 W gtk%s			gtk.ads			gtk.ali
 W gtk.label%s		gtk-label.adb		gtk-label.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
 
 D ada.ads		20230707070819 76789da1 ada%s
+D a-contai.ads		20230707070819 61e5e089 ada.containers%s
+D a-csquin.ads		20230707070819 8c71856d ada.containers.synchronized_queue_interfaces%s
+D a-cusyqu.ads		20230707070819 c768ec18 ada.containers.unbounded_synchronized_queues%s
+D a-cusyqu.adb		20230707070819 bdf5fca2 ada.containers.unbounded_synchronized_queues%b
 D a-except.ads		20230707070819 a7106115 ada.exceptions%s
 D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
 D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
@@ -48,8 +67,8 @@ D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
 D cards.ads		20240402235118 46fa6e46 cards%s
-D cardtable.ads		20240403212733 8b4dc47f cardtable%s
-D cardtable.adb		20240404131902 55d7fa48 cardtable%b
+D cardtable.ads		20240404143200 d4cd0087 cardtable%s
+D cardtable.adb		20240404142629 3429ea59 cardtable%b
 D deck.ads		20240321223612 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
@@ -130,12 +149,18 @@ D pango-layout.ads	20240229103412 d240b716 pango.layout%s
 D pango-matrix.ads	20240229103412 50fe54f2 pango.matrix%s
 D pango-tabs.ads	20240229103412 0c575925 pango.tabs%s
 D system.ads		20230707070819 4635ec04 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
 D s-exctab.ads		20230707070819 54135002 system.exception_table%s
 D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
 D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
 D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
 D s-imguns.ads		20230707070819 9ff43cf7 system.img_uns%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-memory.ads		20230707070819 597d6634 system.memory%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
+D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
 D s-parame.ads		20230707070819 48ec542b system.parameters%s
 D s-pooglo.ads		20230707070819 ede33ef8 system.pool_global%s
 D s-rannum.ads		20230707070819 99ade2f2 system.random_numbers%s
@@ -144,135 +169,188 @@ D s-ransee.ads		20230707070819 01a57b33 system.random_seed%s
 D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
 D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
 D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
 D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
 D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
 D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
 D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
 D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
 D s-string.ads		20230707070819 8fe54fb7 system.strings%s
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20230707070819 5f548bb3 system.tasking.protected_objects.operations%s
 D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
 D s-valuns.ads		20230707070819 35067db9 system.val_uns%s
 D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
 G a e
-G c s s s [s cardtable 5 1 none]
-G c Z s s [TtableaurowsBIP cardtable 15 4 none]
-G c Z s s [TfoundationBIP cardtable 25 4 none]
-G c Z s b [initdrawpile cardtable 32 14 none]
-G c Z s b [shuffledeck cardtable 33 14 none]
-G c Z s b [swapcard cardtable 34 14 none]
-G c Z s b [resetstock cardtable 35 14 none]
-G c Z s b [dealcards cardtable 36 14 none]
-G c Z b b [random cardtable__rand 52 13 16_4]
-G c Z b b [reset cardtable__rand 54 14 16_4]
-G c Z b b [reset cardtable__rand 55 14 16_4]
-G c Z b b [save cardtable__rand 61 14 16_4]
-G c Z b b [reset cardtable__rand 62 14 16_4]
-G c Z b b [image cardtable__rand 66 13 16_4]
-G c Z b b [value cardtable__rand 67 13 16_4]
-G r s suit [s cardtable 5 1 none] [suitIP cards 15 9 none]
-G r s TcarddeckB [s cardtable 5 1 none] [TcarddeckBIP deck 3 4 none]
-G r s suit [TtableaurowsBIP cardtable 15 4 none] [suitIP cards 15 9 none]
-G r s suit [TfoundationBIP cardtable 25 4 none] [suitIP cards 15 9 none]
-G r c none [initdrawpile cardtable 32 14 none] [initializedeck deck 6 14 none]
-G r s suit [shuffledeck cardtable 33 14 none] [suitIP cards 15 9 none]
-G r s suit [swapcard cardtable 34 14 none] [suitIP cards 15 9 none]
+G c s s s [s cardtable 14 1 none]
+G c Z s s [enqueue cardtable__card_containers__implementation 56 17 23_4]
+G c Z s s [dequeue cardtable__card_containers__implementation 60 17 23_4]
+G c Z s s [length cardtable__card_containers__implementation 64 16 23_4]
+G c Z s s [max_length cardtable__card_containers__implementation 66 16 23_4]
+G c Z s s [finalize cardtable__card_containers__implementation 84 28 23_4]
+G c Z s s [free cardtable__card_containers__implementation 40 17 23_4]
+G c Z s s [enqueue cardtable__card_containers__queue 94 24 23_4]
+G c Z s s [dequeue cardtable__card_containers__queue 96 24 23_4]
+G c Z s s [current_use cardtable__card_containers__queue 98 27 23_4]
+G c Z s s [peak_use cardtable__card_containers__queue 100 27 23_4]
+G c Z s s [queue__current_useN cardtable__card_containers 98 18 23_4]
+G c Z s s [queue__current_useP cardtable__card_containers 98 18 23_4]
+G c Z s s [queue__peak_useN cardtable__card_containers 100 18 23_4]
+G c Z s s [queue__peak_useP cardtable__card_containers 100 18 23_4]
+G c Z s s [list_typeDF cardtable__card_containers__implementation 78 12 23_4]
+G c Z s s [list_typeIP cardtable__card_containers__implementation 78 12 23_4]
+G c Z s s [node_typeIP cardtable__card_containers__implementation 73 12 23_4]
+G c Z s s [queueVDF cardtable__card_containers 88 4 23_4]
+G c Z s s [queueVDI cardtable__card_containers 88 4 23_4]
+G c Z s s [queueVIP cardtable__card_containers 88 4 23_4]
+G c Z s s [P19sIP cardtable__card_containers 94 18 23_4]
+G c Z s s [P22sIP cardtable__card_containers 96 18 23_4]
+G c Z s s [queue__current_use cardtable__card_containers 138 7 23_4]
+G c Z s s [queue__peak_use cardtable__card_containers 167 7 23_4]
+G c Z s s [TtableaurowsBIP cardtable 35 4 none]
+G c Z s s [TfoundationBIP cardtable 45 4 none]
+G c Z s b [initdrawpile cardtable 52 14 none]
+G c Z s b [shuffledeck cardtable 53 14 none]
+G c Z s b [swapcard cardtable 54 14 none]
+G c Z s b [resetstock cardtable 55 14 none]
+G c Z s b [dealcards cardtable 56 14 none]
+G c Z b b [random cardtable__rand 52 13 14_4]
+G c Z b b [reset cardtable__rand 54 14 14_4]
+G c Z b b [reset cardtable__rand 55 14 14_4]
+G c Z b b [save cardtable__rand 61 14 14_4]
+G c Z b b [reset cardtable__rand 62 14 14_4]
+G c Z b b [image cardtable__rand 66 13 14_4]
+G c Z b b [value cardtable__rand 67 13 14_4]
+G r s suit [s cardtable 14 1 none] [suitIP cards 15 9 none]
+G r s TcarddeckB [s cardtable 14 1 none] [TcarddeckBIP deck 3 4 none]
+G r s suit [TtableaurowsBIP cardtable 35 4 none] [suitIP cards 15 9 none]
+G r s suit [TfoundationBIP cardtable 45 4 none] [suitIP cards 15 9 none]
+G r c none [initdrawpile cardtable 52 14 none] [initializedeck deck 6 14 none]
+G r s suit [shuffledeck cardtable 53 14 none] [suitIP cards 15 9 none]
+G r s suit [swapcard cardtable 54 14 none] [suitIP cards 15 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 16|3r6 17|1r6 2r6 17r6 46r7 52r7
-X 5 a-numeri.ads
-16K13*Numerics 32e17 16|3r10 17|1r10 17r10
-X 6 a-nudira.ads
-44k22*Discrete_Random 75e33 16|3w19 17|1w19 17r19
-50R9*Generator<106|63R9> 17|19r8[16]
-52V13*Random{integer} 17|28s15[16]
-55U14*Reset<106|100p14> 17|27s10[16]
-X 7 a-nudira.adb
-53V16 Random[106|83]{integer} 107|392b13[17|16]
-X 10 a-textio.ads
-57K13*Text_IO 727e16 17|2w10 46r11 52r11
-508U14*Put_Line 17|46s19 52s19
-X 15 cards.ads
-1K9*cards 30e10 16|1w6 15r40 25r39 17|35r21
-15R9*suit<5R9> 19e14 16|15r46 25r45 17|35r27
-X 16 cardtable.ads
-5K9*CardTable 38l5 38e14 17|3b14 56l5 56t14
-7a4*drawPile{18|3A9} 17|11m7 37r22 38m7 38r26 39m7
-9i4*drawPileLocation{integer}
-11p4*DiscardPile{65|201P9}
-12p4*Stock{65|201P9}
-15A9*tableauRows(15|15R9)<integer> 16r13 17r13 18r15 19r14 20r14 21r13 22r15
-16a4*rowOne{15A9}
-17a4*rowTwo{15A9}
-18a4*rowThree{15A9}
-19a4*rowFour{15A9}
-20a4*rowFive{15A9}
-21a4*rowSix{15A9}
-22a4*rowSeven{15A9}
-25A9*foundation(15|15R9)<integer> 26r21 27r23 28r23 29r22
-26a4*acesFoundation{25A9}
-27a4*heartsFoundation{25A9}
-28a4*spadesFoundation{25A9}
-29a4*clubsFoundation{25A9}
-32U14*initDrawPile 17|8b14 12t7
-33U14*shuffleDeck 17|24b14 31t7
-34U14*swapCard 34>23 34>40 17|29s10 34b14 40t7
-34i23 index{integer} 17|34b23 37r31 38r16
-34i40 swapLocation{integer} 17|34b40 38r35 39r16
-35U14*resetStock 17|44b14 47t7
-36U14*dealCards 17|50b14 53t7
-X 17 cardtable.adb
-15I12 randomRange{integer} 17r35 20r8
-16K12 Rand[6|44] 18r8
-19r4 G{6|50R9[16]} 27r16 28r22
-20i4 X{15I12} 28m10 29r22
-26i11 i{integer} 29r19
-35r7 tempSwapVar{15|15R9} 37m7 39r33
-X 18 deck.ads
-2K9*Deck 16|2w6 7r15 17|10r7 11r19 18|10e9
-3A9*cardDeck(15|15R9)<integer> 16|7r20
-5a4*stdCardDeck{3A9} 17|11r24
-6U14*initializeDeck 17|10s12
-X 19 gdk.ads
-43P9*Gdk_Window<38|153P9>
-46P9*Gdk_Visual<38|153P9>
-X 21 gdk-device.ads
+16K9*Ada 20e8 20|1r6 2r6 3r6 4r6 22r6 24r6 21|15r6 44r7 50r7
+X 2 a-contai.ads
+16K13*Containers 28e19 20|1r10 2r10 22r10 24r10
+X 3 a-csquin.ads
+37k24*Synchronized_Queue_Interfaces 56e49 20|1w21 22r21
+X 4 a-cusyqu.ads
+44k24*Unbounded_Synchronized_Queues 106e49 20|2w21 24r21
+88W19*Queue<3|40R9[20|21]> 20|26r32[23] 27r34[23]
+X 9 a-numeri.ads
+16K13*Numerics 32e17 20|3r10 21|15r10
+X 10 a-nudira.ads
+44k22*Discrete_Random 75e33 20|3w19 21|15r19
+50R9*Generator<116|63R9> 21|17r8[14]
+52V13*Random{integer} 21|26s15[14]
+55U14*Reset<116|100p14> 21|25s10[14]
+X 11 a-nudira.adb
+53V16 Random[116|83]{integer} 117|392b13[21|14]
+X 14 a-textio.ads
+57K13*Text_IO 727e16 20|4w10 21|44r11 50r11
+508U14*Put_Line 21|44s19 50s19
+X 19 cards.ads
+1K9*cards 30e10 20|6w6 22r51 35r40 45r39 21|33r21
+15R9*suit<5R9> 19e14 20|22r57 35r46 45r45 21|33r27
+X 20 cardtable.ads
+14K9*CardTable 58l5 58e14 21|1b14 54l5 54t14
+16a4*drawPile{22|3A9} 21|9m7 35r22 36m7 36r26 37m7
+18i4*drawPileLocation{integer}
+21K12*queue_interface[3|37] 24r51
+23K12*card_containers[4|44] 26r16 27r18
+26w4*cardStock{4|88W19[23]}
+27w4*cardDiscard{4|88W19[23]}
+31p4*DiscardPile{69|201P9}
+32p4*Stock{69|201P9}
+35A9*tableauRows(19|15R9)<integer> 36r13 37r13 38r15 39r14 40r14 41r13 42r15
+36a4*rowOne{35A9}
+37a4*rowTwo{35A9}
+38a4*rowThree{35A9}
+39a4*rowFour{35A9}
+40a4*rowFive{35A9}
+41a4*rowSix{35A9}
+42a4*rowSeven{35A9}
+45A9*foundation(19|15R9)<integer> 46r21 47r23 48r23 49r22
+46a4*acesFoundation{45A9}
+47a4*heartsFoundation{45A9}
+48a4*spadesFoundation{45A9}
+49a4*clubsFoundation{45A9}
+52U14*initDrawPile 21|6b14 10t7
+53U14*shuffleDeck 21|22b14 29t7
+54U14*swapCard 54>23 54>40 21|27s10 32b14 38t7
+54i23 index{integer} 21|32b23 35r31 36r16
+54i40 swapLocation{integer} 21|32b40 36r35 37r16
+55U14*resetStock 21|42b14 45t7
+56U14*dealCards 21|48b14 51t7
+X 21 cardtable.adb
+13I12 randomRange{integer} 15r35 18r8
+14K12 Rand[10|44] 16r8
+17r4 G{10|50R9[14]} 25r16 26r22
+18i4 X{13I12} 26m10 27r22
+24i11 i{integer} 27r19
+33r7 tempSwapVar{19|15R9} 35m7 37r33
+X 22 deck.ads
+2K9*Deck 20|8w6 16r15 21|8r7 9r19 22|10e9
+3A9*cardDeck(19|15R9)<integer> 20|16r20
+5a4*stdCardDeck{3A9} 21|9r24
+6U14*initializeDeck 21|8s12
+X 23 gdk.ads
+43P9*Gdk_Window<42|153P9>
+46P9*Gdk_Visual<42|153P9>
+X 25 gdk-device.ads
 48P9*Gdk_Device(47R9)
-72V13*Convert{97|67M9} 43|58i21
-73V13*Convert{48P9} 43|59i21
-X 36 gdk-visual.ads
-78V13*Convert[11|20]{97|67M9} 43|58i21
-80V13*Convert[11|20]{19|46P9} 43|59i21
-X 37 gdk-window.ads
-309V13*Convert{97|67M9} 43|58i21
-310V13*Convert{19|43P9} 43|59i21
-X 38 glib.ads
+72V13*Convert{101|67M9} 47|58i21
+73V13*Convert{48P9} 47|59i21
+X 40 gdk-visual.ads
+78V13*Convert[15|20]{101|67M9} 47|58i21
+80V13*Convert[15|20]{23|46P9} 47|59i21
+X 41 gdk-window.ads
+309V13*Convert{101|67M9} 47|58i21
+310V13*Convert{23|43P9} 47|59i21
+X 42 glib.ads
 153P9*C_Proxy(150R9)
-X 46 glib-object.ads
+X 50 glib-object.ads
 41P9*GObject(40R9)
-675V13*Convert{97|67M9} 43|58i21 44|49i21
-676V13*Convert{41P9} 43|59i21 44|50i21
-X 54 gtk.ads
-41K9*Gtk 16|4r6 4r21 54|79e8
-X 64 gtk-enums.ads
-882V13*Convert{97|67M9} 43|58i21 44|49i21
-883V13*Convert{string} 43|59i21 44|50i21
-X 65 gtk-label.ads
-198K13*Label 16|4w10 4r25 65|991e14
-201P9*Gtk_Label(200R9) 16|11r18 12r12
-X 74 gtk-widget.ads
+675V13*Convert{101|67M9} 47|58i21 48|49i21
+676V13*Convert{41P9} 47|59i21 48|50i21
+X 58 gtk.ads
+41K9*Gtk 20|10r6 10r21 58|79e8
+X 68 gtk-enums.ads
+882V13*Convert{101|67M9} 47|58i21 48|49i21
+883V13*Convert{string} 47|59i21 48|50i21
+X 69 gtk-label.ads
+198K13*Label 20|10w10 10r25 69|991e14
+201P9*Gtk_Label(200R9) 20|31r18 32r12
+X 78 gtk-widget.ads
 351P9*Gtk_Widget(350R9)
-438V13*Convert{97|67M9} 43|58i21 44|49i21
-439V13*Convert{351P9} 43|59i21 44|50i21
-X 79 interfac.ads
+438V13*Convert{101|67M9} 47|58i21 48|49i21
+439V13*Convert{351P9} 47|59i21 48|50i21
+X 83 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64
-X 84 pango-attributes.ads
-41P9*Pango_Attribute<38|153P9>
-52V13*Convert{97|67M9} 44|49i21
-53V13*Convert{41P9} 44|50i21
-X 97 system.ads
+X 88 pango-attributes.ads
+41P9*Pango_Attribute<42|153P9>
+52V13*Convert{101|67M9} 48|49i21
+53V13*Convert{41P9} 48|50i21
+X 101 system.ads
 67M9*Address
-X 106 s-rannum.ads
-75V13*Random{79|74M9} 107|221i21
-76V13*Random{79|77M9} 107|221i21
+X 110 s-memory.ads
+53V13*Alloc{101|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{101|67M9} 105i<c,__gnat_realloc>22
+X 116 s-rannum.ads
+75V13*Random{83|74M9} 117|221i21
+76V13*Random{83|77M9} 117|221i21
+X 122 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 124 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
 
