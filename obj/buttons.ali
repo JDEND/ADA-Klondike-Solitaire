@@ -1,0 +1,252 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U buttons%b		buttons.adb		d88f9793 NE OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W gtk%s			gtk.ads			gtk.ali
+W gtk.main%s		gtk-main.adb		gtk-main.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U buttons%s		buttons.ads		1215a9fa EE NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W cardtable%s		cardtable.adb		cardtable.ali
+W gtk%s			gtk.ads			gtk.ali
+W gtk.button%s		gtk-button.adb		gtk-button.ali
+W gtk.label%s		gtk-label.adb		gtk-label.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-calend.ads		20230707070819 474d9720 ada.calendar%s
+D a-calfor.ads		20230707070819 0a6f9afc ada.calendar.formatting%s
+D a-catizo.ads		20230707070819 409d7e5b ada.calendar.time_zones%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
+D a-nudira.ads		20230707070819 71e55def ada.numerics.discrete_random%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D buttons.ads		20240403204029 e8b17322 buttons%s
+D buttons.adb		20240403212652 d6ba4199 buttons%b
+D cairo.ads		20240229103412 925d4aaa cairo%s
+D cairo-region.ads	20240229103412 b7133728 cairo.region%s
+D cards.ads		20240402235118 46fa6e46 cards%s
+D cardtable.ads		20240403212718 c7418127 cardtable%s
+D deck.ads		20240321223612 3e4d350d deck%s
+D gdk.ads		20240229103412 96d821f3 gdk%s
+D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
+D gdk-device.ads	20240229103412 873a4dfe gdk.device%s
+D gdk-device_tool.ads	20240229103412 7548cf02 gdk.device_tool%s
+D gdk-display.ads	20240229103412 2ca984e1 gdk.display%s
+D gdk-drag_contexts.ads	20240229103412 c0b30362 gdk.drag_contexts%s
+D gdk-drawing_context.ads  20240229103412 5ffa567a gdk.drawing_context%s
+D gdk-event.ads		20240229103412 12dba357 gdk.event%s
+D gdk-frame_clock.ads	20240229103412 b23ee86a gdk.frame_clock%s
+D gdk-frame_timings.ads	20240229103412 98b5e7d1 gdk.frame_timings%s
+D gdk-glcontext.ads	20240229103412 0725b164 gdk.glcontext%s
+D gdk-monitor.ads	20240229103412 970cbb66 gdk.monitor%s
+D gdk-pixbuf.ads	20240229103412 499fe1c7 gdk.pixbuf%s
+D gdk-rectangle.ads	20240229103412 7b900608 gdk.rectangle%s
+D gdk-rgba.ads		20240229103412 2609514a gdk.rgba%s
+D gdk-screen.ads	20240229103412 2563f3b9 gdk.screen%s
+D gdk-types.ads		20240229103412 921dc8b2 gdk.types%s
+D gdk-visual.ads	20240229103412 bf09ee2d gdk.visual%s
+D gdk-window.ads	20240229103412 c5ab0023 gdk.window%s
+D glib.ads		20240229103412 7d107887 glib%s
+D glib-action_group.ads	20240229103412 39f0dcb6 glib.action_group%s
+D glib-error.ads	20240229103412 e055fabe glib.error%s
+D glib-g_icon.ads	20240229103412 04aa38a9 glib.g_icon%s
+D glib-generic_properties.ads  20240229103412 f3dc70df glib.generic_properties%s
+D glib-glist.ads	20240229103412 65a6e1be glib.glist%s
+D glib-gslist.ads	20240229103412 953541be glib.gslist%s
+D glib-menu_model.ads	20240229103412 b4f2d5a1 glib.menu_model%s
+D glib-object.ads	20240229103412 fb5efa0e glib.object%s
+D glib-properties.ads	20240229103412 4118b916 glib.properties%s
+D glib-string.ads	20240229103412 1c658347 glib.string%s
+D glib-types.ads	20240229103412 86ac71ae glib.types%s
+D glib-values.ads	20240229103412 5ef3ad24 glib.values%s
+D glib-variant.ads	20240229103412 a1ae139c glib.variant%s
+D gnat.ads		20230707070819 b5988c27 gnat%s
+D g-string.ads		20230707070819 c6abc540 gnat.strings%s
+D gtk.ads		20240229103412 cfdeaf1c gtk%s
+D gtk-accel_group.ads	20240229103412 a14a159a gtk.accel_group%s
+D gtk-action.ads	20240229103412 98120d78 gtk.action%s
+D gtk-actionable.ads	20240229103412 e100f0b2 gtk.actionable%s
+D gtk-activatable.ads	20240229103412 873be5b9 gtk.activatable%s
+D gtk-adjustment.ads	20240229103412 80acb9f5 gtk.adjustment%s
+D gtk-bin.ads		20240229103412 4e8a2236 gtk.bin%s
+D gtk-buildable.ads	20240229103412 42aefd00 gtk.buildable%s
+D gtk-builder.ads	20240229103412 35d802c2 gtk.builder%s
+D gtk-button.ads	20240229103412 7abde3a0 gtk.button%s
+D gtk-container.ads	20240229103412 229c6e7d gtk.container%s
+D gtk-enums.ads		20240229103412 e04a0db3 gtk.enums%s
+D gtk-label.ads		20240229103412 d2f6fd4f gtk.label%s
+D gtk-main.ads		20240229103412 e684a528 gtk.main%s
+D gtk-menu.ads		20240229103412 a2c8593d gtk.menu%s
+D gtk-menu_item.ads	20240229103412 ab552f06 gtk.menu_item%s
+D gtk-menu_shell.ads	20240229103412 63bcc2d2 gtk.menu_shell%s
+D gtk-misc.ads		20240229103412 7021384d gtk.misc%s
+D gtk-selection_data.ads  20240229103412 061b2148 gtk.selection_data%s
+D gtk-style.ads		20240229103412 3c4cbc07 gtk.style%s
+D gtk-target_entry.ads	20240229103412 02690213 gtk.target_entry%s
+D gtk-target_list.ads	20240229103412 a9d79eb7 gtk.target_list%s
+D gtk-widget.ads	20240229103412 7e1eb2be gtk.widget%s
+D gtkada.ads		20240229103412 57aea1c7 gtkada%s
+D gtkada-bindings.ads	20240229103412 fc9825de gtkada.bindings%s
+D gtkada-c.ads		20240229103412 0f5973e3 gtkada.c%s
+D gtkada-types.ads	20240229103412 471f54b5 gtkada.types%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrin.ads		20230707070819 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D pango.ads		20240229103412 e51ea573 pango%s
+D pango-attributes.ads	20240229103412 21c09ee4 pango.attributes%s
+D pango-context.ads	20240229103412 ab3b8a9f pango.context%s
+D pango-enums.ads	20240229103412 8ddf1b71 pango.enums%s
+D pango-font.ads	20240229103412 90904519 pango.font%s
+D pango-font_face.ads	20240229103412 c62e6ce5 pango.font_face%s
+D pango-font_family.ads	20240229103412 5dd1eb29 pango.font_family%s
+D pango-font_map.ads	20240229103412 7959860d pango.font_map%s
+D pango-font_metrics.ads  20240229103412 38b0be76 pango.font_metrics%s
+D pango-fontset.ads	20240229103412 af4fe708 pango.fontset%s
+D pango-language.ads	20240229103412 d0382281 pango.language%s
+D pango-layout.ads	20240229103412 d240b716 pango.layout%s
+D pango-matrix.ads	20240229103412 50fe54f2 pango.matrix%s
+D pango-tabs.ads	20240229103412 0c575925 pango.tabs%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-pooglo.ads		20230707070819 ede33ef8 system.pool_global%s
+D s-rannum.ads		20230707070819 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-string.ads		20230707070819 8fe54fb7 system.strings%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [new_game_callback buttons 17 14 none]
+G c Z s b [quit_callback buttons 18 14 none]
+G c Z s b [draw_callback buttons 19 14 none]
+G r c none [new_game_callback buttons 17 14 none] [initdrawpile cardtable 32 14 none]
+G r c none [new_game_callback buttons 17 14 none] [shuffledeck cardtable 33 14 none]
+G r c none [new_game_callback buttons 17 14 none] [set_text gtk__label 521 14 none]
+G r c none [quit_callback buttons 18 14 none] [main_quit gtk__main 205 14 none]
+G r c none [draw_callback buttons 19 14 none] [set_text gtk__label 521 14 none]
+G r c none [draw_callback buttons 19 14 none] [getcardself cards 28 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1w6 1r15 3r6 3r24 4r6 4r35 5r6 5r23
+X 2 a-calend.ads
+36K13*Calendar 409e17 15|3w10 3r28 4r10 4r39
+42I9*Time<222I9> 15|21r16 22r14
+56V13*Clock{42I9} 16|10s20
+222I9 Time_Rep<long_long_integer>
+X 3 a-calfor.ads
+24K22*Formatting 215e28 15|4w19 4r48
+X 12 a-textio.ads
+57K13*Text_IO 727e16 15|5w10 5r27
+508U14*Put_Line 16|49s7
+X 15 buttons.ads
+14K9*buttons 29l5 29e12 16|2b14 53l5 53t12
+17U14*New_Game_Callback 17^33 16|4b14 16l8 16t25
+17p33 Button(66|73R9) 16|4b33
+18U14*Quit_Callback 18^29 16|18b14 28l8 28t21
+18p29 Button(66|73R9) 16|18b29
+19U14*Draw_Callback 19^29 16|30b14 51l8 51t21
+19p29 Button(66|73R9) 16|30b29
+21i4*startTime{2|42I9} 16|10m7
+22i4*endTime{2|42I9}
+25p4*Btn_NewGame{66|74P9}
+26p4*Btn_Quit{66|74P9}
+27p4*Btn_Draw{66|74P9}
+X 19 cards.ads
+28V13*getCardSelf{string} 16|48s55 49s43
+X 20 cardtable.ads
+5K9*CardTable 15|7w6 7r21 20|38e14
+7a4*drawPile{21|3A9} 16|37r30 44r30 48m28 48r28 49m16 49r16
+9i4*drawPileLocation{integer} 16|14m7 37r10 39m10 42m7 42r27 44r10 48r37
+. 49r25
+11p4*DiscardPile{69|201P9} 16|15r7 48r7
+12p4*Stock{69|201P9} 16|40r10 45r10
+32U14*initDrawPile 16|12s7
+33U14*shuffleDeck 16|13s7
+X 21 deck.ads
+3A9*cardDeck(19|15R9)<integer>
+X 22 gdk.ads
+43P9*Gdk_Window<41|153P9>
+46P9*Gdk_Visual<41|153P9>
+X 24 gdk-device.ads
+48P9*Gdk_Device(47R9)
+72V13*Convert{102|67M9} 46|58i21
+73V13*Convert{48P9} 46|59i21
+X 39 gdk-visual.ads
+78V13*Convert[13|20]{102|67M9} 46|58i21
+80V13*Convert[13|20]{22|46P9} 46|59i21
+X 40 gdk-window.ads
+309V13*Convert{102|67M9} 46|58i21
+310V13*Convert{22|43P9} 46|59i21
+X 41 glib.ads
+153P9*C_Proxy(150R9)
+X 49 glib-object.ads
+41P9*GObject(40R9)
+675V13*Convert{102|67M9} 46|58i21 47|49i21
+676V13*Convert{41P9} 46|59i21 47|50i21
+X 57 gtk.ads
+41K9*Gtk 15|9r6 9r22 10r6 10r21 16|1r6 27r7 57|79e8
+X 66 gtk-button.ads
+71K13*Button 15|9w10 9r26 66|613e15
+73R9*Gtk_Button_Record<63|45R9> 15|17r49 18r45 19r45 16|4r49 18r45 30r45
+. 66|73e65
+74P9*Gtk_Button(73R9) 15|25r18 26r15 27r15
+X 68 gtk-enums.ads
+882V13*Convert{102|67M9} 46|58i21 47|49i21
+883V13*Convert{string} 46|59i21 47|50i21
+X 69 gtk-label.ads
+198K13*Label 15|10w10 10r25 69|991e14
+201P9*Gtk_Label(200R9)
+521U14*Set_Text 16|15R19 40R16 45R16 48R19
+X 70 gtk-main.ads
+33K13*Main 16|1w10 27r11 70|327e13
+205U14*Main_Quit 16|27s16
+X 79 gtk-widget.ads
+351P9*Gtk_Widget(350R9)
+438V13*Convert{102|67M9} 46|58i21 47|49i21
+439V13*Convert{351P9} 46|59i21 47|50i21
+X 89 pango-attributes.ads
+41P9*Pango_Attribute<41|153P9>
+52V13*Convert{102|67M9} 47|49i21
+53V13*Convert{41P9} 47|50i21
+X 102 system.ads
+67M9*Address
+

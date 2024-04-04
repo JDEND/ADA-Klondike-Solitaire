@@ -1,0 +1,125 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U cards%b		cards.adb		646cb906 OO PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U cards%s		cards.ads		46fa6e46 EE OO PF PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D cards.ads		20240402235118 46fa6e46 cards%s
+D cards.adb		20240403203121 8c62022d cards%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [printcardvaluenumeric cards 9 14 none]
+G c Z s b [setcardvalue cards 10 14 none]
+G c Z s b [getcardvalue cards 11 13 none]
+G c Z s b [getcardrepresentation cards 12 13 none]
+G c Z s s [cardDA cards 5 9 none]
+G c Z s s [cardDF cards 5 9 none]
+G c Z s s [cardIP cards 5 9 none]
+G c Z s b [isvalidplace cards 21 13 none]
+G c Z s b [setsuittype cards 23 14 none]
+G c Z s b [invertcard cards 25 19 none]
+G c Z s b [isflipped cards 26 13 none]
+G c Z s b [printcard cards 27 14 none]
+G c Z s b [getcardself cards 28 13 none]
+G c Z s s [suitDA cards 15 9 none]
+G c Z s s [suitDF cards 15 9 none]
+G c Z s s [suitIP cards 15 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|1r6 15r13 17r13 19r13 21r13 23r13 25r13 27r13 29r13 31r13
+. 33r13 35r13 37r13 39r13 41r13 156r10 158r10
+X 6 a-textio.ads
+57K13*Text_IO 727e16 9|1w10 15r17 17r17 19r17 21r17 23r17 25r17 27r17 29r17
+. 31r17 33r17 35r17 37r17 39r17 41r17 156r14 158r14
+508U14*Put_Line 9|15s25 17s25 19s25 21s25 23s25 25s25 27s25 29s25 31s25 33s25
+. 35s25 37s25 39s25 41s25 156s22 158s22
+X 8 cards.ads
+1K9*cards 30l5 30e10 9|3b14 172l5 172t10
+5R9*card 7e14 9p14 9r50 10p14 10r41 11p13 11r40 12p13 12r50 15r21 9|9r50
+. 47r40 55r41 62r50
+6i7*cardValue{integer} 9|12r19 49r19 57m22 65r19 108r21 108r39
+9U14*printCardValueNumeric 9=36 9|9b14 44t7
+9r36 Self{5R9} 9|9b36 12r14
+10U14*setCardValue 10=27 10>47 9|55b14 58t7 124s12
+10r27 Self{5R9} 9|55b27 57m17
+10i47 newVal{integer} 9|55b47 57r35
+11V13*getCardValue{integer} 11=26 9|47b13 50l8 50t20
+11r26 Self{5R9} 9|47b26 49r14
+12V13*getCardRepresentation{string} 12=36 9|62b13 96t7 158s52 165s38
+12r36 Self{5R9} 9|62b36 65r14
+15R9*suit<5R9> 9p14 10p14 11p13 12p13 19e14 21p13 21r40 21r61 23p14 23r40
+. 25p19 25r44 26p13 26r37 27p14 27r38 28p13 28r40 9|103r40 103r61 119r40
+. 129r37 142r38 153r38 162r40
+16e7*suitName{character} 9|123m12 158r36 165r22
+17e7*suitColor{character} 9|107r18 107r37 122m12
+18b7*flipped{boolean} 9|131r15 144r15 145m15
+21V13*isValidPlace{boolean} 21=26 21=46 9|103b13 115t12
+21r26 Self{15R9} 9|103b26 106m10 106r10 107r13 108r16
+21r46 Other{15R9} 9|103b46 106m36 106r36 107r31 108r33
+23U14*setSuitType 23=26 23>46 24>26 24>49 9|119b14 125t7
+23r26 Self{15R9} 9|119b26 122m7 123m7 124m7 124r7
+23e46 suitName{character} 9|119b46 123r24
+24e26 suitColor{character} 9|120b26 122r25
+24i49 newVal{integer} 9|120b49 124r25
+25U19*invertCard 25=30 9|142b13 147t7
+25r30 Self{15R9} 9|142b24 144r10 145m10
+26V13*isFlipped{boolean} 26=23 9|106s15 106s42 129b13 136t7 155s15 164s15
+26r23 Self{15R9} 9|129b23 131r10
+27U14*printCard 27=24 9|153b14 160t7
+27r24 Self{15R9} 9|153b24 155m10 155r10 158r31 158m47 158r47
+28V13*getCardSelf{string} 28=26 9|162b13 169l8 169t19
+28r26 Self{15R9} 9|162b26 164m10 164r10 165r17 165m33 165r33
+X 9 cards.adb
+10i7 Val{integer} 12m7 13r12
+63i7 Val{integer} 65m7 66r12
+

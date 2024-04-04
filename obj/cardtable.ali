@@ -1,0 +1,273 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U cardtable%b		cardtable.adb		1c580d0e OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+U cardtable%s		cardtable.ads		1ce57acc EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W cards%s		cards.adb		cards.ali
+W deck%s		deck.adb		deck.ali
+W gtk%s			gtk.ads			gtk.ali
+W gtk.label%s		gtk-label.adb		gtk-label.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
+D a-nudira.ads		20230707070819 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20230707070819 72908cdb ada.numerics.discrete_random%b
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D cairo.ads		20240229103412 925d4aaa cairo%s
+D cairo-region.ads	20240229103412 b7133728 cairo.region%s
+D cards.ads		20240402235118 46fa6e46 cards%s
+D cardtable.ads		20240403212718 c7418127 cardtable%s
+D cardtable.adb		20240403212706 040804ab cardtable%b
+D deck.ads		20240321223612 3e4d350d deck%s
+D gdk.ads		20240229103412 96d821f3 gdk%s
+D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
+D gdk-device.ads	20240229103412 873a4dfe gdk.device%s
+D gdk-device_tool.ads	20240229103412 7548cf02 gdk.device_tool%s
+D gdk-display.ads	20240229103412 2ca984e1 gdk.display%s
+D gdk-drag_contexts.ads	20240229103412 c0b30362 gdk.drag_contexts%s
+D gdk-drawing_context.ads  20240229103412 5ffa567a gdk.drawing_context%s
+D gdk-event.ads		20240229103412 12dba357 gdk.event%s
+D gdk-frame_clock.ads	20240229103412 b23ee86a gdk.frame_clock%s
+D gdk-frame_timings.ads	20240229103412 98b5e7d1 gdk.frame_timings%s
+D gdk-glcontext.ads	20240229103412 0725b164 gdk.glcontext%s
+D gdk-monitor.ads	20240229103412 970cbb66 gdk.monitor%s
+D gdk-pixbuf.ads	20240229103412 499fe1c7 gdk.pixbuf%s
+D gdk-rectangle.ads	20240229103412 7b900608 gdk.rectangle%s
+D gdk-rgba.ads		20240229103412 2609514a gdk.rgba%s
+D gdk-screen.ads	20240229103412 2563f3b9 gdk.screen%s
+D gdk-types.ads		20240229103412 921dc8b2 gdk.types%s
+D gdk-visual.ads	20240229103412 bf09ee2d gdk.visual%s
+D gdk-window.ads	20240229103412 c5ab0023 gdk.window%s
+D glib.ads		20240229103412 7d107887 glib%s
+D glib-action_group.ads	20240229103412 39f0dcb6 glib.action_group%s
+D glib-error.ads	20240229103412 e055fabe glib.error%s
+D glib-g_icon.ads	20240229103412 04aa38a9 glib.g_icon%s
+D glib-generic_properties.ads  20240229103412 f3dc70df glib.generic_properties%s
+D glib-glist.ads	20240229103412 65a6e1be glib.glist%s
+D glib-gslist.ads	20240229103412 953541be glib.gslist%s
+D glib-menu_model.ads	20240229103412 b4f2d5a1 glib.menu_model%s
+D glib-object.ads	20240229103412 fb5efa0e glib.object%s
+D glib-properties.ads	20240229103412 4118b916 glib.properties%s
+D glib-string.ads	20240229103412 1c658347 glib.string%s
+D glib-types.ads	20240229103412 86ac71ae glib.types%s
+D glib-values.ads	20240229103412 5ef3ad24 glib.values%s
+D glib-variant.ads	20240229103412 a1ae139c glib.variant%s
+D gnat.ads		20230707070819 b5988c27 gnat%s
+D g-string.ads		20230707070819 c6abc540 gnat.strings%s
+D gtk.ads		20240229103412 cfdeaf1c gtk%s
+D gtk-accel_group.ads	20240229103412 a14a159a gtk.accel_group%s
+D gtk-action.ads	20240229103412 98120d78 gtk.action%s
+D gtk-actionable.ads	20240229103412 e100f0b2 gtk.actionable%s
+D gtk-activatable.ads	20240229103412 873be5b9 gtk.activatable%s
+D gtk-adjustment.ads	20240229103412 80acb9f5 gtk.adjustment%s
+D gtk-bin.ads		20240229103412 4e8a2236 gtk.bin%s
+D gtk-buildable.ads	20240229103412 42aefd00 gtk.buildable%s
+D gtk-builder.ads	20240229103412 35d802c2 gtk.builder%s
+D gtk-container.ads	20240229103412 229c6e7d gtk.container%s
+D gtk-enums.ads		20240229103412 e04a0db3 gtk.enums%s
+D gtk-label.ads		20240229103412 d2f6fd4f gtk.label%s
+D gtk-menu.ads		20240229103412 a2c8593d gtk.menu%s
+D gtk-menu_item.ads	20240229103412 ab552f06 gtk.menu_item%s
+D gtk-menu_shell.ads	20240229103412 63bcc2d2 gtk.menu_shell%s
+D gtk-misc.ads		20240229103412 7021384d gtk.misc%s
+D gtk-selection_data.ads  20240229103412 061b2148 gtk.selection_data%s
+D gtk-style.ads		20240229103412 3c4cbc07 gtk.style%s
+D gtk-target_entry.ads	20240229103412 02690213 gtk.target_entry%s
+D gtk-target_list.ads	20240229103412 a9d79eb7 gtk.target_list%s
+D gtk-widget.ads	20240229103412 7e1eb2be gtk.widget%s
+D gtkada.ads		20240229103412 57aea1c7 gtkada%s
+D gtkada-bindings.ads	20240229103412 fc9825de gtkada.bindings%s
+D gtkada-c.ads		20240229103412 0f5973e3 gtkada.c%s
+D gtkada-types.ads	20240229103412 471f54b5 gtkada.types%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrin.ads		20230707070819 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D pango.ads		20240229103412 e51ea573 pango%s
+D pango-attributes.ads	20240229103412 21c09ee4 pango.attributes%s
+D pango-context.ads	20240229103412 ab3b8a9f pango.context%s
+D pango-enums.ads	20240229103412 8ddf1b71 pango.enums%s
+D pango-font.ads	20240229103412 90904519 pango.font%s
+D pango-font_face.ads	20240229103412 c62e6ce5 pango.font_face%s
+D pango-font_family.ads	20240229103412 5dd1eb29 pango.font_family%s
+D pango-font_map.ads	20240229103412 7959860d pango.font_map%s
+D pango-font_metrics.ads  20240229103412 38b0be76 pango.font_metrics%s
+D pango-fontset.ads	20240229103412 af4fe708 pango.fontset%s
+D pango-language.ads	20240229103412 d0382281 pango.language%s
+D pango-layout.ads	20240229103412 d240b716 pango.layout%s
+D pango-matrix.ads	20240229103412 50fe54f2 pango.matrix%s
+D pango-tabs.ads	20240229103412 0c575925 pango.tabs%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-imguns.ads		20230707070819 9ff43cf7 system.img_uns%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-pooglo.ads		20230707070819 ede33ef8 system.pool_global%s
+D s-rannum.ads		20230707070819 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20230707070819 20ba1217 system.random_numbers%b
+D s-ransee.ads		20230707070819 01a57b33 system.random_seed%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-string.ads		20230707070819 8fe54fb7 system.strings%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-valuns.ads		20230707070819 35067db9 system.val_uns%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c s s s [s cardtable 5 1 none]
+G c Z s s [TtableaurowsBIP cardtable 15 4 none]
+G c Z s s [TfoundationBIP cardtable 25 4 none]
+G c Z s b [initdrawpile cardtable 32 14 none]
+G c Z s b [shuffledeck cardtable 33 14 none]
+G c Z s b [swapcard cardtable 34 14 none]
+G c Z b b [random cardtable__rand 52 13 16_4]
+G c Z b b [reset cardtable__rand 54 14 16_4]
+G c Z b b [reset cardtable__rand 55 14 16_4]
+G c Z b b [save cardtable__rand 61 14 16_4]
+G c Z b b [reset cardtable__rand 62 14 16_4]
+G c Z b b [image cardtable__rand 66 13 16_4]
+G c Z b b [value cardtable__rand 67 13 16_4]
+G r s suit [s cardtable 5 1 none] [suitIP cards 15 9 none]
+G r s TcarddeckB [s cardtable 5 1 none] [TcarddeckBIP deck 3 4 none]
+G r s suit [TtableaurowsBIP cardtable 15 4 none] [suitIP cards 15 9 none]
+G r s suit [TfoundationBIP cardtable 25 4 none] [suitIP cards 15 9 none]
+G r c none [initdrawpile cardtable 32 14 none] [initializedeck deck 6 14 none]
+G r s suit [shuffledeck cardtable 33 14 none] [suitIP cards 15 9 none]
+G r s suit [swapcard cardtable 34 14 none] [suitIP cards 15 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|3r6 17|1r6 2r6 17r6
+X 5 a-numeri.ads
+16K13*Numerics 32e17 16|3r10 17|1r10 17r10
+X 6 a-nudira.ads
+44k22*Discrete_Random 75e33 16|3w19 17|1w19 17r19
+50R9*Generator<106|63R9> 17|19r8[16]
+52V13*Random{integer} 17|28s15[16]
+55U14*Reset<106|100p14> 17|27s10[16]
+X 7 a-nudira.adb
+53V16 Random[106|83]{integer} 107|392b13[17|16]
+X 10 a-textio.ads
+57K13*Text_IO 727e16 17|2w10
+X 15 cards.ads
+1K9*cards 30e10 16|1w6 15r40 25r39 17|36r21
+15R9*suit<5R9> 19e14 16|15r46 25r45 17|36r27
+X 16 cardtable.ads
+5K9*CardTable 38l5 38e14 17|3b14 58l5 58t14
+7a4*drawPile{18|3A9} 17|11m7 38r22 39m7 39r26 40m7
+9i4*drawPileLocation{integer}
+11p4*DiscardPile{65|201P9}
+12p4*Stock{65|201P9}
+15A9*tableauRows(15|15R9)<integer> 16r13 17r13 18r15 19r14 20r14 21r13 22r15
+16a4*rowOne{15A9}
+17a4*rowTwo{15A9}
+18a4*rowThree{15A9}
+19a4*rowFour{15A9}
+20a4*rowFive{15A9}
+21a4*rowSix{15A9}
+22a4*rowSeven{15A9}
+25A9*foundation(15|15R9)<integer> 26r21 27r23 28r23 29r22
+26a4*acesFoundation{25A9}
+27a4*heartsFoundation{25A9}
+28a4*spadesFoundation{25A9}
+29a4*clubsFoundation{25A9}
+32U14*initDrawPile 17|8b14 12t7
+33U14*shuffleDeck 17|24b14 32t7
+34U14*swapCard 34>23 34>40 17|29s10 35b14 41t7
+34i23 index{integer} 17|35b23 38r31 39r16
+34i40 swapLocation{integer} 17|35b40 39r35 40r16
+X 17 cardtable.adb
+15I12 randomRange{integer} 17r35 20r8
+16K12 Rand[6|44] 18r8
+19r4 G{6|50R9[16]} 27r16 28r22
+20i4 X{15I12} 28m10 29r22
+26i11 i{integer} 29r19
+36r7 tempSwapVar{15|15R9} 38m7 40r33
+X 18 deck.ads
+2K9*Deck 16|2w6 7r15 17|10r7 11r19 18|10e9
+3A9*cardDeck(15|15R9)<integer> 16|7r20
+5a4*stdCardDeck{3A9} 17|11r24
+6U14*initializeDeck 17|10s12
+X 19 gdk.ads
+43P9*Gdk_Window<38|153P9>
+46P9*Gdk_Visual<38|153P9>
+X 21 gdk-device.ads
+48P9*Gdk_Device(47R9)
+72V13*Convert{97|67M9} 43|58i21
+73V13*Convert{48P9} 43|59i21
+X 36 gdk-visual.ads
+78V13*Convert[11|20]{97|67M9} 43|58i21
+80V13*Convert[11|20]{19|46P9} 43|59i21
+X 37 gdk-window.ads
+309V13*Convert{97|67M9} 43|58i21
+310V13*Convert{19|43P9} 43|59i21
+X 38 glib.ads
+153P9*C_Proxy(150R9)
+X 46 glib-object.ads
+41P9*GObject(40R9)
+675V13*Convert{97|67M9} 43|58i21 44|49i21
+676V13*Convert{41P9} 43|59i21 44|50i21
+X 54 gtk.ads
+41K9*Gtk 16|4r6 4r21 54|79e8
+X 64 gtk-enums.ads
+882V13*Convert{97|67M9} 43|58i21 44|49i21
+883V13*Convert{string} 43|59i21 44|50i21
+X 65 gtk-label.ads
+198K13*Label 16|4w10 4r25 65|991e14
+201P9*Gtk_Label(200R9) 16|11r18 12r12
+X 74 gtk-widget.ads
+351P9*Gtk_Widget(350R9)
+438V13*Convert{97|67M9} 43|58i21 44|49i21
+439V13*Convert{351P9} 43|59i21 44|50i21
+X 79 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 84 pango-attributes.ads
+41P9*Pango_Attribute<38|153P9>
+52V13*Convert{97|67M9} 44|49i21
+53V13*Convert{41P9} 44|50i21
+X 97 system.ads
+67M9*Address
+X 106 s-rannum.ads
+75V13*Random{79|74M9} 107|221i21
+76V13*Random{79|77M9} 107|221i21
+
