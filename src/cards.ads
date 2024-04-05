@@ -24,7 +24,7 @@ package cards is
                          suitColor : Character; newVal : Integer);
 	procedure invertCard(Self : in out suit);
    function isFlipped(Self : in out suit) return Boolean;
-   procedure printCard(Self : in out suit);
+   --  procedure printCard(Self : in out suit);
    function getCardSelf (Self : in out suit) return String;
 
 end cards;

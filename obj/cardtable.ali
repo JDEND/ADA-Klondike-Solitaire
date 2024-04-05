@@ -5,10 +5,12 @@ A -march=x86-64
 P SS ZX
 
 RN
+RV NO_DISPATCHING_CALLS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
 RV NO_IO
+RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
@@ -16,14 +18,19 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV SPARK_05
+RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U cardtable%b		cardtable.adb		e0e4eade OO PK
+U cardtable%b		cardtable.adb		575901a6 OO PK
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W system%s		system.ads		system.ali
 Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
 
-U cardtable%s		cardtable.ads		ea844774 EE OO PF PK IL
+U cardtable%s		cardtable.ads		4b0442f5 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 W ada.containers.synchronized_queue_interfaces%s
@@ -66,9 +73,9 @@ D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
-D cards.ads		20240402235118 46fa6e46 cards%s
-D cardtable.ads		20240404143200 d4cd0087 cardtable%s
-D cardtable.adb		20240404142629 3429ea59 cardtable%b
+D cards.ads		20240404213002 46dedb99 cards%s
+D cardtable.ads		20240404235443 7569b0d9 cardtable%s
+D cardtable.adb		20240405002454 2230b17f cardtable%b
 D deck.ads		20240321223612 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
@@ -214,13 +221,15 @@ G c Z s s [P19sIP cardtable__card_containers 94 18 23_4]
 G c Z s s [P22sIP cardtable__card_containers 96 18 23_4]
 G c Z s s [queue__current_use cardtable__card_containers 138 7 23_4]
 G c Z s s [queue__peak_use cardtable__card_containers 167 7 23_4]
-G c Z s s [TtableaurowsBIP cardtable 35 4 none]
-G c Z s s [TfoundationBIP cardtable 45 4 none]
-G c Z s b [initdrawpile cardtable 52 14 none]
-G c Z s b [shuffledeck cardtable 53 14 none]
-G c Z s b [swapcard cardtable 54 14 none]
-G c Z s b [resetstock cardtable 55 14 none]
-G c Z s b [dealcards cardtable 56 14 none]
+G c Z s s [TtableaurowsBIP cardtable 34 4 none]
+G c Z s s [TcardspotsBIP cardtable 37 4 none]
+G c Z s s [TfoundationBIP cardtable 42 4 none]
+G c Z s b [initdrawpile cardtable 49 14 none]
+G c Z s b [shuffledeck cardtable 50 14 none]
+G c Z s b [swapcard cardtable 51 14 none]
+G c Z s b [resetstock cardtable 52 14 none]
+G c Z s b [initializetable cardtable 53 14 none]
+G c Z s b [dealcards cardtable 54 14 none]
 G c Z b b [random cardtable__rand 52 13 14_4]
 G c Z b b [reset cardtable__rand 54 14 14_4]
 G c Z b b [reset cardtable__rand 55 14 14_4]
@@ -228,15 +237,18 @@ G c Z b b [save cardtable__rand 61 14 14_4]
 G c Z b b [reset cardtable__rand 62 14 14_4]
 G c Z b b [image cardtable__rand 66 13 14_4]
 G c Z b b [value cardtable__rand 67 13 14_4]
-G r s suit [s cardtable 14 1 none] [suitIP cards 15 9 none]
 G r s TcarddeckB [s cardtable 14 1 none] [TcarddeckBIP deck 3 4 none]
-G r s suit [TtableaurowsBIP cardtable 35 4 none] [suitIP cards 15 9 none]
-G r s suit [TfoundationBIP cardtable 45 4 none] [suitIP cards 15 9 none]
-G r c none [initdrawpile cardtable 52 14 none] [initializedeck deck 6 14 none]
-G r s suit [shuffledeck cardtable 53 14 none] [suitIP cards 15 9 none]
-G r s suit [swapcard cardtable 54 14 none] [suitIP cards 15 9 none]
+G r s suit [s cardtable 14 1 none] [suitIP cards 15 9 none]
+G r s suit [TtableaurowsBIP cardtable 34 4 none] [suitIP cards 15 9 none]
+G r s suit [TfoundationBIP cardtable 42 4 none] [suitIP cards 15 9 none]
+G r c none [initdrawpile cardtable 49 14 none] [initializedeck deck 6 14 none]
+G r s suit [shuffledeck cardtable 50 14 none] [suitIP cards 15 9 none]
+G r s suit [swapcard cardtable 51 14 none] [suitIP cards 15 9 none]
+G r c none [initializetable cardtable 53 14 none] [gtk_label_new gtk__label 217 13 none]
+G r c none [dealcards cardtable 54 14 none] [getcardself cards 28 13 none]
+G r c none [dealcards cardtable 54 14 none] [set_text gtk__label 521 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 20|1r6 2r6 3r6 4r6 22r6 24r6 21|15r6 44r7 50r7
+16K9*Ada 20e8 20|1r6 2r6 3r6 4r6 22r6 24r6 21|15r6 44r7
 X 2 a-contai.ads
 16K13*Containers 28e19 20|1r10 2r10 22r10 24r10
 X 3 a-csquin.ads
@@ -244,6 +256,7 @@ X 3 a-csquin.ads
 X 4 a-cusyqu.ads
 44k24*Unbounded_Synchronized_Queues 106e49 20|2w21 24r21
 88W19*Queue<3|40R9[20|21]> 20|26r32[23] 27r34[23]
+94Y24 Enqueue 21|104s20[20|23]
 X 9 a-numeri.ads
 16K13*Numerics 32e17 20|3r10 21|15r10
 X 10 a-nudira.ads
@@ -254,41 +267,41 @@ X 10 a-nudira.ads
 X 11 a-nudira.adb
 53V16 Random[116|83]{integer} 117|392b13[21|14]
 X 14 a-textio.ads
-57K13*Text_IO 727e16 20|4w10 21|44r11 50r11
-508U14*Put_Line 21|44s19 50s19
+57K13*Text_IO 727e16 20|4w10 21|44r11
+508U14*Put_Line 21|44s19
 X 19 cards.ads
-1K9*cards 30e10 20|6w6 22r51 35r40 45r39 21|33r21
-15R9*suit<5R9> 19e14 20|22r57 35r46 45r45 21|33r27
+1K9*cards 30e10 20|6w6 22r51 34r46 42r39 21|33r21
+15R9*suit<5R9> 19e14 20|22r57 34r52 42r45 21|33r27
+28V13*getCardSelf{string} 21|86s56 88s56 90s56 92s56 94s56 96s56 98s56
 X 20 cardtable.ads
-14K9*CardTable 58l5 58e14 21|1b14 54l5 54t14
-16a4*drawPile{22|3A9} 21|9m7 35r22 36m7 36r26 37m7
+14K9*CardTable 56l5 56e14 21|1b14 109l5 109t14
+16a4*drawPile{22|3A9} 21|9m7 35r22 36m7 36r26 37m7 65r36 67r36 69r36 71r36
+. 73r36 75r36 77r36 86m44 86r44 88m44 88r44 90m44 90r44 92m44 92r44 94m44
+. 94r44 96m44 96r44 98m44 98r44 104r28
 18i4*drawPileLocation{integer}
 21K12*queue_interface[3|37] 24r51
 23K12*card_containers[4|44] 26r16 27r18
-26w4*cardStock{4|88W19[23]}
+26w4*cardStock{4|88W19[23]} 21|104r10
 27w4*cardDiscard{4|88W19[23]}
-31p4*DiscardPile{69|201P9}
-32p4*Stock{69|201P9}
-35A9*tableauRows(19|15R9)<integer> 36r13 37r13 38r15 39r14 40r14 41r13 42r15
-36a4*rowOne{35A9}
-37a4*rowTwo{35A9}
-38a4*rowThree{35A9}
-39a4*rowFour{35A9}
-40a4*rowFive{35A9}
-41a4*rowSix{35A9}
-42a4*rowSeven{35A9}
-45A9*foundation(19|15R9)<integer> 46r21 47r23 48r23 49r22
-46a4*acesFoundation{45A9}
-47a4*heartsFoundation{45A9}
-48a4*spadesFoundation{45A9}
-49a4*clubsFoundation{45A9}
-52U14*initDrawPile 21|6b14 10t7
-53U14*shuffleDeck 21|22b14 29t7
-54U14*swapCard 54>23 54>40 21|27s10 32b14 38t7
-54i23 index{integer} 21|32b23 35r31 36r16
-54i40 swapLocation{integer} 21|32b40 36r35 37r16
-55U14*resetStock 21|42b14 45t7
-56U14*dealCards 21|48b14 51t7
+30p4*DiscardPile{69|201P9}
+31p4*Stock{69|201P9}
+34A9*tableauRows(19|15R9)<integer><integer> 35r12
+35a4*table{34A9} 21|65m13 67m13 69m13 71m13 73m13 75m13 77m13
+37A9*cardSpots(69|201P9)<integer><integer> 38r14
+38a4*tableau{37A9} 21|51m13 86r13 88r13 90r13 92r13 94r13 96r13 98r13
+42A9*foundation(19|15R9)<integer> 43r21 44r23 45r23 46r22
+43a4*acesFoundation{42A9}
+44a4*heartsFoundation{42A9}
+45a4*spadesFoundation{42A9}
+46a4*clubsFoundation{42A9}
+49U14*initDrawPile 21|6b14 10t7
+50U14*shuffleDeck 21|22b14 29t7
+51U14*swapCard 51>23 51>40 21|27s10 32b14 38t7
+51i23 index{integer} 21|32b23 35r31 36r16
+51i40 swapLocation{integer} 21|32b40 36r35 37r16
+52U14*resetStock 21|42b14 45t7
+53U14*initializeTable 21|47b14 54t7
+54U14*dealCards 21|58b14 106t7
 X 21 cardtable.adb
 13I12 randomRange{integer} 15r35 18r8
 14K12 Rand[10|44] 16r8
@@ -296,6 +309,15 @@ X 21 cardtable.adb
 18i4 X{13I12} 26m10 27r22
 24i11 i{integer} 27r19
 33r7 tempSwapVar{19|15R9} 35m7 37r33
+49i11 i{integer} 51r21
+50i14 j{integer} 51r23
+59i7 j{integer} 61m7 64r13 66r16 68r16 70r16 72r16 74r16 79m10 79r15 83m7
+. 85r13 87r16 89r16 91r16 93r16 95r16 100m10 100r15
+63i11 i{integer} 65r23 65r45 67r23 67r45 69r23 69r45 71r23 71r45 73r23 73r45
+. 75r23 75r45 77r23 77r45
+84i11 i{integer} 86r25 86r53 88r25 88r53 90r25 90r53 92r25 92r53 94r25 94r53
+. 96r25 96r53 98r25 98r53
+103i11 i{integer} 104r37
 X 22 deck.ads
 2K9*Deck 20|8w6 16r15 21|8r7 9r19 22|10e9
 3A9*cardDeck(19|15R9)<integer> 20|16r20
@@ -327,7 +349,9 @@ X 68 gtk-enums.ads
 883V13*Convert{string} 47|59i21 48|50i21
 X 69 gtk-label.ads
 198K13*Label 20|10w10 10r25 69|991e14
-201P9*Gtk_Label(200R9) 20|31r18 32r12
+201P9*Gtk_Label(200R9) 20|30r18 31r12 37r44
+217V13*Gtk_Label_New{201P9} 21|51s29
+521U14*Set_Text 21|86R35 88R35 90R35 92R35 94R35 96R35 98R35
 X 78 gtk-widget.ads
 351P9*Gtk_Widget(350R9)
 438V13*Convert{101|67M9} 47|58i21 48|49i21

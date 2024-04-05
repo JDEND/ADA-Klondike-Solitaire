@@ -14,6 +14,10 @@ package body buttons is
       DiscardPile.Set_Text("");
       Stock.Set_Text("[*]");
       Btn_Draw.Set_Visible(True);
+      Btn_Return.Set_Visible(False);
+
+      dealCards;
+      
    end New_Game_Callback;
 
    procedure Quit_Callback (Button : access Gtk_Button_Record'Class) is
@@ -28,27 +32,39 @@ package body buttons is
       Gtk.Main.Main_Quit;
    end Quit_Callback;
 
+   --this is the call for the draw pile, it continues down the list of the
+   --drawable cards, and sets the lable for the top card equal to it
+   --this will hopefully be replaced by images in the future
+   --04/02/24 - GV6507
+   --rework to make use of queues 04/04/24 -GV6507
    procedure Draw_Callback (Button : access Gtk_Button_Record'Class) is
+      temp : cards.suit;
    begin
-      --this will need to be reworked
-      --this is the call for the draw pile, it continues down the list of the
-      --drawable cards, and sets the lable for the top card equal to it
-      --this will hopefully be replaced by images in the future
-      --04/02/24 - GV6507
-      if(drawPileLocation = (drawPile'Length - 1)) then
-         --insert call reset stock function
-         drawPileLocation := -1;
-         Stock.Set_Text("[*]");
+      if Integer(cardStock.Current_Use) > 0 then
+         cardStock.Dequeue(temp);
+         temp.flipped := True; --replace this with function in future
+         DiscardPile.Set_Text(temp.getCardSelf);
+         cardDiscard.Enqueue(temp);
+         if Integer(cardStock.Current_Use) = 0 then
+            Stock.Set_Text("");
+            Btn_Draw.Set_Visible(False);
+            Btn_Return.Set_Visible(True);
+         end if;
       end if;
-      drawPileLocation := drawPileLocation + 1;
-
-      if drawPileLocation = (drawPile'Length - 1) then
-         Stock.Set_Text("");
-      end if;
-
-      DiscardPile.Set_Text(drawPile(drawPileLocation).getCardSelf);
-      Put_Line(drawPile(drawPileLocation).getCardSelf);     
-
    end Draw_Callback;
 
+   --returns all cards in the discard to the stock pile
+   procedure Return_Callback (Button : access Gtk_Button_Record'Class) is
+      temp : cards.suit;
+   begin
+      Btn_Return.Set_Visible(False);
+      DiscardPile.Set_Text("");
+      Stock.Set_Text("[*]");
+      while Integer(cardDiscard.Current_Use) > 0 loop
+         cardDiscard.Dequeue(temp);
+         temp.flipped := False;
+         cardStock.Enqueue(temp);
+      end loop;
+      Btn_Draw.Set_Visible(True);
+   end;
 end buttons;

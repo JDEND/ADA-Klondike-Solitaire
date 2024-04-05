@@ -31,14 +31,12 @@ package CardTable is
    Stock : Gtk_Label;
 
    --tableau declarations
-   type tableauRows is array(0..18) of cards.suit;
-   rowOne : tableauRows;
-   rowTwo : tableauRows;
-   rowThree : tableauRows;
-   rowFour : tableauRows;
-   rowFive : tableauRows;
-   rowSix : tableauRows;
-   rowSeven : tableauRows;
+   type tableauRows is array(0..18, 0..6) of cards.suit;
+   table : tableauRows;
+
+   type cardSpots is array(0..18, 0..6) of Gtk_Label;
+   tableau : cardSpots;
+
 
    --foundations declarations
    type foundation is array(0..12) of cards.suit;
@@ -52,6 +50,7 @@ package CardTable is
    procedure shuffleDeck;
    procedure swapCard(index : Integer; swapLocation : Integer);
    procedure resetStock;
+   procedure initializeTable;
    procedure dealCards;
 
 end CardTable;

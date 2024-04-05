@@ -14,7 +14,7 @@ RV SPARK_05
 U deck%b		deck.adb		799bdb55 OO PK
 Z ada.tags%s		a-tags.adb		a-tags.ali
 
-U deck%s		deck.ads		78b75b4b EE OO PK
+U deck%s		deck.ads		7893ee94 EE OO PK
 W cards%s		cards.adb		cards.ali
 
 D ada.ads		20230707070819 76789da1 ada%s
@@ -22,7 +22,7 @@ D a-except.ads		20230707070819 a7106115 ada.exceptions%s
 D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
 D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D cards.ads		20240402235118 46fa6e46 cards%s
+D cards.ads		20240404213002 46dedb99 cards%s
 D deck.ads		20240321223612 3e4d350d deck%s
 D deck.adb		20240403203725 47d6ee58 deck%b
 D system.ads		20230707070819 4635ec04 system%s

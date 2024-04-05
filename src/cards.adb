@@ -59,6 +59,7 @@ package body cards is
 
    --currently only used for terminal, may be modified for use with GUI at
    --a later point 03/21/24 - GV6507
+   --returns card number for printing to GUI
    function getCardRepresentation (Self : in out card) return String is
       Val : integer;
    begin
@@ -150,14 +151,15 @@ package body cards is
    --is not currently visible it instead prints ¤ 03/18/24 - GV6507
    --This is set to be deprecated upon the creation of the 
    --GTKADA GUI 03/21/24 - GV6507
-   procedure printCard(Self : in out suit) is
-   begin
-      if Self.isFlipped = False then
-         Ada.Text_IO.Put_Line("¤");
-      else
-         Ada.Text_IO.Put_Line(Self.suitName & Self.getCardRepresentation);
-      end if;
-   end;
+   --Deprecated 04/04/24 - GV6507
+   --  procedure printCard(Self : in out suit) is
+   --  begin
+   --     if Self.isFlipped = False then
+   --        Ada.Text_IO.Put_Line("¤");
+   --     else
+   --        Ada.Text_IO.Put_Line(Self.suitName & Self.getCardRepresentation);
+   --     end if;
+   --  end;
 
    function getCardSelf (Self : in out suit) return String is
    begin

@@ -9,6 +9,7 @@ with CardTable; use CardTable;
 with Gtk.Button; use Gtk.Button;
 with Gtk.Label; use Gtk.Label;
 
+with cards; use cards;
 
 
 package buttons is
@@ -17,6 +18,7 @@ package buttons is
    procedure New_Game_Callback (Button : access Gtk_Button_Record'Class);
    procedure Quit_Callback (Button : access Gtk_Button_Record'Class);
    procedure Draw_Callback (Button : access Gtk_Button_Record'Class);
+   procedure Return_Callback (Button : access Gtk_Button_Record'Class);
 
    startTime : Time;
    endTime : Time;
@@ -25,5 +27,6 @@ package buttons is
    Btn_NewGame : Gtk_Button;
    Btn_Quit : Gtk_Button;
    Btn_Draw : Gtk_Button;
+   Btn_Return : Gtk_Button;
 
 end buttons;
