@@ -14,7 +14,7 @@ RV SPARK_05
 U deck%b		deck.adb		799bdb55 OO PK
 Z ada.tags%s		a-tags.adb		a-tags.ali
 
-U deck%s		deck.ads		7893ee94 EE OO PK
+U deck%s		deck.ads		3f41b059 EE OO PK
 W cards%s		cards.adb		cards.ali
 
 D ada.ads		20230707070819 76789da1 ada%s
@@ -22,9 +22,9 @@ D a-except.ads		20230707070819 a7106115 ada.exceptions%s
 D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
 D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D cards.ads		20240404213002 46dedb99 cards%s
+D cards.ads		20240405010154 010c8554 cards%s
 D deck.ads		20240321223612 3e4d350d deck%s
-D deck.adb		20240403203725 47d6ee58 deck%b
+D deck.adb		20240405005903 47d6ee58 deck%b
 D system.ads		20230707070819 4635ec04 system%s
 D s-exctab.ads		20230707070819 54135002 system.exception_table%s
 D s-parame.ads		20230707070819 48ec542b system.parameters%s
@@ -46,77 +46,77 @@ G r s suit [s deck 2 1 none] [suitIP cards 15 9 none]
 G r s suit [TcarddeckBIP deck 3 4 none] [suitIP cards 15 9 none]
 G r c none [initializedeck deck 6 14 none] [setsuittype cards 23 14 none]
 X 6 cards.ads
-1K9*cards 30e10 7|1w6 3r37 8|3r16 3r40 3r66 4r17 4r41 4r65 5r18 5r44 5r69
-. 6r16 6r41 6r67 7r17 9r15 9r38 9r63 10r16 10r40 10r63 11r17 11r42 11r66
-. 12r15 12r39 12r64 13r16 15r16 15r40 15r66 16r17 16r42 16r66 17r18 17r44
-. 17r69 18r16 18r41 18r67 19r17 21r18 21r43 21r70 22r19 22r45 22r70 23r20
-. 23r47 24r19 24r44 24r70 25r20 25r46
-15R9*suit<5R9> 19e14 7|3r43 8|3r22 3r46 3r72 4r23 4r47 4r71 5r24 5r50 5r75
-. 6r22 6r47 6r73 7r23 9r21 9r44 9r69 10r22 10r46 10r69 11r23 11r48 11r72
-. 12r21 12r45 12r70 13r22 15r22 15r46 15r72 16r23 16r48 16r72 17r24 17r50
-. 17r75 18r22 18r47 18r73 19r23 21r24 21r49 21r76 22r25 22r51 22r76 23r26
-. 23r53 24r25 24r50 24r76 25r26 25r52
-23U14*setSuitType 8|45s25 48s25 51s25 54s25
+1K9*cards 30e10 7|1w6 3r37 8|5r16 5r40 5r66 6r17 6r41 6r65 7r18 7r44 7r69
+. 8r16 8r41 8r67 9r17 11r15 11r38 11r63 12r16 12r40 12r63 13r17 13r42 13r66
+. 14r15 14r39 14r64 15r16 17r16 17r40 17r66 18r17 18r42 18r66 19r18 19r44
+. 19r69 20r16 20r41 20r67 21r17 23r18 23r43 23r70 24r19 24r45 24r70 25r20
+. 25r47 26r19 26r44 26r70 27r20 27r46
+15R9*suit<5R9> 19e14 7|3r43 8|5r22 5r46 5r72 6r23 6r47 6r71 7r24 7r50 7r75
+. 8r22 8r47 8r73 9r23 11r21 11r44 11r69 12r22 12r46 12r69 13r23 13r48 13r72
+. 14r21 14r45 14r70 15r22 17r22 17r46 17r72 18r23 18r48 18r72 19r24 19r50
+. 19r75 20r22 20r47 20r73 21r23 23r24 23r49 23r76 24r25 24r51 24r76 25r26
+. 25r53 26r25 26r50 26r76 27r26 27r52
+23U14*setSuitType 8|47s25 50s25 53s25 56s25
 X 7 deck.ads
-2K9*Deck 10l5 10e9 8|1b14 58l5 58t9
+2K9*Deck 10l5 10e9 8|1b14 60l5 60t9
 3A9*cardDeck(6|15R9)<integer> 5r18
-5a4*stdCardDeck{3A9} 8|31m7 45m10 45r10 48m10 48r10 51m10 51r10 54m10 54r10
-6U14*initializeDeck 8|29b14 56t7
+5a4*stdCardDeck{3A9} 8|33m7 47m10 47r10 50m10 50r10 53m10 53r10 56m10 56r10
+6U14*initializeDeck 8|31b14 58t7
 X 8 deck.adb
-3r4 aceSpades{6|15R9} 31r23
-3r28 twoSpades{6|15R9} 31r34
-3r52 threeSpades{6|15R9} 31r45
-4r4 fourSpades{6|15R9} 31r58
-4r28 fiveSpades{6|15R9} 31r70
-4r53 sixSpades{6|15R9} 32r23
-5r4 sevenSpades{6|15R9} 32r34
-5r30 eightSpades{6|15R9} 32r47
-5r56 nineSpades{6|15R9} 32r60
-6r4 tenSpades{6|15R9} 33r23
-6r28 jackSpades{6|15R9} 33r34
-6r53 queenSpades{6|15R9} 33r46
-7r4 kingSpades{6|15R9} 33r59
-9r4 aceClubs{6|15R9} 33r71
-9r27 twoClubs{6|15R9} 34r23
-9r50 threeClubs{6|15R9} 34r33
-10r4 fourClubs{6|15R9} 34r45
-10r28 fiveClubs{6|15R9} 34r56
-10r52 sixClubs{6|15R9} 35r23
-11r4 sevenClubs{6|15R9} 35r33
-11r29 eightClubs{6|15R9} 35r45
-11r54 nineClubs{6|15R9} 35r57
-12r4 tenClubs{6|15R9} 35r68
-12r27 jackClubs{6|15R9} 36r23
-12r51 queenClubs{6|15R9} 36r34
-13r4 kingClubs{6|15R9} 36r46
-15r4 aceHearts{6|15R9} 36r57
-15r28 twoHearts{6|15R9} 36r68
-15r52 threeHearts{6|15R9} 37r23
-16r4 fourHearts{6|15R9} 37r36
-16r29 fiveHearts{6|15R9} 37r48
-16r54 sixHearts{6|15R9} 37r60
-17r4 sevenHearts{6|15R9} 38r23
-17r30 eightHearts{6|15R9} 38r36
-17r56 nineHearts{6|15R9} 38r49
-18r4 tenHearts{6|15R9} 38r61
-18r28 jackHearts{6|15R9} 39r23
-18r53 queenHearts{6|15R9} 39r35
-19r4 kingHearts{6|15R9} 39r48
-21r4 aceDiamonds{6|15R9} 39r60
-21r29 twoDiamonds{6|15R9} 40r23
-21r54 threeDiamonds{6|15R9} 40r36
-22r4 fourDiamonds{6|15R9} 40r51
-22r30 fiveDiamonds{6|15R9} 40r65
-22r56 sixDiamonds{6|15R9} 41r23
-23r4 sevenDiamonds{6|15R9} 41r36
-23r31 eightDiamonds{6|15R9} 41r51
-24r4 nineDiamonds{6|15R9} 41r66
-24r30 tenDiamonds{6|15R9} 42r23
-24r55 jackDiamonds{6|15R9} 42r36
-25r4 queenDiamonds{6|15R9} 42r50
-25r31 kingDiamonds{6|15R9} 42r65
-44i11 i{integer} 45r22 45r48
-47i17 i{integer} 48r22 48r48
-50i11 i{integer} 51r22 51r48
-53i17 i{integer} 54r22 54r48
+5r4 aceSpades{6|15R9} 33r23
+5r28 twoSpades{6|15R9} 33r34
+5r52 threeSpades{6|15R9} 33r45
+6r4 fourSpades{6|15R9} 33r58
+6r28 fiveSpades{6|15R9} 33r70
+6r53 sixSpades{6|15R9} 34r23
+7r4 sevenSpades{6|15R9} 34r34
+7r30 eightSpades{6|15R9} 34r47
+7r56 nineSpades{6|15R9} 34r60
+8r4 tenSpades{6|15R9} 35r23
+8r28 jackSpades{6|15R9} 35r34
+8r53 queenSpades{6|15R9} 35r46
+9r4 kingSpades{6|15R9} 35r59
+11r4 aceClubs{6|15R9} 35r71
+11r27 twoClubs{6|15R9} 36r23
+11r50 threeClubs{6|15R9} 36r33
+12r4 fourClubs{6|15R9} 36r45
+12r28 fiveClubs{6|15R9} 36r56
+12r52 sixClubs{6|15R9} 37r23
+13r4 sevenClubs{6|15R9} 37r33
+13r29 eightClubs{6|15R9} 37r45
+13r54 nineClubs{6|15R9} 37r57
+14r4 tenClubs{6|15R9} 37r68
+14r27 jackClubs{6|15R9} 38r23
+14r51 queenClubs{6|15R9} 38r34
+15r4 kingClubs{6|15R9} 38r46
+17r4 aceHearts{6|15R9} 38r57
+17r28 twoHearts{6|15R9} 38r68
+17r52 threeHearts{6|15R9} 39r23
+18r4 fourHearts{6|15R9} 39r36
+18r29 fiveHearts{6|15R9} 39r48
+18r54 sixHearts{6|15R9} 39r60
+19r4 sevenHearts{6|15R9} 40r23
+19r30 eightHearts{6|15R9} 40r36
+19r56 nineHearts{6|15R9} 40r49
+20r4 tenHearts{6|15R9} 40r61
+20r28 jackHearts{6|15R9} 41r23
+20r53 queenHearts{6|15R9} 41r35
+21r4 kingHearts{6|15R9} 41r48
+23r4 aceDiamonds{6|15R9} 41r60
+23r29 twoDiamonds{6|15R9} 42r23
+23r54 threeDiamonds{6|15R9} 42r36
+24r4 fourDiamonds{6|15R9} 42r51
+24r30 fiveDiamonds{6|15R9} 42r65
+24r56 sixDiamonds{6|15R9} 43r23
+25r4 sevenDiamonds{6|15R9} 43r36
+25r31 eightDiamonds{6|15R9} 43r51
+26r4 nineDiamonds{6|15R9} 43r66
+26r30 tenDiamonds{6|15R9} 44r23
+26r55 jackDiamonds{6|15R9} 44r36
+27r4 queenDiamonds{6|15R9} 44r50
+27r31 kingDiamonds{6|15R9} 44r65
+46i11 i{integer} 47r22 47r48
+49i17 i{integer} 50r22 50r48
+52i11 i{integer} 53r22 53r48
+55i17 i{integer} 56r22 56r48
 

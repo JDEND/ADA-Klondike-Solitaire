@@ -50,7 +50,7 @@ D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
 D buttons.ads		20240405004711 7e41a3ed buttons%s
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
-D cards.ads		20240404213002 46dedb99 cards%s
+D cards.ads		20240405010154 010c8554 cards%s
 D cardtable.ads		20240404235443 7569b0d9 cardtable%s
 D deck.ads		20240321223612 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s

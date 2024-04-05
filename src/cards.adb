@@ -136,15 +136,10 @@ package body cards is
       end if;
    end;
 
-   --Inverts card if not currently visible, reverse functionality is not needed
-   --as the only time the card visibility would ever be reset is in the
-   --case of a game reset, in which case the cards themselves are reset to
-   --their default non-visible state 03/21/24 - GV6507
+  --flips card 04/04/24 - GV6507
   procedure invertCard(Self : in out suit) is
   begin
-      if Self.flipped = False then
-         self.flipped := True;
-      end if;
+      self.flipped := not self.flipped;
    end;
 
    --Prints card to terminal, shows the suit and the card "number", if the card

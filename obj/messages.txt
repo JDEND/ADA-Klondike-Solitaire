@@ -2,10 +2,11 @@
 Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
 gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
 Compile
-   [Ada]          buttons.adb
+   [Ada]          cardtable.adb
+   [Ada]          cards.adb
 Bind
    [gprbind]      main.bexch
    [Ada]          main.ali
 Link
    [link]         main.adb
-[2024-04-04 20:53:45] process terminated successfully, elapsed time: 00.70s
+[2024-04-04 21:11:39] process terminated successfully, elapsed time: 00.70s

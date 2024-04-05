@@ -1,5 +1,7 @@
 package body Deck is
    --declare empty card objects
+   --note 04/04/24: this is horrificly ugly and inefficient, but its not getting
+   --changed right now - GV6507
    aceSpades : cards.suit; twoSpades : cards.suit; threeSpades : cards.suit;
    fourSpades : cards.suit;fiveSpades : cards.suit; sixSpades : cards.suit;
    sevenSpades : cards.suit; eightSpades : cards.suit; nineSpades : cards.suit;

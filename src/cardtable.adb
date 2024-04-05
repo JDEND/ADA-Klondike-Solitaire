@@ -103,6 +103,19 @@ package body CardTable is
       for i in 28..51 loop
          cardStock.Enqueue(drawPile(i));
       end loop;
+
+      --this is terrible but I'm lazy
+      table(0,6).invertCard; table(1,5).invertCard; table(2,4).invertCard;
+      table(3,3).invertCard; table(4,2).invertCard; table(5,1).invertCard;
+      table(6,0).invertCard;
+
+      tableau(0,6).Set_Text(table(0,6).getCardSelf);
+      tableau(1,5).Set_Text(table(1,5).getCardSelf);
+      tableau(2,4).Set_Text(table(2,4).getCardSelf);
+      tableau(3,3).Set_Text(table(3,3).getCardSelf);
+      tableau(4,2).Set_Text(table(4,2).getCardSelf);
+      tableau(5,1).Set_Text(table(5,1).getCardSelf);
+      tableau(6,0).Set_Text(table(6,0).getCardSelf);
    end;
    
    

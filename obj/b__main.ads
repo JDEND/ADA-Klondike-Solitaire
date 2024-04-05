@@ -241,7 +241,7 @@ package ada_main is
    pragma Export (C, u00101, "system__string_hashS");
    u00102 : constant Version_32 := 16#9d4f6ba2#;
    pragma Export (C, u00102, "buttonsB");
-   u00103 : constant Version_32 := 16#70139352#;
+   u00103 : constant Version_32 := 16#37c1cd9f#;
    pragma Export (C, u00103, "buttonsS");
    u00104 : constant Version_32 := 16#0fa5c191#;
    pragma Export (C, u00104, "gtkS");
@@ -875,13 +875,13 @@ package ada_main is
    pragma Export (C, u00418, "system__file_ioS");
    u00419 : constant Version_32 := 16#bbaa76ac#;
    pragma Export (C, u00419, "system__file_control_blockS");
-   u00420 : constant Version_32 := 16#2f3f8ca8#;
+   u00420 : constant Version_32 := 16#1a2eca92#;
    pragma Export (C, u00420, "cardsB");
-   u00421 : constant Version_32 := 16#46dedb99#;
+   u00421 : constant Version_32 := 16#010c8554#;
    pragma Export (C, u00421, "cardsS");
-   u00422 : constant Version_32 := 16#575901a6#;
+   u00422 : constant Version_32 := 16#547bea71#;
    pragma Export (C, u00422, "cardtableB");
-   u00423 : constant Version_32 := 16#4b0442f5#;
+   u00423 : constant Version_32 := 16#0cd61c38#;
    pragma Export (C, u00423, "cardtableS");
    u00424 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00424, "ada__numericsS");
@@ -895,7 +895,7 @@ package ada_main is
    pragma Export (C, u00428, "system__random_seedS");
    u00429 : constant Version_32 := 16#799bdb55#;
    pragma Export (C, u00429, "deckB");
-   u00430 : constant Version_32 := 16#7893ee94#;
+   u00430 : constant Version_32 := 16#3f41b059#;
    pragma Export (C, u00430, "deckS");
    u00431 : constant Version_32 := 16#53ec4831#;
    pragma Export (C, u00431, "gtk__labelB");

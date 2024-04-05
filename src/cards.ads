@@ -15,7 +15,7 @@ package cards is
    type suit is new card with record
       suitName : Character;
       suitColor : Character;
-      flipped : Boolean := True;
+      flipped : Boolean := False;
    end record;
 
    function isValidPlace(Self : in out suit; Other : in out suit)
