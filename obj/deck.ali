@@ -22,7 +22,7 @@ D a-except.ads		20230707070819 a7106115 ada.exceptions%s
 D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
 D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D cards.ads		20240405010154 010c8554 cards%s
+D cards.ads		20240405013620 010c8554 cards%s
 D deck.ads		20240321223612 3e4d350d deck%s
 D deck.adb		20240405005903 47d6ee58 deck%b
 D system.ads		20230707070819 4635ec04 system%s
@@ -46,7 +46,7 @@ G r s suit [s deck 2 1 none] [suitIP cards 15 9 none]
 G r s suit [TcarddeckBIP deck 3 4 none] [suitIP cards 15 9 none]
 G r c none [initializedeck deck 6 14 none] [setsuittype cards 23 14 none]
 X 6 cards.ads
-1K9*cards 30e10 7|1w6 3r37 8|5r16 5r40 5r66 6r17 6r41 6r65 7r18 7r44 7r69
+1K9*cards 32e10 7|1w6 3r37 8|5r16 5r40 5r66 6r17 6r41 6r65 7r18 7r44 7r69
 . 8r16 8r41 8r67 9r17 11r15 11r38 11r63 12r16 12r40 12r63 13r17 13r42 13r66
 . 14r15 14r39 14r64 15r16 17r16 17r40 17r66 18r17 18r42 18r66 19r18 19r44
 . 19r69 20r16 20r41 20r67 21r17 23r18 23r43 23r70 24r19 24r45 24r70 25r20

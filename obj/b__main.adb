@@ -50,7 +50,8 @@ package body ada_main is
    E106 : Short_Integer; pragma Import (Ada, E106, "glib_E");
    E109 : Short_Integer; pragma Import (Ada, E109, "gtkada__types_E");
    E421 : Short_Integer; pragma Import (Ada, E421, "cards_E");
-   E430 : Short_Integer; pragma Import (Ada, E430, "deck_E");
+   E430 : Short_Integer; pragma Import (Ada, E430, "cardstack_E");
+   E436 : Short_Integer; pragma Import (Ada, E436, "deck_E");
    E202 : Short_Integer; pragma Import (Ada, E202, "gdk__frame_timings_E");
    E150 : Short_Integer; pragma Import (Ada, E150, "glib__glist_E");
    E190 : Short_Integer; pragma Import (Ada, E190, "gdk__visual_E");
@@ -75,7 +76,7 @@ package body ada_main is
    E212 : Short_Integer; pragma Import (Ada, E212, "glib__string_E");
    E210 : Short_Integer; pragma Import (Ada, E210, "glib__variant_E");
    E275 : Short_Integer; pragma Import (Ada, E275, "glib__g_icon_E");
-   E442 : Short_Integer; pragma Import (Ada, E442, "gtk__actionable_E");
+   E448 : Short_Integer; pragma Import (Ada, E448, "gtk__actionable_E");
    E216 : Short_Integer; pragma Import (Ada, E216, "gtk__builder_E");
    E255 : Short_Integer; pragma Import (Ada, E255, "gtk__buildable_E");
    E287 : Short_Integer; pragma Import (Ada, E287, "gtk__cell_area_context_E");
@@ -152,18 +153,18 @@ package body ada_main is
    E180 : Short_Integer; pragma Import (Ada, E180, "gtk__dialog_E");
    E309 : Short_Integer; pragma Import (Ada, E309, "gtk__print_operation_E");
    E161 : Short_Integer; pragma Import (Ada, E161, "gtk__arguments_E");
-   E436 : Short_Integer; pragma Import (Ada, E436, "glib__menu_model_E");
-   E440 : Short_Integer; pragma Import (Ada, E440, "gtk__action_E");
-   E444 : Short_Integer; pragma Import (Ada, E444, "gtk__activatable_E");
-   E448 : Short_Integer; pragma Import (Ada, E448, "gtk__button_E");
+   E442 : Short_Integer; pragma Import (Ada, E442, "glib__menu_model_E");
+   E446 : Short_Integer; pragma Import (Ada, E446, "gtk__action_E");
+   E450 : Short_Integer; pragma Import (Ada, E450, "gtk__activatable_E");
+   E454 : Short_Integer; pragma Import (Ada, E454, "gtk__button_E");
    E154 : Short_Integer; pragma Import (Ada, E154, "gtk__main_E");
-   E438 : Short_Integer; pragma Import (Ada, E438, "gtk__menu_item_E");
-   E446 : Short_Integer; pragma Import (Ada, E446, "gtk__menu_shell_E");
-   E434 : Short_Integer; pragma Import (Ada, E434, "gtk__menu_E");
-   E432 : Short_Integer; pragma Import (Ada, E432, "gtk__label_E");
+   E444 : Short_Integer; pragma Import (Ada, E444, "gtk__menu_item_E");
+   E452 : Short_Integer; pragma Import (Ada, E452, "gtk__menu_shell_E");
+   E440 : Short_Integer; pragma Import (Ada, E440, "gtk__menu_E");
+   E438 : Short_Integer; pragma Import (Ada, E438, "gtk__label_E");
    E423 : Short_Integer; pragma Import (Ada, E423, "cardtable_E");
    E103 : Short_Integer; pragma Import (Ada, E103, "buttons_E");
-   E450 : Short_Integer; pragma Import (Ada, E450, "gtk__table_E");
+   E456 : Short_Integer; pragma Import (Ada, E456, "gtk__table_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -174,7 +175,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E450 := E450 - 1;
+      E456 := E456 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "gtk__table__finalize_spec");
@@ -188,49 +189,49 @@ package body ada_main is
       begin
          F2;
       end;
-      E432 := E432 - 1;
+      E438 := E438 - 1;
       declare
          procedure F3;
          pragma Import (Ada, F3, "gtk__label__finalize_spec");
       begin
          F3;
       end;
-      E434 := E434 - 1;
+      E440 := E440 - 1;
       declare
          procedure F4;
          pragma Import (Ada, F4, "gtk__menu__finalize_spec");
       begin
          F4;
       end;
-      E446 := E446 - 1;
+      E452 := E452 - 1;
       declare
          procedure F5;
          pragma Import (Ada, F5, "gtk__menu_shell__finalize_spec");
       begin
          F5;
       end;
-      E438 := E438 - 1;
+      E444 := E444 - 1;
       declare
          procedure F6;
          pragma Import (Ada, F6, "gtk__menu_item__finalize_spec");
       begin
          F6;
       end;
-      E448 := E448 - 1;
+      E454 := E454 - 1;
       declare
          procedure F7;
          pragma Import (Ada, F7, "gtk__button__finalize_spec");
       begin
          F7;
       end;
-      E440 := E440 - 1;
+      E446 := E446 - 1;
       declare
          procedure F8;
          pragma Import (Ada, F8, "gtk__action__finalize_spec");
       begin
          F8;
       end;
-      E436 := E436 - 1;
+      E442 := E442 - 1;
       declare
          procedure F9;
          pragma Import (Ada, F9, "glib__menu_model__finalize_spec");
@@ -685,61 +686,68 @@ package body ada_main is
       begin
          F73;
       end;
-      E421 := E421 - 1;
+      E430 := E430 - 1;
       declare
          procedure F74;
-         pragma Import (Ada, F74, "cards__finalize_spec");
+         pragma Import (Ada, F74, "cardstack__finalize_spec");
       begin
          F74;
       end;
-      E106 := E106 - 1;
+      E421 := E421 - 1;
       declare
          procedure F75;
-         pragma Import (Ada, F75, "glib__finalize_spec");
+         pragma Import (Ada, F75, "cards__finalize_spec");
       begin
          F75;
       end;
-      E390 := E390 - 1;
+      E106 := E106 - 1;
       declare
          procedure F76;
-         pragma Import (Ada, F76, "system__tasking__protected_objects__entries__finalize_spec");
+         pragma Import (Ada, F76, "glib__finalize_spec");
       begin
          F76;
       end;
-      E124 := E124 - 1;
+      E390 := E390 - 1;
       declare
          procedure F77;
-         pragma Import (Ada, F77, "system__pool_global__finalize_spec");
+         pragma Import (Ada, F77, "system__tasking__protected_objects__entries__finalize_spec");
       begin
          F77;
       end;
-      E414 := E414 - 1;
+      E124 := E124 - 1;
       declare
          procedure F78;
-         pragma Import (Ada, F78, "ada__text_io__finalize_spec");
+         pragma Import (Ada, F78, "system__pool_global__finalize_spec");
       begin
          F78;
       end;
-      E128 := E128 - 1;
+      E414 := E414 - 1;
       declare
          procedure F79;
-         pragma Import (Ada, F79, "system__storage_pools__subpools__finalize_spec");
+         pragma Import (Ada, F79, "ada__text_io__finalize_spec");
       begin
          F79;
       end;
-      E115 := E115 - 1;
+      E128 := E128 - 1;
       declare
          procedure F80;
-         pragma Import (Ada, F80, "system__finalization_masters__finalize_spec");
+         pragma Import (Ada, F80, "system__storage_pools__subpools__finalize_spec");
       begin
          F80;
       end;
+      E115 := E115 - 1;
       declare
          procedure F81;
-         pragma Import (Ada, F81, "system__file_io__finalize_body");
+         pragma Import (Ada, F81, "system__finalization_masters__finalize_spec");
+      begin
+         F81;
+      end;
+      declare
+         procedure F82;
+         pragma Import (Ada, F82, "system__file_io__finalize_body");
       begin
          E418 := E418 - 1;
-         F81;
+         F82;
       end;
       declare
          procedure Reraise_Library_Exception_If_Any;
@@ -962,9 +970,11 @@ package body ada_main is
       cards'elab_spec;
       cards'elab_body;
       E421 := E421 + 1;
+      Cardstack'Elab_Spec;
+      E430 := E430 + 1;
       Deck'Elab_Spec;
       Deck'Elab_Body;
-      E430 := E430 + 1;
+      E436 := E436 + 1;
       Gdk.Frame_Timings'Elab_Spec;
       Gdk.Frame_Timings'Elab_Body;
       E202 := E202 + 1;
@@ -1005,7 +1015,7 @@ package body ada_main is
       E210 := E210 + 1;
       E275 := E275 + 1;
       Gtk.Actionable'Elab_Spec;
-      E442 := E442 + 1;
+      E448 := E448 + 1;
       Gtk.Builder'Elab_Spec;
       Gtk.Builder'Elab_Body;
       E216 := E216 + 1;
@@ -1205,35 +1215,35 @@ package body ada_main is
       E263 := E263 + 1;
       Glib.Menu_Model'Elab_Spec;
       Glib.Menu_Model'Elab_Body;
-      E436 := E436 + 1;
+      E442 := E442 + 1;
       Gtk.Action'Elab_Spec;
       Gtk.Action'Elab_Body;
-      E440 := E440 + 1;
+      E446 := E446 + 1;
       Gtk.Activatable'Elab_Spec;
-      E444 := E444 + 1;
+      E450 := E450 + 1;
       Gtk.Button'Elab_Spec;
       Gtk.Button'Elab_Body;
-      E448 := E448 + 1;
+      E454 := E454 + 1;
       E154 := E154 + 1;
       Gtk.Menu_Item'Elab_Spec;
       Gtk.Menu_Item'Elab_Body;
-      E438 := E438 + 1;
+      E444 := E444 + 1;
       Gtk.Menu_Shell'Elab_Spec;
       Gtk.Menu_Shell'Elab_Body;
-      E446 := E446 + 1;
+      E452 := E452 + 1;
       Gtk.Menu'Elab_Spec;
       Gtk.Menu'Elab_Body;
-      E434 := E434 + 1;
+      E440 := E440 + 1;
       Gtk.Label'Elab_Spec;
       Gtk.Label'Elab_Body;
-      E432 := E432 + 1;
+      E438 := E438 + 1;
       cardtable'elab_spec;
       Cardtable'Elab_Body;
       E423 := E423 + 1;
       E103 := E103 + 1;
       Gtk.Table'Elab_Spec;
       Gtk.Table'Elab_Body;
-      E450 := E450 + 1;
+      E456 := E456 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -1272,6 +1282,7 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   /home/jared/Documents/Wayne/CSC3200/Final/obj/cards.o
+   --   /home/jared/Documents/Wayne/CSC3200/Final/obj/cardstack.o
    --   /home/jared/Documents/Wayne/CSC3200/Final/obj/deck.o
    --   /home/jared/Documents/Wayne/CSC3200/Final/obj/cardtable.o
    --   /home/jared/Documents/Wayne/CSC3200/Final/obj/buttons.o

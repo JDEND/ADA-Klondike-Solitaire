@@ -1,0 +1,240 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U cardstack%b		cardstack.adb		b17264c2 NE OO PK
+
+U cardstack%s		cardstack.ads		04724d28 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.vectors%s
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+W cards%s		cards.adb		cards.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-contai.ads		20230707070819 61e5e089 ada.containers%s
+D a-cgarso.ads		20230707070819 9129bfa8 ada.containers.generic_array_sort%s
+D a-conhel.ads		20230707070819 20298884 ada.containers.helpers%s
+D a-conhel.adb		20230707070819 e8b6ff51 ada.containers.helpers%b
+D a-convec.ads		20230707070819 7e2b0fdf ada.containers.vectors%s
+D a-convec.adb		20230707070819 08afd670 ada.containers.vectors%b
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-iteint.ads		20230707070819 7c7305e9 ada.iterator_interfaces%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D cards.ads		20240405013620 010c8554 cards%s
+D cardstack.ads		20240406000100 7b55c7a3 cardstack%s
+D cardstack.adb		20240406000142 ca27a361 cardstack%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20230707070819 b65612c0 system.atomic_counters%b
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-memory.ads		20230707070819 597d6634 system.memory%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-pooglo.ads		20230707070819 ede33ef8 system.pool_global%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [Oeq cardstack 5 13 none]
+G c Z s s [has_element cardstack__stack 107 13 7_4]
+G c Z s s [Oeq cardstack__stack 117 24 7_4]
+G c Z s s [to_vector cardstack__stack 126 13 7_4]
+G c Z s s [to_vector cardstack__stack 129 13 7_4]
+G c Z s s [Oconcat cardstack__stack 135 13 7_4]
+G c Z s s [Oconcat cardstack__stack 139 13 7_4]
+G c Z s s [Oconcat cardstack__stack 143 13 7_4]
+G c Z s s [Oconcat cardstack__stack 147 13 7_4]
+G c Z s s [capacity cardstack__stack 151 13 7_4]
+G c Z s s [reserve_capacity cardstack__stack 154 14 7_4]
+G c Z s s [length cardstack__stack 165 13 7_4]
+G c Z s s [set_length cardstack__stack 168 14 7_4]
+G c Z s s [is_empty cardstack__stack 177 13 7_4]
+G c Z s s [clear cardstack__stack 180 14 7_4]
+G c Z s s [to_cursor cardstack__stack 184 13 7_4]
+G c Z s s [to_index cardstack__stack 191 13 7_4]
+G c Z s s [element cardstack__stack 196 13 7_4]
+G c Z s s [element cardstack__stack 203 13 7_4]
+G c Z s s [replace_element cardstack__stack 207 14 7_4]
+G c Z s s [replace_element cardstack__stack 218 14 7_4]
+G c Z s s [query_element cardstack__stack 229 14 7_4]
+G c Z s s [query_element cardstack__stack 240 14 7_4]
+G c Z s s [update_element cardstack__stack 249 14 7_4]
+G c Z s s [update_element cardstack__stack 266 14 7_4]
+G c Z s s [constant_reference cardstack__stack 293 13 7_4]
+G c Z s s [reference cardstack__stack 298 13 7_4]
+G c Z s s [constant_reference cardstack__stack 303 13 7_4]
+G c Z s s [reference cardstack__stack 308 13 7_4]
+G c Z s s [assign cardstack__stack 313 14 7_4]
+G c Z s s [copy cardstack__stack 315 13 7_4]
+G c Z s s [move cardstack__stack 317 14 7_4]
+G c Z s s [insert cardstack__stack 323 14 7_4]
+G c Z s s [insert cardstack__stack 341 14 7_4]
+G c Z s s [insert cardstack__stack 352 14 7_4]
+G c Z s s [insert cardstack__stack 363 14 7_4]
+G c Z s s [insert cardstack__stack 370 14 7_4]
+G c Z s s [insert cardstack__stack 377 14 7_4]
+G c Z s s [insert cardstack__stack 386 14 7_4]
+G c Z s s [insert cardstack__stack 403 14 7_4]
+G c Z s s [prepend cardstack__stack 414 14 7_4]
+G c Z s s [prepend cardstack__stack 419 14 7_4]
+G c Z s s [append cardstack__stack 426 14 7_4]
+G c Z s s [append cardstack__stack 431 14 7_4]
+G c Z s s [insert_space cardstack__stack 438 14 7_4]
+G c Z s s [insert_space cardstack__stack 455 14 7_4]
+G c Z s s [delete cardstack__stack 466 14 7_4]
+G c Z s s [delete cardstack__stack 476 14 7_4]
+G c Z s s [delete_first cardstack__stack 485 14 7_4]
+G c Z s s [delete_last cardstack__stack 490 14 7_4]
+G c Z s s [reverse_elements cardstack__stack 498 14 7_4]
+G c Z s s [swap cardstack__stack 501 14 7_4]
+G c Z s s [swap cardstack__stack 506 14 7_4]
+G c Z s s [first_index cardstack__stack 512 13 7_4]
+G c Z s s [first cardstack__stack 515 13 7_4]
+G c Z s s [first_element cardstack__stack 519 13 7_4]
+G c Z s s [last_index cardstack__stack 522 13 7_4]
+G c Z s s [last cardstack__stack 526 13 7_4]
+G c Z s s [last_element cardstack__stack 530 13 7_4]
+G c Z s s [next cardstack__stack 533 13 7_4]
+G c Z s s [next cardstack__stack 539 14 7_4]
+G c Z s s [previous cardstack__stack 542 13 7_4]
+G c Z s s [previous cardstack__stack 548 14 7_4]
+G c Z s s [find_index cardstack__stack 551 13 7_4]
+G c Z s s [find cardstack__stack 561 13 7_4]
+G c Z s s [reverse_find_index cardstack__stack 575 13 7_4]
+G c Z s s [reverse_find cardstack__stack 587 13 7_4]
+G c Z s s [contains cardstack__stack 601 13 7_4]
+G c Z s s [iterate cardstack__stack 606 14 7_4]
+G c Z s s [reverse_iterate cardstack__stack 614 14 7_4]
+G c Z s s [iterate cardstack__stack 621 13 7_4]
+G c Z s s [iterate cardstack__stack 624 13 7_4]
+G c Z s s [adjust cardstack__stack__implementation 90 28 678_4_7_4]
+G c Z s s [finalize cardstack__stack__implementation 93 28 678_4_7_4]
+G c Z s s [zero_counts cardstack__stack__implementation 96 17 678_4_7_4]
+G c Z s s [busy cardstack__stack__implementation 100 17 678_4_7_4]
+G c Z s s [unbusy cardstack__stack__implementation 104 17 678_4_7_4]
+G c Z s s [lock cardstack__stack__implementation 108 17 678_4_7_4]
+G c Z s s [unlock cardstack__stack__implementation 112 17 678_4_7_4]
+G c Z s s [tc_check cardstack__stack__implementation 116 17 678_4_7_4]
+G c Z s s [te_check cardstack__stack__implementation 120 17 678_4_7_4]
+G c Z s s [initialize cardstack__stack__implementation 139 28 678_4_7_4]
+G c Z s s [finalize cardstack__stack__implementation 140 28 678_4_7_4]
+G c Z s s [initialize cardstack__stack__implementation 145 28 678_4_7_4]
+G c Z s s [finalize cardstack__stack__implementation 146 28 678_4_7_4]
+G c Z s s [reference_control_typeDA cardstack__stack__implementation 84 12 678_4_7_4]
+G c Z s s [reference_control_typeDF cardstack__stack__implementation 84 12 678_4_7_4]
+G c Z s s [reference_control_typeIP cardstack__stack__implementation 84 12 678_4_7_4]
+G c Z s s [with_busyDF cardstack__stack__implementation 136 12 678_4_7_4]
+G c Z s s [with_busyIP cardstack__stack__implementation 136 12 678_4_7_4]
+G c Z s s [with_lockDF cardstack__stack__implementation 142 12 678_4_7_4]
+G c Z s s [with_lockIP cardstack__stack__implementation 142 12 678_4_7_4]
+G c Z s s [adjust cardstack__stack 699 25 7_4]
+G c Z s s [finalize cardstack__stack 700 25 7_4]
+G c Z s s [write cardstack__stack 702 14 7_4]
+G c Z s s [read cardstack__stack 708 14 7_4]
+G c Z s s [read cardstack__stack 722 14 7_4]
+G c Z s s [write cardstack__stack 728 14 7_4]
+G c Z s s [write cardstack__stack 747 14 7_4]
+G c Z s s [read cardstack__stack 753 14 7_4]
+G c Z s s [write cardstack__stack 769 14 7_4]
+G c Z s s [read cardstack__stack 775 14 7_4]
+G c Z s s [pseudo_reference cardstack__stack 786 13 7_4]
+G c Z s s [get_element_access cardstack__stack 795 13 7_4]
+G c Z s s [cursorIP cardstack__stack 717 9 7_4]
+G c Z s s [vectorDA cardstack__stack 693 9 7_4]
+G c Z s s [vectorDF cardstack__stack 693 9 7_4]
+G c Z s s [vectorIP cardstack__stack 693 9 7_4]
+G c Z s s [constant_reference_typeDI cardstack__stack 737 9 7_4]
+G c Z s s [constant_reference_typeDA cardstack__stack 737 9 7_4]
+G c Z s s [constant_reference_typeDF cardstack__stack 737 9 7_4]
+G c Z s s [constant_reference_typeIP cardstack__stack 737 9 7_4]
+G c Z s s [reference_typeDI cardstack__stack 759 9 7_4]
+G c Z s s [reference_typeDA cardstack__stack 759 9 7_4]
+G c Z s s [reference_typeDF cardstack__stack 759 9 7_4]
+G c Z s s [reference_typeIP cardstack__stack 759 9 7_4]
+G c Z s s [finalize cardstack__stack 811 25 7_4]
+G c Z s s [first cardstack__stack 813 24 7_4]
+G c Z s s [last cardstack__stack 814 24 7_4]
+G c Z s s [next cardstack__stack 816 24 7_4]
+G c Z s s [previous cardstack__stack 820 24 7_4]
+G c Z s s [elements_arrayIP cardstack__stack 681 9 7_4]
+G c Z s s [elements_typeIP cardstack__stack 684 9 7_4]
+G c Z s s [iteratorDF cardstack__stack 803 9 7_4]
+G c Z s s [iteratorIP cardstack__stack 803 9 7_4]
+G c Z s s [free cardstack__stack 41 14 7_4]
+G c Z s s [append_slow_path cardstack__stack 44 14 7_4]
+X 1 ada.ads
+16K9*Ada 20e8 16|1r6 7r25
+X 2 a-contai.ads
+16K13*Containers 28e19 16|1r10 7r29
+X 6 a-convec.ads
+61I9 Index_Type 16|7r48
+62+9 Element_Type 16|8r48
+64V19 "="{boolean} 16|9r48
+73k24*Vectors 824e27 16|1w21 7r40
+X 10 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[6|111]>
+X 15 cards.ads
+1K9*cards 32e10 16|2w6 5r28 5r51 8r64 17|3r28 3r51
+6i7*cardValue{integer} 17|5r50 5r68
+15R9*suit<5R9> 19e14 16|5r34 5r57 8r70 17|3r34 3r57
+16e7*suitName{character} 17|5r15 5r32
+X 16 cardstack.ads
+3K9*cardStack 9r54 12l5 12e14 17|1b14 12l5 12t14
+5V14*"="{boolean} 5>18 5>40 9r65 17|3b14 10t7
+5r18 left{15|15R9} 17|3b18 5r10 5r45
+5r40 right{15|15R9} 17|3b40 5r26 5r62
+7K12*Stack[6|73]
+X 19 system.ads
+67M9*Address
+X 25 s-memory.ads
+53V13*Alloc{19|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{19|67M9} 105i<c,__gnat_realloc>22
+X 32 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

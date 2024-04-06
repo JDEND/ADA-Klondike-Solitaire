@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#109d39d2#;
+   u00001 : constant Version_32 := 16#3bfabdbd#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -241,7 +241,7 @@ package ada_main is
    pragma Export (C, u00101, "system__string_hashS");
    u00102 : constant Version_32 := 16#9d4f6ba2#;
    pragma Export (C, u00102, "buttonsB");
-   u00103 : constant Version_32 := 16#37c1cd9f#;
+   u00103 : constant Version_32 := 16#1ca649f0#;
    pragma Export (C, u00103, "buttonsS");
    u00104 : constant Version_32 := 16#0fa5c191#;
    pragma Export (C, u00104, "gtkS");
@@ -879,9 +879,9 @@ package ada_main is
    pragma Export (C, u00420, "cardsB");
    u00421 : constant Version_32 := 16#010c8554#;
    pragma Export (C, u00421, "cardsS");
-   u00422 : constant Version_32 := 16#547bea71#;
+   u00422 : constant Version_32 := 16#7f1c6e1e#;
    pragma Export (C, u00422, "cardtableB");
-   u00423 : constant Version_32 := 16#0cd61c38#;
+   u00423 : constant Version_32 := 16#22cf502b#;
    pragma Export (C, u00423, "cardtableS");
    u00424 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00424, "ada__numericsS");
@@ -893,50 +893,62 @@ package ada_main is
    pragma Export (C, u00427, "system__random_seedB");
    u00428 : constant Version_32 := 16#1d25c55f#;
    pragma Export (C, u00428, "system__random_seedS");
-   u00429 : constant Version_32 := 16#799bdb55#;
-   pragma Export (C, u00429, "deckB");
-   u00430 : constant Version_32 := 16#3f41b059#;
-   pragma Export (C, u00430, "deckS");
-   u00431 : constant Version_32 := 16#53ec4831#;
-   pragma Export (C, u00431, "gtk__labelB");
-   u00432 : constant Version_32 := 16#2c9e099c#;
-   pragma Export (C, u00432, "gtk__labelS");
-   u00433 : constant Version_32 := 16#bd94f457#;
-   pragma Export (C, u00433, "gtk__menuB");
-   u00434 : constant Version_32 := 16#222a525c#;
-   pragma Export (C, u00434, "gtk__menuS");
-   u00435 : constant Version_32 := 16#8335c69b#;
-   pragma Export (C, u00435, "glib__menu_modelB");
-   u00436 : constant Version_32 := 16#931244b4#;
-   pragma Export (C, u00436, "glib__menu_modelS");
-   u00437 : constant Version_32 := 16#e447f63d#;
-   pragma Export (C, u00437, "gtk__menu_itemB");
-   u00438 : constant Version_32 := 16#08ccac4c#;
-   pragma Export (C, u00438, "gtk__menu_itemS");
-   u00439 : constant Version_32 := 16#c4c3ce19#;
-   pragma Export (C, u00439, "gtk__actionB");
-   u00440 : constant Version_32 := 16#6f2c876b#;
-   pragma Export (C, u00440, "gtk__actionS");
-   u00441 : constant Version_32 := 16#5db35dda#;
-   pragma Export (C, u00441, "gtk__actionableB");
-   u00442 : constant Version_32 := 16#899552b6#;
-   pragma Export (C, u00442, "gtk__actionableS");
-   u00443 : constant Version_32 := 16#76974be8#;
-   pragma Export (C, u00443, "gtk__activatableB");
-   u00444 : constant Version_32 := 16#6a53f7e2#;
-   pragma Export (C, u00444, "gtk__activatableS");
-   u00445 : constant Version_32 := 16#13eb5a71#;
-   pragma Export (C, u00445, "gtk__menu_shellB");
-   u00446 : constant Version_32 := 16#a70cde2e#;
-   pragma Export (C, u00446, "gtk__menu_shellS");
-   u00447 : constant Version_32 := 16#c3a22529#;
-   pragma Export (C, u00447, "gtk__buttonB");
-   u00448 : constant Version_32 := 16#afb64caa#;
-   pragma Export (C, u00448, "gtk__buttonS");
-   u00449 : constant Version_32 := 16#9bfe8abc#;
-   pragma Export (C, u00449, "gtk__tableB");
-   u00450 : constant Version_32 := 16#98298123#;
-   pragma Export (C, u00450, "gtk__tableS");
+   u00429 : constant Version_32 := 16#b17264c2#;
+   pragma Export (C, u00429, "cardstackB");
+   u00430 : constant Version_32 := 16#04724d28#;
+   pragma Export (C, u00430, "cardstackS");
+   u00431 : constant Version_32 := 16#c89f77d5#;
+   pragma Export (C, u00431, "ada__containers__helpersB");
+   u00432 : constant Version_32 := 16#4adfc5eb#;
+   pragma Export (C, u00432, "ada__containers__helpersS");
+   u00433 : constant Version_32 := 16#020a3f4d#;
+   pragma Export (C, u00433, "system__atomic_countersB");
+   u00434 : constant Version_32 := 16#f269c189#;
+   pragma Export (C, u00434, "system__atomic_countersS");
+   u00435 : constant Version_32 := 16#799bdb55#;
+   pragma Export (C, u00435, "deckB");
+   u00436 : constant Version_32 := 16#3f41b059#;
+   pragma Export (C, u00436, "deckS");
+   u00437 : constant Version_32 := 16#53ec4831#;
+   pragma Export (C, u00437, "gtk__labelB");
+   u00438 : constant Version_32 := 16#2c9e099c#;
+   pragma Export (C, u00438, "gtk__labelS");
+   u00439 : constant Version_32 := 16#bd94f457#;
+   pragma Export (C, u00439, "gtk__menuB");
+   u00440 : constant Version_32 := 16#222a525c#;
+   pragma Export (C, u00440, "gtk__menuS");
+   u00441 : constant Version_32 := 16#8335c69b#;
+   pragma Export (C, u00441, "glib__menu_modelB");
+   u00442 : constant Version_32 := 16#931244b4#;
+   pragma Export (C, u00442, "glib__menu_modelS");
+   u00443 : constant Version_32 := 16#e447f63d#;
+   pragma Export (C, u00443, "gtk__menu_itemB");
+   u00444 : constant Version_32 := 16#08ccac4c#;
+   pragma Export (C, u00444, "gtk__menu_itemS");
+   u00445 : constant Version_32 := 16#c4c3ce19#;
+   pragma Export (C, u00445, "gtk__actionB");
+   u00446 : constant Version_32 := 16#6f2c876b#;
+   pragma Export (C, u00446, "gtk__actionS");
+   u00447 : constant Version_32 := 16#5db35dda#;
+   pragma Export (C, u00447, "gtk__actionableB");
+   u00448 : constant Version_32 := 16#899552b6#;
+   pragma Export (C, u00448, "gtk__actionableS");
+   u00449 : constant Version_32 := 16#76974be8#;
+   pragma Export (C, u00449, "gtk__activatableB");
+   u00450 : constant Version_32 := 16#6a53f7e2#;
+   pragma Export (C, u00450, "gtk__activatableS");
+   u00451 : constant Version_32 := 16#13eb5a71#;
+   pragma Export (C, u00451, "gtk__menu_shellB");
+   u00452 : constant Version_32 := 16#a70cde2e#;
+   pragma Export (C, u00452, "gtk__menu_shellS");
+   u00453 : constant Version_32 := 16#c3a22529#;
+   pragma Export (C, u00453, "gtk__buttonB");
+   u00454 : constant Version_32 := 16#afb64caa#;
+   pragma Export (C, u00454, "gtk__buttonS");
+   u00455 : constant Version_32 := 16#9bfe8abc#;
+   pragma Export (C, u00455, "gtk__tableB");
+   u00456 : constant Version_32 := 16#98298123#;
+   pragma Export (C, u00456, "gtk__tableS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -944,6 +956,8 @@ package ada_main is
    --  ada.characters.latin_1%s
    --  interfaces%s
    --  system%s
+   --  system.atomic_counters%s
+   --  system.atomic_counters%b
    --  system.exn_llf%s
    --  system.exn_llf%b
    --  system.float_control%s
@@ -1078,6 +1092,8 @@ package ada_main is
    --  system.finalization_root%s
    --  system.finalization_root%b
    --  ada.finalization%s
+   --  ada.containers.helpers%s
+   --  ada.containers.helpers%b
    --  system.file_io%s
    --  system.file_io%b
    --  system.linux%s
@@ -1156,6 +1172,8 @@ package ada_main is
    --  glib.error%b
    --  cards%s
    --  cards%b
+   --  cardstack%s
+   --  cardstack%b
    --  deck%s
    --  deck%b
    --  gdk%s

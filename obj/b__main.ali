@@ -18,13 +18,13 @@ RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U ada_main%b		b__main.adb		dc2d800a OO PK IL
+U ada_main%b		b__main.adb		1ff1be70 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W system%s		system.ads		system.ali
 W system.restrictions%s	s-restri.adb		s-restri.ali
 
-U ada_main%s		b__main.ads		fe1bb50b EE NE OO PK IL
+U ada_main%s		b__main.ads		d897a86a EE NE OO PK IL
 W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
@@ -32,8 +32,8 @@ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 D ada.ads		20230707070819 76789da1 ada%s
 D a-except.ads		20230707070819 a7106115 ada.exceptions%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D b__main.ads		20240405011139 d079eb12 ada_main%s
-D b__main.adb		20240405011139 b0d90c7f ada_main%b
+D b__main.ads		20240406000147 f6f5f673 ada_main%s
+D b__main.adb		20240406000147 55892f64 ada_main%b
 D system.ads		20230707070819 4635ec04 system%s
 D s-parame.ads		20230707070819 48ec542b system.parameters%s
 D s-restri.ads		20230707070819 1b9d0672 system.restrictions%s
@@ -46,27 +46,27 @@ G a e
 G c Z s b [adainit ada_main 26 14 none]
 G c Z s b [adafinal ada_main 29 14 none]
 G c Z s b [main ada_main 32 13 none]
-G c Z b b [Tsec_default_sized_stacksBIP ada_main 168 4 none]
-G c Z b b [finalize_library ada_main 175 14 none]
-G c Z b b [ada_main_program ada_main 1239 14 none]
+G c Z b b [Tsec_default_sized_stacksBIP ada_main 169 4 none]
+G c Z b b [finalize_library ada_main 176 14 none]
+G c Z b b [ada_main_program ada_main 1249 14 none]
 X 1 ada.ads
 16K9*Ada 20e8 5|8r6
 X 2 a-except.ads
 48K13*Exceptions 335e19 5|8w10
 X 4 b__main.ads
-6K9*ada_main 1394l5 1394e13 5|10b14 1294l5 1294t13
-8i4*gnat_argc{integer} 12m22 12r22 5|1259r10 1260m10
-9m4*gnat_argv{6|67M9} 13m22 13r22 5|1261m10
-10m4*gnat_envp{6|67M9} 14m22 14r22 5|1263m7
-16i4*gnat_exit_status{integer} 17m22 17r22 5|1270r15
+6K9*ada_main 1412l5 1412e13 5|10b14 1305l5 1305t13
+8i4*gnat_argc{integer} 12m22 12r22 5|1269r10 1270m10
+9m4*gnat_argv{6|67M9} 13m22 13r22 5|1271m10
+10m4*gnat_envp{6|67M9} 14m22 14r22 5|1273m7
+16i4*gnat_exit_status{integer} 17m22 17r22 5|1280r15
 19a4*GNAT_Version{string} 21r22
-23a4*Ada_Main_Program_Name{string} 24r22 5|1255r52
-26U14*adainit 27i<c,adainit>22 5|771b14 1237l8 1237t15 1266s7
-29U14*adafinal 30i<c,adafinal>22 5|752b14 766l8 766t16 1268s7
-32V13*main{integer} 33>7 34>7 35>7 37i<c,main>22 5|1242b13 1271t7
-33i7 argc{integer} 5|1243b7 1260r23
-34m7 argv{6|67M9} 5|1244b7 1261r23
-35m7 envp{6|67M9} 5|1245b7 1263r20
+23a4*Ada_Main_Program_Name{string} 24r22 5|1265r52
+26U14*adainit 27i<c,adainit>22 5|779b14 1247l8 1247t15 1276s7
+29U14*adafinal 30i<c,adafinal>22 5|760b14 774l8 774t16 1278s7
+32V13*main{integer} 33>7 34>7 35>7 37i<c,main>22 5|1252b13 1281t7
+33i7 argc{integer} 5|1253b7 1270r23
+34m7 argv{6|67M9} 5|1254b7 1271r23
+35m7 envp{6|67M9} 5|1255b7 1273r20
 39M9*Version_32 40r22 42r22 44r22 46r22 48r22 50r22 52r22 54r22 56r22 58r22
 . 60r22 62r22 64r22 66r22 68r22 70r22 72r22 74r22 76r22 78r22 80r22 82r22
 . 84r22 86r22 88r22 90r22 92r22 94r22 96r22 98r22 100r22 102r22 104r22 106r22
@@ -107,7 +107,8 @@ X 4 b__main.ads
 . 856r22 858r22 860r22 862r22 864r22 866r22 868r22 870r22 872r22 874r22 876r22
 . 878r22 880r22 882r22 884r22 886r22 888r22 890r22 892r22 894r22 896r22 898r22
 . 900r22 902r22 904r22 906r22 908r22 910r22 912r22 914r22 916r22 918r22 920r22
-. 922r22 924r22 926r22 928r22 930r22 932r22 934r22 936r22 938r22
+. 922r22 924r22 926r22 928r22 930r22 932r22 934r22 936r22 938r22 940r22 942r22
+. 944r22 946r22 948r22 950r22
 40m4*u00001{39M9} 41r22
 42m4*u00002{39M9} 43r22
 44m4*u00003{39M9} 45r22
@@ -558,306 +559,314 @@ X 4 b__main.ads
 934m4*u00448{39M9} 935r22
 936m4*u00449{39M9} 937r22
 938m4*u00450{39M9} 939r22
+940m4*u00451{39M9} 941r22
+942m4*u00452{39M9} 943r22
+944m4*u00453{39M9} 945r22
+946m4*u00454{39M9} 947r22
+948m4*u00455{39M9} 949r22
+950m4*u00456{39M9} 951r22
 X 5 b__main.adb
-12i4 E075{short_integer} 12m46 12r46 901m7 901r15
-13i4 E008{short_integer} 13m46 13r46 907m7 907r15
-14i4 E013{short_integer} 14m46 14r46 904m7 904r15
-15i4 E025{short_integer} 15m46 15r46 881m7 881r15
-16i4 E040{short_integer} 16m46 16r46 883m7 883r15
-17i4 E070{short_integer} 17m46 17r46 885m7 885r15
-18i4 E055{short_integer} 18m46 18r46 887m7 887r15
-19i4 E057{short_integer} 19m46 19r46 889m7 889r15
-20i4 E061{short_integer} 20m46 20r46 891m7 891r15
-21i4 E045{short_integer} 21m46 21r46 893m7 893r15
-22i4 E027{short_integer} 22m46 22r46 895m7 895r15
-23i4 E081{short_integer} 23m46 23r46 897m7 897r15
-24i4 E050{short_integer} 24m46 24r46 899m7 899r15
-25i4 E021{short_integer} 25m46 25r46 903m7 903r15
-26i4 E039{short_integer} 26m46 26r46 906m7 906r15
-27i4 E424{short_integer} 27m46 27r46 909m7 909r15
-28i4 E006{short_integer} 28m46 28r46 912m7 912r15
-29i4 E113{short_integer} 29m46 29r46 914m7 914r15
-30i4 E139{short_integer} 30m46 30r46 916m7 916r15
-31i4 E111{short_integer} 31m46 31r46 918m7 918r15
-32i4 E419{short_integer} 32m46 32r46 920m7 920r15
-33i4 E120{short_integer} 33m46 33r46 922m7 922r15
-34i4 E118{short_integer} 34m46 34r46 924m7 924r15
-35i4 E418{short_integer} 35m46 35r46 741m10 741r18 926m7 926r15
-36i4 E122{short_integer} 36m46 36r46 928m7 928r15
-37i4 E115{short_integer} 37m46 37r46 730m7 730r15 931m7 931r15
-38i4 E128{short_integer} 38m46 38r46 723m7 723r15 933m7 933r15
-39i4 E360{short_integer} 39m46 39r46 935m7 935r15
-40i4 E352{short_integer} 40m46 40r46 937m7 937r15
-41i4 E398{short_integer} 41m46 41r46 940m7 940r15
-42i4 E402{short_integer} 42m46 42r46 942m7 942r15
-43i4 E414{short_integer} 43m46 43r46 716m7 716r15 945m7 945r15
-44i4 E124{short_integer} 44m46 44r46 709m7 709r15 947m7 947r15
-45i4 E428{short_integer} 45m46 45r46 949m7 949r15
-46i4 E386{short_integer} 46m46 46r46 951m7 951r15
-47i4 E374{short_integer} 47m46 47r46 953m7 953r15
-48i4 E390{short_integer} 48m46 48r46 702m7 702r15 955m7 955r15
-49i4 E392{short_integer} 49m46 49r46 957m7 957r15
-50i4 E106{short_integer} 50m46 50r46 695m7 695r15 961m7 961r15
-51i4 E109{short_integer} 51m46 51r46 960m7 960r15
-52i4 E421{short_integer} 52m46 52r46 688m7 688r15 964m7 964r15
-53i4 E430{short_integer} 53m46 53r46 967m7 967r15
-54i4 E202{short_integer} 54m46 54r46 681m7 681r15 970m7 970r15
-55i4 E150{short_integer} 55m46 55r46 971m7 971r15
-56i4 E190{short_integer} 56m46 56r46 973m7 973r15
-57i4 E152{short_integer} 57m46 57r46 974m7 974r15
-58i4 E144{short_integer} 58m46 58r46 975m7 975r15
-59i4 E134{short_integer} 59m46 59r46 674m7 674r15 982m7 982r15
-60i4 E136{short_integer} 60m46 60r46 977m7 977r15
-61i4 E146{short_integer} 61m46 61r46 983m7 983r15
-62i4 E148{short_integer} 62m46 62r46 979m7 979r15
-63i4 E138{short_integer} 63m46 63r46 980m7 980r15
-64i4 E163{short_integer} 64m46 64r46 984m7 984r15
-65i4 E165{short_integer} 65m46 65r46 985m7 985r15
-66i4 E175{short_integer} 66m46 66r46 986m7 986r15
-67i4 E159{short_integer} 67m46 67r46 989m7 989r15
-68i4 E198{short_integer} 68m46 68r46 991m7 991r15
-69i4 E178{short_integer} 69m46 69r46 992m7 992r15
-70i4 E313{short_integer} 70m46 70r46 993m7 993r15
-71i4 E173{short_integer} 71m46 71r46 994m7 994r15
-72i4 E171{short_integer} 72m46 72r46 667m7 667r15 997m7 997r15
-73i4 E267{short_integer} 73m46 73r46 660m7 660r15 1000m7 1000r15
-74i4 E169{short_integer} 74m46 74r46 1001m7 1001r15
-75i4 E212{short_integer} 75m46 75r46 1002m7 1002r15
-76i4 E210{short_integer} 76m46 76r46 653m7 653r15 1005m7 1005r15
-77i4 E275{short_integer} 77m46 77r46 1006m7 1006r15
-78i4 E442{short_integer} 78m46 78r46 1008m7 1008r15
-79i4 E216{short_integer} 79m46 79r46 646m7 646r15 1011m7 1011r15
-80i4 E255{short_integer} 80m46 80r46 1012m7 1012r15
-81i4 E287{short_integer} 81m46 81r46 639m7 639r15 1015m7 1015r15
-82i4 E303{short_integer} 82m46 82r46 632m7 632r15 1018m7 1018r15
-83i4 E192{short_integer} 83m46 83r46 1019m7 1019r15
-84i4 E261{short_integer} 84m46 84r46 1021m7 1021r15
-85i4 E315{short_integer} 85m46 85r46 625m7 625r15 1024m7 1024r15
-86i4 E311{short_integer} 86m46 86r46 618m7 618r15 1027m7 1027r15
-87i4 E321{short_integer} 87m46 87r46 611m7 611r15 1030m7 1030r15
-88i4 E224{short_integer} 88m46 88r46 1031m7 1031r15
-89i4 E222{short_integer} 89m46 89r46 604m7 604r15 1034m7 1034r15
-90i4 E341{short_integer} 90m46 90r46 597m7 597r15 1037m7 1037r15
-91i4 E229{short_integer} 91m46 91r46 1038m7 1038r15
-92i4 E249{short_integer} 92m46 92r46 590m7 590r15 1041m7 1041r15
-93i4 E233{short_integer} 93m46 93r46 583m7 583r15 1044m7 1044r15
-94i4 E235{short_integer} 94m46 94r46 576m7 576r15 1047m7 1047r15
-95i4 E231{short_integer} 95m46 95r46 569m7 569r15 1050m7 1050r15
-96i4 E327{short_integer} 96m46 96r46 1051m7 1051r15
-97i4 E329{short_integer} 97m46 97r46 562m7 562r15 1054m7 1054r15
-98i4 E239{short_integer} 98m46 98r46 555m7 555r15 1057m7 1057r15
-99i4 E237{short_integer} 99m46 99r46 548m7 548r15 1060m7 1060r15
-100i4 E241{short_integer} 100m46 100r46 541m7 541r15 1063m7 1063r15
-101i4 E243{short_integer} 101m46 101r46 1064m7 1064r15
-102i4 E227{short_integer} 102m46 102r46 534m7 534r15 1067m7 1067r15
-103i4 E245{short_integer} 103m46 103r46 527m7 527r15 1070m7 1070r15
-104i4 E251{short_integer} 104m46 104r46 520m7 520r15 1073m7 1073r15
-105i4 E247{short_integer} 105m46 105r46 513m7 513r15 1076m7 1076r15
-106i4 E317{short_integer} 106m46 106r46 506m7 506r15 1079m7 1079r15
-107i4 E200{short_integer} 107m46 107r46 262m7 262r15 1157m7 1157r15
-108i4 E188{short_integer} 108m46 108r46 261m7 261r15 1159m7 1159r15
-109i4 E186{short_integer} 109m46 109r46 264m7 264r15 1153m7 1153r15
-110i4 E269{short_integer} 110m46 110r46 481m7 481r15 1085m7 1085r15
-111i4 E204{short_integer} 111m46 111r46 474m7 474r15 1087m7 1087r15
-112i4 E184{short_integer} 112m46 112r46 467m7 467r15 1090m7 1090r15
-113i4 E157{short_integer} 113m46 113r46 265m7 265r15 1151m7 1151r15
-114i4 E167{short_integer} 114m46 114r46 263m7 263r15 1155m7 1155r15
-115i4 E265{short_integer} 115m46 115r46 1094m7 1094r15
-116i4 E208{short_integer} 116m46 116r46 1160m7 1160r15
-117i4 E214{short_integer} 117m46 117r46 260m7 260r15 1162m7 1162r15
-118i4 E259{short_integer} 118m46 118r46 259m7 259r15 1164m7 1164r15
-119i4 E277{short_integer} 119m46 119r46 1167m7 1167r15
-120i4 E279{short_integer} 120m46 120r46 1176m7 1176r15
-121i4 E281{short_integer} 121m46 121r46 253m7 253r15 1178m7 1178r15
-122i4 E299{short_integer} 122m46 122r46 430m7 430r15 1101m7 1101r15
-123i4 E319{short_integer} 123m46 123r46 1187m7 1187r15
-124i4 E218{short_integer} 124m46 124r46 423m7 423r15 1104m7 1104r15
-125i4 E337{short_integer} 125m46 125r46 256m7 256r15 1171m7 1171r15
-126i4 E220{short_integer} 126m46 126r46 247m7 247r15 1191m7 1191r15
-127i4 E333{short_integer} 127m46 127r46 1108m7 1108r15
-128i4 E325{short_integer} 128m46 128r46 1109m7 1109r15
-129i4 E343{short_integer} 129m46 129r46 244m7 244r15 1197m7 1197r15
-130i4 E293{short_integer} 130m46 130r46 242m7 242r15 1201m7 1201r15
-131i4 E196{short_integer} 131m46 131r46 241m7 241r15 1203m7 1203r15
-132i4 E291{short_integer} 132m46 132r46 257m7 257r15 1169m7 1169r15
-133i4 E289{short_integer} 133m46 133r46 1114m7 1114r15
-134i4 E285{short_integer} 134m46 134r46 258m7 258r15 1166m7 1166r15
-135i4 E257{short_integer} 135m46 135r46 255m7 255r15 1173m7 1173r15
-136i4 E271{short_integer} 136m46 136r46 368m7 368r15 1119m7 1119r15
-137i4 E253{short_integer} 137m46 137r46 361m7 361r15 1122m7 1122r15
-138i4 E283{short_integer} 138m46 138r46 252m7 252r15 1180m7 1180r15
-139i4 E305{short_integer} 139m46 139r46 348m7 348r15 1126m7 1126r15
-140i4 E307{short_integer} 140m46 140r46 250m7 250r15 1184m7 1184r15
-141i4 E323{short_integer} 141m46 141r46 248m7 248r15 1189m7 1189r15
-142i4 E194{short_integer} 142m46 142r46 1129m7 1129r15
-143i4 E182{short_integer} 143m46 143r46 329m7 329r15 1132m7 1132r15
-144i4 E301{short_integer} 144m46 144r46 246m7 246r15 1193m7 1193r15
-145i4 E297{short_integer} 145m46 145r46 316m7 316r15 1136m7 1136r15
-146i4 E295{short_integer} 146m46 146r46 309m7 309r15 1139m7 1139r15
-147i4 E273{short_integer} 147m46 147r46 251m7 251r15 1182m7 1182r15
-148i4 E339{short_integer} 148m46 148r46 296m7 296r15 1143m7 1143r15
-149i4 E335{short_integer} 149m46 149r46 245m7 245r15 1195m7 1195r15
-150i4 E331{short_integer} 150m46 150r46 243m7 243r15 1199m7 1199r15
-151i4 E263{short_integer} 151m46 151r46 240m7 240r15 1205m7 1205r15
-152i4 E180{short_integer} 152m46 152r46 254m7 254r15 1175m7 1175r15
-153i4 E309{short_integer} 153m46 153r46 249m7 249r15 1186m7 1186r15
-154i4 E161{short_integer} 154m46 154r46 1149m7 1149r15
-155i4 E436{short_integer} 155m46 155r46 233m7 233r15 1208m7 1208r15
-156i4 E440{short_integer} 156m46 156r46 226m7 226r15 1211m7 1211r15
-157i4 E444{short_integer} 157m46 157r46 1213m7 1213r15
-158i4 E448{short_integer} 158m46 158r46 219m7 219r15 1216m7 1216r15
-159i4 E154{short_integer} 159m46 159r46 1217m7 1217r15
-160i4 E438{short_integer} 160m46 160r46 212m7 212r15 1220m7 1220r15
-161i4 E446{short_integer} 161m46 161r46 205m7 205r15 1223m7 1223r15
-162i4 E434{short_integer} 162m46 162r46 198m7 198r15 1226m7 1226r15
-163i4 E432{short_integer} 163m46 163r46 191m7 191r15 1229m7 1229r15
-164i4 E423{short_integer} 164m46 164r46 184m7 184r15 1232m7 1232r15
-165i4 E103{short_integer} 165m46 165r46 1233m7 1233r15
-166i4 E450{short_integer} 166m46 166r46 177m7 177r15 1236m7 1236r15
-168a4 Sec_Default_Sized_Stacks(10|45R9) 872m32 872r32
-170a4 Local_Priority_Specific_Dispatching{string} 859r9
-171a4 Local_Interrupt_States{string} 862r27
-173b4 Is_Elaborated{boolean} 760r14 763m7 818r10 821m7
-175U14 finalize_library 175b14 750l8 750t24 876r35
-179U20*F1 180b<ada,gtk__table__finalize_spec>30 182s10
-186U20*F2 187b<ada,cardtable__finalize_spec>30 189s10
-193U20*F3 194b<ada,gtk__label__finalize_spec>30 196s10
-200U20*F4 201b<ada,gtk__menu__finalize_spec>30 203s10
-207U20*F5 208b<ada,gtk__menu_shell__finalize_spec>30 210s10
-214U20*F6 215b<ada,gtk__menu_item__finalize_spec>30 217s10
-221U20*F7 222b<ada,gtk__button__finalize_spec>30 224s10
-228U20*F8 229b<ada,gtk__action__finalize_spec>30 231s10
-235U20*F9 236b<ada,glib__menu_model__finalize_spec>30 238s10
-267U20*F10 268b<ada,gtk__print_operation__finalize_spec>30 270s10
-273U20*F11 274b<ada,gtk__dialog__finalize_spec>30 276s10
-279U20*F12 280b<ada,gtk__window__finalize_spec>30 282s10
-285U20*F13 286b<ada,gtk__text_view__finalize_spec>30 288s10
-291U20*F14 292b<ada,gtk__text_buffer__finalize_spec>30 294s10
-298U20*F15 299b<ada,gtk__text_child_anchor__finalize_spec>30 301s10
-304U20*F16 305b<ada,gtk__gentry__finalize_spec>30 307s10
-311U20*F17 312b<ada,gtk__image__finalize_spec>30 314s10
-318U20*F18 319b<ada,gtk__icon_set__finalize_spec>30 321s10
-324U20*F19 325b<ada,gtk__style_context__finalize_spec>30 327s10
-331U20*F20 332b<ada,gtk__settings__finalize_spec>30 334s10
-337U20*F21 338b<ada,gtk__status_bar__finalize_spec>30 340s10
-343U20*F22 344b<ada,gtk__notebook__finalize_spec>30 346s10
-350U20*F23 351b<ada,gtk__misc__finalize_spec>30 353s10
-356U20*F24 357b<ada,gtk__entry_completion__finalize_spec>30 359s10
-363U20*F25 364b<ada,gtk__box__finalize_spec>30 366s10
-370U20*F26 371b<ada,gtk__bin__finalize_spec>30 373s10
-376U20*F27 377b<ada,gtk__container__finalize_spec>30 379s10
-382U20*F28 383b<ada,gtk__cell_area__finalize_spec>30 385s10
-388U20*F29 389b<ada,gtk__cell_renderer__finalize_spec>30 391s10
-394U20*F30 395b<ada,gtk__widget__finalize_spec>30 397s10
-400U20*F31 401b<ada,gtk__tree_model__finalize_spec>30 403s10
-406U20*F32 407b<ada,gtk__text_tag_table__finalize_spec>30 409s10
-412U20*F33 413b<ada,gtk__style__finalize_spec>30 415s10
-418U20*F34 419b<ada,gtk__clipboard__finalize_spec>30 421s10
-425U20*F35 426b<ada,gtk__selection_data__finalize_spec>30 428s10
-432U20*F36 433b<ada,gtk__icon_source__finalize_spec>30 435s10
-438U20*F37 439b<ada,gtk__entry_buffer__finalize_spec>30 441s10
-444U20*F38 445b<ada,gtk__adjustment__finalize_spec>30 447s10
-450U20*F39 451b<ada,gtk__accel_group__finalize_spec>30 453s10
-456U20*F40 457b<ada,gdk__drag_contexts__finalize_spec>30 459s10
-462U20*F41 463b<ada,gdk__device__finalize_spec>30 465s10
-469U20*F42 470b<ada,gdk__screen__finalize_spec>30 472s10
-476U20*F43 477b<ada,gdk__pixbuf__finalize_spec>30 479s10
-483U20*F44 484b<ada,gdk__glcontext__finalize_spec>30 486s10
-489U20*F45 490b<ada,gdk__display__finalize_spec>30 492s10
-495U20*F46 496b<ada,gdk__monitor__finalize_spec>30 498s10
-501U20*F47 502b<ada,gdk__frame_clock__finalize_spec>30 504s10
-508U20*F48 509b<ada,gtk__print_context__finalize_spec>30 511s10
-515U20*F49 516b<ada,pango__layout__finalize_spec>30 518s10
-522U20*F50 523b<ada,pango__tabs__finalize_spec>30 525s10
-529U20*F51 530b<ada,pango__font_map__finalize_spec>30 532s10
-536U20*F52 537b<ada,pango__context__finalize_spec>30 539s10
-543U20*F53 544b<ada,pango__fontset__finalize_spec>30 546s10
-550U20*F54 551b<ada,pango__font_family__finalize_spec>30 553s10
-557U20*F55 558b<ada,pango__font_face__finalize_spec>30 560s10
-564U20*F56 565b<ada,gtk__text_tag__finalize_spec>30 567s10
-571U20*F57 572b<ada,pango__font__finalize_spec>30 574s10
-578U20*F58 579b<ada,pango__language__finalize_spec>30 581s10
-585U20*F59 586b<ada,pango__font_metrics__finalize_spec>30 588s10
-592U20*F60 593b<ada,pango__attributes__finalize_spec>30 595s10
-599U20*F61 600b<ada,gtk__text_mark__finalize_spec>30 602s10
-606U20*F62 607b<ada,gtk__target_list__finalize_spec>30 609s10
-613U20*F63 614b<ada,gtk__print_settings__finalize_spec>30 616s10
-620U20*F64 621b<ada,gtk__page_setup__finalize_spec>30 623s10
-627U20*F65 628b<ada,gtk__paper_size__finalize_spec>30 630s10
-634U20*F66 635b<ada,gtk__css_section__finalize_spec>30 637s10
-641U20*F67 642b<ada,gtk__cell_area_context__finalize_spec>30 644s10
-648U20*F68 649b<ada,gtk__builder__finalize_spec>30 651s10
-655U20*F69 656b<ada,glib__variant__finalize_spec>30 658s10
-662U20*F70 663b<ada,gdk__drawing_context__finalize_spec>30 665s10
-669U20*F71 670b<ada,gdk__device_tool__finalize_spec>30 672s10
-676U20*F72 677b<ada,glib__object__finalize_spec>30 679s10
-683U20*F73 684b<ada,gdk__frame_timings__finalize_spec>30 686s10
-690U20*F74 691b<ada,cards__finalize_spec>30 693s10
-697U20*F75 698b<ada,glib__finalize_spec>30 700s10
-704U20*F76 705b<ada,system__tasking__protected_objects__entries__finalize_spec>30
-. 707s10
-711U20*F77 712b<ada,system__pool_global__finalize_spec>30 714s10
-718U20*F78 719b<ada,ada__text_io__finalize_spec>30 721s10
-725U20*F79 726b<ada,system__storage_pools__subpools__finalize_spec>30 728s10
-732U20*F80 733b<ada,system__finalization_masters__finalize_spec>30 735s10
-738U20*F81 739b<ada,system__file_io__finalize_body>30 742s10
-745U20*Reraise_Library_Exception_If_Any 746b<ada,__gnat_reraise_library_exception_if_any>33
-. 748s10
-753U17*s_stalib_adafinal 754b<c,system__standard_library__adafinal>25 765s7
-756U17*Runtime_Finalize 757b<c,__gnat_runtime_finalize>25 764s7
-768P9 No_Param_Proc 769r28 810r34
-772i7*Main_Priority{integer} 773m25 773r25 822m7
-774i7*Time_Slice_Value{integer} 775m25 775r25 823m7
-776e7*WC_Encoding{character} 777m25 777r25 824m7
-778e7*Locking_Policy{character} 779m25 779r25 825m7
-780e7*Queuing_Policy{character} 781m25 781r25 826m7
-782e7*Task_Dispatching_Policy{character} 783m25 783r25 827m7
-784m7*Priority_Specific_Dispatching{6|67M9} 785m25 785r25 858m7
-786i7*Num_Specific_Dispatching{integer} 787m25 787r25 860m7
-788i7*Main_CPU{integer} 789m25 789r25 861m7
-790m7*Interrupt_States{6|67M9} 791m25 791r25 862m7
-792i7*Num_Interrupt_States{integer} 793m25 793r25 863m7
-794i7*Unreserve_All_Interrupts{integer} 795m25 795r25 864m7
-796i7*Detect_Blocking{integer} 797m25 797r25 865m7
-798i7*Default_Stack_Size{integer} 799m25 799r25 866m7
-800i7*Default_Secondary_Stack_Size{7|58I9} 801m25 801r25 870m7
-802i7*Leap_Seconds_Support{integer} 803m25 803r25 867m7
-804m7*Bind_Env_Addr{6|67M9} 805m25 805r25
-807U17*Runtime_Initialize 807>37 808b<c,__gnat_runtime_initialize>25 874s7
-807i37 Install_Handler{integer}
-810p7*Finalize_Library_Objects{768P9} 811m25 811r25 876m7
-812i7*Binder_Sec_Stacks_Count{natural} 813m27 813r27 871m7
-814m7*Default_Sized_SS_Pool{6|67M9} 815m27 815r27 872m7
-1239U14 Ada_Main_Program 1240b<ada,_ada_main>24 1267s7
-1248U17*Initialize 1248>29 1249b<c,__gnat_initialize>25 1265s7
-1248m29 Addr{6|67M9}
-1251U17*Finalize 1252b<c,__gnat_finalize>25 1269s7
-1253a7 SEH(integer) 1265m19 1265r19
-1255m7 Ensure_Reference{6|67M9} 1256r24
+12i4 E075{short_integer} 12m46 12r46 909m7 909r15
+13i4 E008{short_integer} 13m46 13r46 915m7 915r15
+14i4 E013{short_integer} 14m46 14r46 912m7 912r15
+15i4 E025{short_integer} 15m46 15r46 889m7 889r15
+16i4 E040{short_integer} 16m46 16r46 891m7 891r15
+17i4 E070{short_integer} 17m46 17r46 893m7 893r15
+18i4 E055{short_integer} 18m46 18r46 895m7 895r15
+19i4 E057{short_integer} 19m46 19r46 897m7 897r15
+20i4 E061{short_integer} 20m46 20r46 899m7 899r15
+21i4 E045{short_integer} 21m46 21r46 901m7 901r15
+22i4 E027{short_integer} 22m46 22r46 903m7 903r15
+23i4 E081{short_integer} 23m46 23r46 905m7 905r15
+24i4 E050{short_integer} 24m46 24r46 907m7 907r15
+25i4 E021{short_integer} 25m46 25r46 911m7 911r15
+26i4 E039{short_integer} 26m46 26r46 914m7 914r15
+27i4 E424{short_integer} 27m46 27r46 917m7 917r15
+28i4 E006{short_integer} 28m46 28r46 920m7 920r15
+29i4 E113{short_integer} 29m46 29r46 922m7 922r15
+30i4 E139{short_integer} 30m46 30r46 924m7 924r15
+31i4 E111{short_integer} 31m46 31r46 926m7 926r15
+32i4 E419{short_integer} 32m46 32r46 928m7 928r15
+33i4 E120{short_integer} 33m46 33r46 930m7 930r15
+34i4 E118{short_integer} 34m46 34r46 932m7 932r15
+35i4 E418{short_integer} 35m46 35r46 749m10 749r18 934m7 934r15
+36i4 E122{short_integer} 36m46 36r46 936m7 936r15
+37i4 E115{short_integer} 37m46 37r46 738m7 738r15 939m7 939r15
+38i4 E128{short_integer} 38m46 38r46 731m7 731r15 941m7 941r15
+39i4 E360{short_integer} 39m46 39r46 943m7 943r15
+40i4 E352{short_integer} 40m46 40r46 945m7 945r15
+41i4 E398{short_integer} 41m46 41r46 948m7 948r15
+42i4 E402{short_integer} 42m46 42r46 950m7 950r15
+43i4 E414{short_integer} 43m46 43r46 724m7 724r15 953m7 953r15
+44i4 E124{short_integer} 44m46 44r46 717m7 717r15 955m7 955r15
+45i4 E428{short_integer} 45m46 45r46 957m7 957r15
+46i4 E386{short_integer} 46m46 46r46 959m7 959r15
+47i4 E374{short_integer} 47m46 47r46 961m7 961r15
+48i4 E390{short_integer} 48m46 48r46 710m7 710r15 963m7 963r15
+49i4 E392{short_integer} 49m46 49r46 965m7 965r15
+50i4 E106{short_integer} 50m46 50r46 703m7 703r15 969m7 969r15
+51i4 E109{short_integer} 51m46 51r46 968m7 968r15
+52i4 E421{short_integer} 52m46 52r46 696m7 696r15 972m7 972r15
+53i4 E430{short_integer} 53m46 53r46 689m7 689r15 974m7 974r15
+54i4 E436{short_integer} 54m46 54r46 977m7 977r15
+55i4 E202{short_integer} 55m46 55r46 682m7 682r15 980m7 980r15
+56i4 E150{short_integer} 56m46 56r46 981m7 981r15
+57i4 E190{short_integer} 57m46 57r46 983m7 983r15
+58i4 E152{short_integer} 58m46 58r46 984m7 984r15
+59i4 E144{short_integer} 59m46 59r46 985m7 985r15
+60i4 E134{short_integer} 60m46 60r46 675m7 675r15 992m7 992r15
+61i4 E136{short_integer} 61m46 61r46 987m7 987r15
+62i4 E146{short_integer} 62m46 62r46 993m7 993r15
+63i4 E148{short_integer} 63m46 63r46 989m7 989r15
+64i4 E138{short_integer} 64m46 64r46 990m7 990r15
+65i4 E163{short_integer} 65m46 65r46 994m7 994r15
+66i4 E165{short_integer} 66m46 66r46 995m7 995r15
+67i4 E175{short_integer} 67m46 67r46 996m7 996r15
+68i4 E159{short_integer} 68m46 68r46 999m7 999r15
+69i4 E198{short_integer} 69m46 69r46 1001m7 1001r15
+70i4 E178{short_integer} 70m46 70r46 1002m7 1002r15
+71i4 E313{short_integer} 71m46 71r46 1003m7 1003r15
+72i4 E173{short_integer} 72m46 72r46 1004m7 1004r15
+73i4 E171{short_integer} 73m46 73r46 668m7 668r15 1007m7 1007r15
+74i4 E267{short_integer} 74m46 74r46 661m7 661r15 1010m7 1010r15
+75i4 E169{short_integer} 75m46 75r46 1011m7 1011r15
+76i4 E212{short_integer} 76m46 76r46 1012m7 1012r15
+77i4 E210{short_integer} 77m46 77r46 654m7 654r15 1015m7 1015r15
+78i4 E275{short_integer} 78m46 78r46 1016m7 1016r15
+79i4 E448{short_integer} 79m46 79r46 1018m7 1018r15
+80i4 E216{short_integer} 80m46 80r46 647m7 647r15 1021m7 1021r15
+81i4 E255{short_integer} 81m46 81r46 1022m7 1022r15
+82i4 E287{short_integer} 82m46 82r46 640m7 640r15 1025m7 1025r15
+83i4 E303{short_integer} 83m46 83r46 633m7 633r15 1028m7 1028r15
+84i4 E192{short_integer} 84m46 84r46 1029m7 1029r15
+85i4 E261{short_integer} 85m46 85r46 1031m7 1031r15
+86i4 E315{short_integer} 86m46 86r46 626m7 626r15 1034m7 1034r15
+87i4 E311{short_integer} 87m46 87r46 619m7 619r15 1037m7 1037r15
+88i4 E321{short_integer} 88m46 88r46 612m7 612r15 1040m7 1040r15
+89i4 E224{short_integer} 89m46 89r46 1041m7 1041r15
+90i4 E222{short_integer} 90m46 90r46 605m7 605r15 1044m7 1044r15
+91i4 E341{short_integer} 91m46 91r46 598m7 598r15 1047m7 1047r15
+92i4 E229{short_integer} 92m46 92r46 1048m7 1048r15
+93i4 E249{short_integer} 93m46 93r46 591m7 591r15 1051m7 1051r15
+94i4 E233{short_integer} 94m46 94r46 584m7 584r15 1054m7 1054r15
+95i4 E235{short_integer} 95m46 95r46 577m7 577r15 1057m7 1057r15
+96i4 E231{short_integer} 96m46 96r46 570m7 570r15 1060m7 1060r15
+97i4 E327{short_integer} 97m46 97r46 1061m7 1061r15
+98i4 E329{short_integer} 98m46 98r46 563m7 563r15 1064m7 1064r15
+99i4 E239{short_integer} 99m46 99r46 556m7 556r15 1067m7 1067r15
+100i4 E237{short_integer} 100m46 100r46 549m7 549r15 1070m7 1070r15
+101i4 E241{short_integer} 101m46 101r46 542m7 542r15 1073m7 1073r15
+102i4 E243{short_integer} 102m46 102r46 1074m7 1074r15
+103i4 E227{short_integer} 103m46 103r46 535m7 535r15 1077m7 1077r15
+104i4 E245{short_integer} 104m46 104r46 528m7 528r15 1080m7 1080r15
+105i4 E251{short_integer} 105m46 105r46 521m7 521r15 1083m7 1083r15
+106i4 E247{short_integer} 106m46 106r46 514m7 514r15 1086m7 1086r15
+107i4 E317{short_integer} 107m46 107r46 507m7 507r15 1089m7 1089r15
+108i4 E200{short_integer} 108m46 108r46 263m7 263r15 1167m7 1167r15
+109i4 E188{short_integer} 109m46 109r46 262m7 262r15 1169m7 1169r15
+110i4 E186{short_integer} 110m46 110r46 265m7 265r15 1163m7 1163r15
+111i4 E269{short_integer} 111m46 111r46 482m7 482r15 1095m7 1095r15
+112i4 E204{short_integer} 112m46 112r46 475m7 475r15 1097m7 1097r15
+113i4 E184{short_integer} 113m46 113r46 468m7 468r15 1100m7 1100r15
+114i4 E157{short_integer} 114m46 114r46 266m7 266r15 1161m7 1161r15
+115i4 E167{short_integer} 115m46 115r46 264m7 264r15 1165m7 1165r15
+116i4 E265{short_integer} 116m46 116r46 1104m7 1104r15
+117i4 E208{short_integer} 117m46 117r46 1170m7 1170r15
+118i4 E214{short_integer} 118m46 118r46 261m7 261r15 1172m7 1172r15
+119i4 E259{short_integer} 119m46 119r46 260m7 260r15 1174m7 1174r15
+120i4 E277{short_integer} 120m46 120r46 1177m7 1177r15
+121i4 E279{short_integer} 121m46 121r46 1186m7 1186r15
+122i4 E281{short_integer} 122m46 122r46 254m7 254r15 1188m7 1188r15
+123i4 E299{short_integer} 123m46 123r46 431m7 431r15 1111m7 1111r15
+124i4 E319{short_integer} 124m46 124r46 1197m7 1197r15
+125i4 E218{short_integer} 125m46 125r46 424m7 424r15 1114m7 1114r15
+126i4 E337{short_integer} 126m46 126r46 257m7 257r15 1181m7 1181r15
+127i4 E220{short_integer} 127m46 127r46 248m7 248r15 1201m7 1201r15
+128i4 E333{short_integer} 128m46 128r46 1118m7 1118r15
+129i4 E325{short_integer} 129m46 129r46 1119m7 1119r15
+130i4 E343{short_integer} 130m46 130r46 245m7 245r15 1207m7 1207r15
+131i4 E293{short_integer} 131m46 131r46 243m7 243r15 1211m7 1211r15
+132i4 E196{short_integer} 132m46 132r46 242m7 242r15 1213m7 1213r15
+133i4 E291{short_integer} 133m46 133r46 258m7 258r15 1179m7 1179r15
+134i4 E289{short_integer} 134m46 134r46 1124m7 1124r15
+135i4 E285{short_integer} 135m46 135r46 259m7 259r15 1176m7 1176r15
+136i4 E257{short_integer} 136m46 136r46 256m7 256r15 1183m7 1183r15
+137i4 E271{short_integer} 137m46 137r46 369m7 369r15 1129m7 1129r15
+138i4 E253{short_integer} 138m46 138r46 362m7 362r15 1132m7 1132r15
+139i4 E283{short_integer} 139m46 139r46 253m7 253r15 1190m7 1190r15
+140i4 E305{short_integer} 140m46 140r46 349m7 349r15 1136m7 1136r15
+141i4 E307{short_integer} 141m46 141r46 251m7 251r15 1194m7 1194r15
+142i4 E323{short_integer} 142m46 142r46 249m7 249r15 1199m7 1199r15
+143i4 E194{short_integer} 143m46 143r46 1139m7 1139r15
+144i4 E182{short_integer} 144m46 144r46 330m7 330r15 1142m7 1142r15
+145i4 E301{short_integer} 145m46 145r46 247m7 247r15 1203m7 1203r15
+146i4 E297{short_integer} 146m46 146r46 317m7 317r15 1146m7 1146r15
+147i4 E295{short_integer} 147m46 147r46 310m7 310r15 1149m7 1149r15
+148i4 E273{short_integer} 148m46 148r46 252m7 252r15 1192m7 1192r15
+149i4 E339{short_integer} 149m46 149r46 297m7 297r15 1153m7 1153r15
+150i4 E335{short_integer} 150m46 150r46 246m7 246r15 1205m7 1205r15
+151i4 E331{short_integer} 151m46 151r46 244m7 244r15 1209m7 1209r15
+152i4 E263{short_integer} 152m46 152r46 241m7 241r15 1215m7 1215r15
+153i4 E180{short_integer} 153m46 153r46 255m7 255r15 1185m7 1185r15
+154i4 E309{short_integer} 154m46 154r46 250m7 250r15 1196m7 1196r15
+155i4 E161{short_integer} 155m46 155r46 1159m7 1159r15
+156i4 E442{short_integer} 156m46 156r46 234m7 234r15 1218m7 1218r15
+157i4 E446{short_integer} 157m46 157r46 227m7 227r15 1221m7 1221r15
+158i4 E450{short_integer} 158m46 158r46 1223m7 1223r15
+159i4 E454{short_integer} 159m46 159r46 220m7 220r15 1226m7 1226r15
+160i4 E154{short_integer} 160m46 160r46 1227m7 1227r15
+161i4 E444{short_integer} 161m46 161r46 213m7 213r15 1230m7 1230r15
+162i4 E452{short_integer} 162m46 162r46 206m7 206r15 1233m7 1233r15
+163i4 E440{short_integer} 163m46 163r46 199m7 199r15 1236m7 1236r15
+164i4 E438{short_integer} 164m46 164r46 192m7 192r15 1239m7 1239r15
+165i4 E423{short_integer} 165m46 165r46 185m7 185r15 1242m7 1242r15
+166i4 E103{short_integer} 166m46 166r46 1243m7 1243r15
+167i4 E456{short_integer} 167m46 167r46 178m7 178r15 1246m7 1246r15
+169a4 Sec_Default_Sized_Stacks(10|45R9) 880m32 880r32
+171a4 Local_Priority_Specific_Dispatching{string} 867r9
+172a4 Local_Interrupt_States{string} 870r27
+174b4 Is_Elaborated{boolean} 768r14 771m7 826r10 829m7
+176U14 finalize_library 176b14 758l8 758t24 884r35
+180U20*F1 181b<ada,gtk__table__finalize_spec>30 183s10
+187U20*F2 188b<ada,cardtable__finalize_spec>30 190s10
+194U20*F3 195b<ada,gtk__label__finalize_spec>30 197s10
+201U20*F4 202b<ada,gtk__menu__finalize_spec>30 204s10
+208U20*F5 209b<ada,gtk__menu_shell__finalize_spec>30 211s10
+215U20*F6 216b<ada,gtk__menu_item__finalize_spec>30 218s10
+222U20*F7 223b<ada,gtk__button__finalize_spec>30 225s10
+229U20*F8 230b<ada,gtk__action__finalize_spec>30 232s10
+236U20*F9 237b<ada,glib__menu_model__finalize_spec>30 239s10
+268U20*F10 269b<ada,gtk__print_operation__finalize_spec>30 271s10
+274U20*F11 275b<ada,gtk__dialog__finalize_spec>30 277s10
+280U20*F12 281b<ada,gtk__window__finalize_spec>30 283s10
+286U20*F13 287b<ada,gtk__text_view__finalize_spec>30 289s10
+292U20*F14 293b<ada,gtk__text_buffer__finalize_spec>30 295s10
+299U20*F15 300b<ada,gtk__text_child_anchor__finalize_spec>30 302s10
+305U20*F16 306b<ada,gtk__gentry__finalize_spec>30 308s10
+312U20*F17 313b<ada,gtk__image__finalize_spec>30 315s10
+319U20*F18 320b<ada,gtk__icon_set__finalize_spec>30 322s10
+325U20*F19 326b<ada,gtk__style_context__finalize_spec>30 328s10
+332U20*F20 333b<ada,gtk__settings__finalize_spec>30 335s10
+338U20*F21 339b<ada,gtk__status_bar__finalize_spec>30 341s10
+344U20*F22 345b<ada,gtk__notebook__finalize_spec>30 347s10
+351U20*F23 352b<ada,gtk__misc__finalize_spec>30 354s10
+357U20*F24 358b<ada,gtk__entry_completion__finalize_spec>30 360s10
+364U20*F25 365b<ada,gtk__box__finalize_spec>30 367s10
+371U20*F26 372b<ada,gtk__bin__finalize_spec>30 374s10
+377U20*F27 378b<ada,gtk__container__finalize_spec>30 380s10
+383U20*F28 384b<ada,gtk__cell_area__finalize_spec>30 386s10
+389U20*F29 390b<ada,gtk__cell_renderer__finalize_spec>30 392s10
+395U20*F30 396b<ada,gtk__widget__finalize_spec>30 398s10
+401U20*F31 402b<ada,gtk__tree_model__finalize_spec>30 404s10
+407U20*F32 408b<ada,gtk__text_tag_table__finalize_spec>30 410s10
+413U20*F33 414b<ada,gtk__style__finalize_spec>30 416s10
+419U20*F34 420b<ada,gtk__clipboard__finalize_spec>30 422s10
+426U20*F35 427b<ada,gtk__selection_data__finalize_spec>30 429s10
+433U20*F36 434b<ada,gtk__icon_source__finalize_spec>30 436s10
+439U20*F37 440b<ada,gtk__entry_buffer__finalize_spec>30 442s10
+445U20*F38 446b<ada,gtk__adjustment__finalize_spec>30 448s10
+451U20*F39 452b<ada,gtk__accel_group__finalize_spec>30 454s10
+457U20*F40 458b<ada,gdk__drag_contexts__finalize_spec>30 460s10
+463U20*F41 464b<ada,gdk__device__finalize_spec>30 466s10
+470U20*F42 471b<ada,gdk__screen__finalize_spec>30 473s10
+477U20*F43 478b<ada,gdk__pixbuf__finalize_spec>30 480s10
+484U20*F44 485b<ada,gdk__glcontext__finalize_spec>30 487s10
+490U20*F45 491b<ada,gdk__display__finalize_spec>30 493s10
+496U20*F46 497b<ada,gdk__monitor__finalize_spec>30 499s10
+502U20*F47 503b<ada,gdk__frame_clock__finalize_spec>30 505s10
+509U20*F48 510b<ada,gtk__print_context__finalize_spec>30 512s10
+516U20*F49 517b<ada,pango__layout__finalize_spec>30 519s10
+523U20*F50 524b<ada,pango__tabs__finalize_spec>30 526s10
+530U20*F51 531b<ada,pango__font_map__finalize_spec>30 533s10
+537U20*F52 538b<ada,pango__context__finalize_spec>30 540s10
+544U20*F53 545b<ada,pango__fontset__finalize_spec>30 547s10
+551U20*F54 552b<ada,pango__font_family__finalize_spec>30 554s10
+558U20*F55 559b<ada,pango__font_face__finalize_spec>30 561s10
+565U20*F56 566b<ada,gtk__text_tag__finalize_spec>30 568s10
+572U20*F57 573b<ada,pango__font__finalize_spec>30 575s10
+579U20*F58 580b<ada,pango__language__finalize_spec>30 582s10
+586U20*F59 587b<ada,pango__font_metrics__finalize_spec>30 589s10
+593U20*F60 594b<ada,pango__attributes__finalize_spec>30 596s10
+600U20*F61 601b<ada,gtk__text_mark__finalize_spec>30 603s10
+607U20*F62 608b<ada,gtk__target_list__finalize_spec>30 610s10
+614U20*F63 615b<ada,gtk__print_settings__finalize_spec>30 617s10
+621U20*F64 622b<ada,gtk__page_setup__finalize_spec>30 624s10
+628U20*F65 629b<ada,gtk__paper_size__finalize_spec>30 631s10
+635U20*F66 636b<ada,gtk__css_section__finalize_spec>30 638s10
+642U20*F67 643b<ada,gtk__cell_area_context__finalize_spec>30 645s10
+649U20*F68 650b<ada,gtk__builder__finalize_spec>30 652s10
+656U20*F69 657b<ada,glib__variant__finalize_spec>30 659s10
+663U20*F70 664b<ada,gdk__drawing_context__finalize_spec>30 666s10
+670U20*F71 671b<ada,gdk__device_tool__finalize_spec>30 673s10
+677U20*F72 678b<ada,glib__object__finalize_spec>30 680s10
+684U20*F73 685b<ada,gdk__frame_timings__finalize_spec>30 687s10
+691U20*F74 692b<ada,cardstack__finalize_spec>30 694s10
+698U20*F75 699b<ada,cards__finalize_spec>30 701s10
+705U20*F76 706b<ada,glib__finalize_spec>30 708s10
+712U20*F77 713b<ada,system__tasking__protected_objects__entries__finalize_spec>30
+. 715s10
+719U20*F78 720b<ada,system__pool_global__finalize_spec>30 722s10
+726U20*F79 727b<ada,ada__text_io__finalize_spec>30 729s10
+733U20*F80 734b<ada,system__storage_pools__subpools__finalize_spec>30 736s10
+740U20*F81 741b<ada,system__finalization_masters__finalize_spec>30 743s10
+746U20*F82 747b<ada,system__file_io__finalize_body>30 750s10
+753U20*Reraise_Library_Exception_If_Any 754b<ada,__gnat_reraise_library_exception_if_any>33
+. 756s10
+761U17*s_stalib_adafinal 762b<c,system__standard_library__adafinal>25 773s7
+764U17*Runtime_Finalize 765b<c,__gnat_runtime_finalize>25 772s7
+776P9 No_Param_Proc 777r28 818r34
+780i7*Main_Priority{integer} 781m25 781r25 830m7
+782i7*Time_Slice_Value{integer} 783m25 783r25 831m7
+784e7*WC_Encoding{character} 785m25 785r25 832m7
+786e7*Locking_Policy{character} 787m25 787r25 833m7
+788e7*Queuing_Policy{character} 789m25 789r25 834m7
+790e7*Task_Dispatching_Policy{character} 791m25 791r25 835m7
+792m7*Priority_Specific_Dispatching{6|67M9} 793m25 793r25 866m7
+794i7*Num_Specific_Dispatching{integer} 795m25 795r25 868m7
+796i7*Main_CPU{integer} 797m25 797r25 869m7
+798m7*Interrupt_States{6|67M9} 799m25 799r25 870m7
+800i7*Num_Interrupt_States{integer} 801m25 801r25 871m7
+802i7*Unreserve_All_Interrupts{integer} 803m25 803r25 872m7
+804i7*Detect_Blocking{integer} 805m25 805r25 873m7
+806i7*Default_Stack_Size{integer} 807m25 807r25 874m7
+808i7*Default_Secondary_Stack_Size{7|58I9} 809m25 809r25 878m7
+810i7*Leap_Seconds_Support{integer} 811m25 811r25 875m7
+812m7*Bind_Env_Addr{6|67M9} 813m25 813r25
+815U17*Runtime_Initialize 815>37 816b<c,__gnat_runtime_initialize>25 882s7
+815i37 Install_Handler{integer}
+818p7*Finalize_Library_Objects{776P9} 819m25 819r25 884m7
+820i7*Binder_Sec_Stacks_Count{natural} 821m27 821r27 879m7
+822m7*Default_Sized_SS_Pool{6|67M9} 823m27 823r27 880m7
+1249U14 Ada_Main_Program 1250b<ada,_ada_main>24 1277s7
+1258U17*Initialize 1258>29 1259b<c,__gnat_initialize>25 1275s7
+1258m29 Addr{6|67M9}
+1261U17*Finalize 1262b<c,__gnat_finalize>25 1279s7
+1263a7 SEH(integer) 1275m19 1275r19
+1265m7 Ensure_Reference{6|67M9} 1266r24
 X 6 system.ads
-37K9*System 4|3w6 4r6 5r6 9r16 10r16 34r14 35r14 5|7r6 168r57 168r90 784r39
-. 790r26 800r38 804r23 814r31 828r7 870r39 1244r14 1245r14 1248r36 1255r34
+37K9*System 4|3w6 4r6 5r6 9r16 10r16 34r14 35r14 5|7r6 169r57 169r90 792r39
+. 798r26 808r38 812r23 822r31 836r7 878r39 1254r14 1255r14 1258r36 1265r34
 . 6|156e11
-67M9*Address 4|9r23 10r23 34r21 35r21 5|784r46 790r33 804r30 814r38 1244r21
-. 1245r21 1248r43 1255r41
+67M9*Address 4|9r23 10r23 34r21 35r21 5|792r46 798r33 812r30 822r38 1254r21
+. 1255r21 1258r43 1265r41
 X 7 s-parame.ads
-51K16*Parameters 4|4w13 5|168r97 800r45 870r46 7|198e22
-58I9*Size_Type<long_integer> 5|800r56
-95i4*Runtime_Default_Sec_Stack_Size{58I9} 5|168r108 870r57
+51K16*Parameters 4|4w13 5|169r97 808r45 878r46 7|198e22
+58I9*Size_Type<long_integer> 5|808r56
+95i4*Runtime_Default_Sec_Stack_Size{58I9} 5|169r108 878r57
 X 8 s-restri.ads
-45K16*Restrictions 5|7w13 828m14 8|77e24
-52r4*Run_Time_Restrictions{9|322R9[49]} 5|828m27
+45K16*Restrictions 5|7w13 836m14 8|77e24
+52r4*Run_Time_Restrictions{9|322R9[49]} 5|836m27
 X 9 s-rident.ads
 318A9*Restriction_Flags(boolean)<85E9[8|49]>
 319A9*Restriction_Values(natural)<85E9[8|49]>
 320A9*Parameter_Flags(boolean)<85E9[8|49]>
 322R9*Restrictions_Info
-323a7*Set{318A9[8|49]} 5|829m10[8|49]
-329a7*Value{319A9[8|49]} 5|842m10[8|49]
-336a7*Violated{318A9[8|49]} 5|843m10[8|49]
-341a7*Count{319A9[8|49]} 5|856m10[8|49]
-349a7*Unknown{320A9[8|49]} 5|857m10[8|49]
+323a7*Set{318A9[8|49]} 5|837m10[8|49]
+329a7*Value{319A9[8|49]} 5|850m10[8|49]
+336a7*Violated{318A9[8|49]} 5|851m10[8|49]
+341a7*Count{319A9[8|49]} 5|864m10[8|49]
+349a7*Unknown{320A9[8|49]} 5|865m10[8|49]
 X 10 s-secsta.ads
-37K16*Secondary_Stack 4|5w13 5|168r64 10|430e27
-45R9*SS_Stack 5|168r80 10|330e14
+37K16*Secondary_Stack 4|5w13 5|169r64 10|430e27
+45R9*SS_Stack 5|169r80 10|330e14
 

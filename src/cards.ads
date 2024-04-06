@@ -27,4 +27,6 @@ package cards is
    --  procedure printCard(Self : in out suit);
    function getCardSelf (Self : in out suit) return String;
 
+
+
 end cards;

@@ -1,7 +1,10 @@
 with ada.Containers.Synchronized_Queue_Interfaces;
 with ada.Containers.Unbounded_Synchronized_Queues;
+with ada.Containers.Vectors;
 with Ada.Numerics.Discrete_Random;
 with Ada.Text_IO;
+
+with cardStack;
 
 with cards;
 
@@ -38,12 +41,12 @@ package CardTable is
    tableau : cardSpots;
 
 
-   --foundations declarations
-   type foundation is array(0..12) of cards.suit;
-   acesFoundation : foundation;
-   heartsFoundation : foundation;
-   spadesFoundation : foundation;
-   clubsFoundation : foundation;
+   --foundations declaration
+
+   acesFoundation : cardStack.Stack.Vector;
+   heartsFoundation : cardStack.Stack.Vector;
+   spadesFoundation : cardStack.Stack.Vector;
+   clubsFoundation : cardStack.Stack.Vector;
 
    --card table functions
    procedure initDrawPile;

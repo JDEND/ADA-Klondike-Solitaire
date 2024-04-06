@@ -7,6 +7,7 @@ b__main.o
 20240402191305 3a6bba41bb930a972cf0258374f788c7
 [BOUND OBJECT FILES]
 /home/jared/Documents/Wayne/CSC3200/Final/obj/cards.o
+/home/jared/Documents/Wayne/CSC3200/Final/obj/cardstack.o
 /home/jared/Documents/Wayne/CSC3200/Final/obj/deck.o
 /home/jared/Documents/Wayne/CSC3200/Final/obj/cardtable.o
 /home/jared/Documents/Wayne/CSC3200/Final/obj/buttons.o
