@@ -13,12 +13,24 @@ package body buttons is
       drawPileLocation := -1;
       DiscardPile.Set_Text("");
       Stock.Set_Text("[*]");
-      Btn_Draw.Set_Visible(True);
-      Btn_Return.Set_Visible(False);
+      makeButtonsStart;
 
       dealCards;
       
    end New_Game_Callback;
+
+   --sets button visibility on game start
+   procedure makeButtonsStart is
+   begin
+      Btn_Draw.Set_Visible(True);
+      Btn_Return.Set_Visible(False);
+      Btn_Down.Set_Visible(True);
+      Btn_Up.Set_Visible(True);
+      Btn_Left.Set_Visible(True);
+      Btn_Right.Set_Visible(True);
+      Btn_SelectDrop.Set_Visible(True);
+   end;
+   
 
    procedure Quit_Callback (Button : access Gtk_Button_Record'Class) is
    begin
@@ -67,4 +79,34 @@ package body buttons is
       end loop;
       Btn_Draw.Set_Visible(True);
    end;
+
+   --Functionality for selecting card(s) to be moved 04/05/24 - GV6507
+   procedure select_Callback (Button : access Gtk_Button_Record'Class) is
+   begin
+      if Btn_SelectDrop.Get_Label = "Select" then
+         Btn_SelectDrop.Set_Label("Drop");
+      else
+         Btn_SelectDrop.Set_Label("Select");
+      end if;    
+   end;
+   
+   --directional movement button functions, moves "cursor" around the game
+   --area 04/05/24 -GV6507
+   procedure up_Callback (Button : access Gtk_Button_Record'Class)is
+   begin
+      Put_Line("up");
+   end;
+   procedure down_Callback (Button : access Gtk_Button_Record'Class)is
+   begin
+      Put_Line("down");
+   end;
+   procedure left_Callback (Button : access Gtk_Button_Record'Class)is
+   begin
+      Put_Line("left");
+   end;
+   procedure right_Callback (Button : access Gtk_Button_Record'Class)is
+   begin
+      Put_Line("right");
+   end;
+   
 end buttons;

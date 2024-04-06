@@ -42,7 +42,6 @@ package CardTable is
 
 
    --foundations declaration
-
    acesFoundation : cardStack.Stack.Vector;
    heartsFoundation : cardStack.Stack.Vector;
    spadesFoundation : cardStack.Stack.Vector;

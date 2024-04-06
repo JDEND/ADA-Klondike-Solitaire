@@ -62,6 +62,21 @@ procedure main is
       Gtk_New(Btn_Return, "Reset Draw");
       Attach_Defaults(Table_Main, Btn_Return, 4,5,1,2);
 
+      Gtk_New(Btn_Up, "Up");
+      Attach_Defaults(Table_Main, Btn_Up, 9,11,10,11);
+
+      Gtk_New(Btn_Down, "Down");
+      Attach_Defaults(Table_Main, Btn_Down, 9,11,12,13);
+
+      Gtk_New(Btn_Left, "Left");
+      Attach_Defaults(Table_Main, Btn_Left, 9,10,11,12);
+
+      Gtk_New(Btn_Right, "Right");
+      Attach_Defaults(Table_Main, Btn_Right, 10,11,11,12);
+
+      Gtk_New(Btn_SelectDrop, "Select");
+      Attach_Defaults(Table_Main, Btn_SelectDrop, 9,11,9,10);
+
       --Add placeholders
       Gtk_New(Blank, "");
       Attach_Defaults(Table_Main, Blank, 1,10,2,10);
@@ -95,12 +110,22 @@ procedure main is
       Btn_Quit.On_Clicked(Quit_Callback'Access);
       Btn_Draw.On_Clicked(Draw_Callback'Access);
       Btn_Return.On_Clicked(Return_Callback'Access);
+      Btn_SelectDrop.On_Clicked(select_Callback'Access);
+      Btn_Down.On_Clicked(down_Callback'Access);
+      Btn_Up.On_Clicked(up_Callback'Access);
+      Btn_Left.On_Clicked(left_Callback'Access);
+      Btn_Right.On_Clicked(right_Callback'Access);
 
       -- Show all widgets
       Show_All(Window_Main);
       --disables draw button until new game is started
       Btn_Draw.Set_Visible(False);
       Btn_Return.Set_Visible(False);
+      Btn_Down.Set_Visible(False);
+      Btn_Up.Set_Visible(False);
+      Btn_Left.Set_Visible(False);
+      Btn_Right.Set_Visible(False);
+      Btn_SelectDrop.Set_Visible(False);
 
 
       -- Start the main loop
