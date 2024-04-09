@@ -54,4 +54,11 @@ package CardTable is
    procedure initializeTable;
    procedure dealCards;
 
+   --Pile Placeholders
+   diamonds : Gtk_Label;
+   hearts : Gtk_Label;
+   spades : Gtk_Label;
+   clubs : Gtk_Label;
+
+
 end CardTable;

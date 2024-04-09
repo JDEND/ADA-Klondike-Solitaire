@@ -27,12 +27,6 @@ procedure main is
    --Blank Space
    Blank : Gtk_Label;
 
-   --Pile Placeholders
-   diamonds : Gtk_Label;
-   hearts : Gtk_Label;
-   spades : Gtk_Label;
-   clubs : Gtk_Label;
-
    -- Entry point
    procedure Main is
    begin
@@ -48,10 +42,6 @@ procedure main is
       -- Create a table for layout
       Gtk_New(Table_Main, 7, 7, False);
       add(Window_Main, Table_Main);
-      Table_Main.Override_Background_Color(Gtk.Enums.Gtk_State_Flag_Normal,
-                                           (65.0, 192.0, 35.0, 1.0));
-      Window_Main.Override_Background_Color(Gtk.Enums.Gtk_State_Flag_Normal,
-                                            (65.0, 192.0, 35.0, 1.0));
 
       -- Add buttons to the table
       Gtk_New(Btn_NewGame, "New Game");
@@ -99,8 +89,6 @@ procedure main is
       Gtk_New(clubs, "clubs");
       Attach_Defaults(Table_Main, clubs, 9,10,1,2);
 
-      clubs.Override_Background_Color(Gtk_State_Flag_Normal, (255.0,
-                                      0.0, 0.0, 1.0));
       --initializes card deck
       initDrawPile;
       initializeTable;

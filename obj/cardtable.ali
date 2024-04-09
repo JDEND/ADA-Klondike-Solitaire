@@ -20,7 +20,7 @@ RV NO_ELABORATION_CODE
 RV SPARK_05
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U cardtable%b		cardtable.adb		459d115e OO PK
+U cardtable%b		cardtable.adb		7478cc84 OO PK
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W system%s		system.ads		system.ali
@@ -30,7 +30,7 @@ Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
 
-U cardtable%s		cardtable.ads		5009762f EE OO PF PK IL
+U cardtable%s		cardtable.ads		61ecabf5 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 W ada.containers.synchronized_queue_interfaces%s
@@ -80,7 +80,7 @@ D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
 D cards.ads		20240406004606 010c8554 cards%s
 D cardstack.ads		20240406004309 7b55c7a3 cardstack%s
-D cardtable.ads		20240406004458 2cc812b2 cardtable%s
+D cardtable.ads		20240409174957 1d2dcf68 cardtable%s
 D cardtable.adb		20240406004450 695503ec cardtable%b
 D deck.ads		20240406004545 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
@@ -289,7 +289,7 @@ X 23 cardstack.ads
 3K9*cardStack 10e14 24|7w6 45r21 46r23 47r23 48r22
 7K12*Stack[7|73] 24|45r31 46r33 47r33 48r32
 X 24 cardtable.ads
-17K9*CardTable 57l5 57e14 25|1b14 115l5 115t14
+17K9*CardTable 64l5 64e14 25|1b14 115l5 115t14
 19a4*drawPile{26|4A9} 25|9m7 35r22 36m7 36r26 37m7 58r36 60r36 62r36 64r36
 . 66r36 68r36 70r36 79m44 79r44 81m44 81r44 83m44 83r44 85m44 85r44 87m44
 . 87r44 89m44 89r44 91m44 91r44 97r28
@@ -319,6 +319,10 @@ X 24 cardtable.ads
 53i40 swapLocation{integer} 25|32b40 36r35 37r16
 54U14*initializeTable 25|40b14 47t7
 55U14*dealCards 25|51b14 112t7
+58p4*diamonds{73|201P9}
+59p4*hearts{73|201P9}
+60p4*spades{73|201P9}
+61p4*clubs{73|201P9}
 X 25 cardtable.adb
 13I12 randomRange{integer} 15r35 18r8
 14K12 Rand[13|44] 16r8
@@ -366,7 +370,7 @@ X 72 gtk-enums.ads
 883V13*Convert{string} 51|59i21 52|50i21
 X 73 gtk-label.ads
 198K13*Label 24|13w10 13r25 73|991e14
-201P9*Gtk_Label(200R9) 24|33r18 34r12 40r44
+201P9*Gtk_Label(200R9) 24|33r18 34r12 40r44 58r15 59r13 60r13 61r12
 217V13*Gtk_Label_New{201P9} 25|44s29
 521U14*Set_Text 25|79R35 81R35 83R35 85R35 87R35 89R35 91R35 105R20 106R20
 . 107R20 108R20 109R20 110R20 111R20

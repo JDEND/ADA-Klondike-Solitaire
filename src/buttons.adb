@@ -17,6 +17,9 @@ package body buttons is
       dealCards;
 
       pos_x := 0; pos_y := 0;
+      tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                         (255.0, 0.0, 0.0, 1.0)
+                                                        );
       
    end New_Game_Callback;
 
@@ -85,7 +88,9 @@ package body buttons is
    procedure select_Callback (Button : access Gtk_Button_Record'Class) is
    begin
       if Btn_SelectDrop.Get_Label = "Select" then
-         Btn_SelectDrop.Set_Label("Drop");
+         if pos_x >= 0 and pos_y >= 0 then
+            Btn_SelectDrop.Set_Label("Drop");
+         end if;
       else
          Btn_SelectDrop.Set_Label("Select");
       end if;    
@@ -97,6 +102,16 @@ package body buttons is
    begin
       if pos_y > -1 then
          pos_y := pos_y - 1;
+         tableau(pos_y + 1, pos_x).Override_Background_Color(
+                                                             Gtk_State_Flag_Normal, 
+                                                             (255.0, 255.0,
+                                                              255.0, 1.0)
+                                                            );
+         if pos_y = -1 then
+            diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                               (255.0, 0.0, 0.0, 1.0)
+                                              );
+         end if;
       end if;
 
       if pos_y >= 0 and pos_x >= 0 then
@@ -116,19 +131,46 @@ package body buttons is
    end;
    procedure down_Callback (Button : access Gtk_Button_Record'Class)is
    begin
+      if pos_y = -1 then
+         diamonds.Override_Background_Color(
+                                            Gtk_State_Flag_Normal, 
+                                            (255.0, 255.0,
+                                             255.0, 1.0)
+                                           );
+         hearts.Override_Background_Color(
+                                          Gtk_State_Flag_Normal, 
+                                          (255.0, 255.0,
+                                           255.0, 1.0)
+                                         );
+         clubs.Override_Background_Color(
+                                         Gtk_State_Flag_Normal, 
+                                         (255.0, 255.0,
+                                          255.0, 1.0)
+                                        );
+         spades.Override_Background_Color(
+                                          Gtk_State_Flag_Normal, 
+                                          (255.0, 255.0,
+                                           255.0, 1.0)
+                                         );
+      end if;
+
       if pos_y < 18 then
          pos_y := pos_y + 1;
       end if;
+      
 
       if pos_y >= 0 and pos_x >= 0 then
          tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
                                                          (255.0, 0.0, 0.0, 1.0)
                                                         );
-         tableau(pos_y - 1, pos_x).Override_Background_Color(
-                                                             Gtk_State_Flag_Normal, 
-                                                             (255.0, 255.0,
-                                                              255.0,1.0)
-                                                            );
+         if pos_y > 0 then
+            tableau(pos_y - 1, 
+                    pos_x).Override_Background_Color(
+                                                     Gtk_State_Flag_Normal, 
+                                                     (255.0, 255.0,
+                                                      255.0,1.0)
+                                                    );
+         end if;
       end if;
 
       Put_Line("Pos_x: " & Integer'Image(pos_x));
@@ -139,6 +181,41 @@ package body buttons is
    begin
       if pos_x > 0 then
          pos_x := pos_x - 1;
+      end if;
+
+      if pos_y = -1 then
+         case pos_x is
+            when 3 =>
+               clubs.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (255.0, 0.0, 0.0, 1.0)
+                                                 );
+            when 2 =>
+               clubs.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (255.0, 255.0,
+                                                   255.0, 1.0)
+                                                 );
+               spades.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                (255.0, 0.0, 0.0, 1.0)
+                                               );
+            when 1 =>
+               spades.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                (255.0, 255.0,
+                                                 255.0, 1.0)
+                                               );
+               hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                (255.0, 0.0, 0.0, 1.0)
+                                               );
+            when 0 =>
+               hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                (255.0, 255.0,
+                                                 255.0, 1.0)
+                                               );
+               diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                               (255.0, 0.0, 0.0, 1.0)
+                                              );
+            when others =>
+               Put_Line("Broke");
+         end case;
       end if;
 
       if pos_y >= 0 and pos_x >= 0 then
@@ -158,11 +235,47 @@ package body buttons is
    end;
    procedure right_Callback (Button : access Gtk_Button_Record'Class)is
    begin
-      if pos_x < 8 and pos_y = -1 then
+      if pos_x < 3 and pos_y = -1 then
          pos_x := pos_x + 1;
       elsif pos_x < 6 and pos_y >= 0 then
          pos_x := pos_x + 1;
       end if;
+
+      if pos_y = -1 then
+         case pos_x is
+            when 0 =>
+               diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                         (255.0, 0.0, 0.0, 1.0)
+                                                        );
+            when 1 =>
+               diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (255.0, 255.0,
+                                                   255.0, 1.0)
+                                                 );
+               hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                (255.0, 0.0, 0.0, 1.0)
+                                               );
+            when 2 =>
+               hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (255.0, 255.0,
+                                                   255.0, 1.0)
+                                                 );
+               spades.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                (255.0, 0.0, 0.0, 1.0)
+                                               );
+            when 3 =>
+               spades.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (255.0, 255.0,
+                                                   255.0, 1.0)
+                                                 );
+               clubs.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                (255.0, 0.0, 0.0, 1.0)
+                                               );
+            when others =>
+               Put_Line("Broke");
+         end case;
+      end if;
+
 
       if pos_y >= 0 and pos_x >= 0 then
          tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 

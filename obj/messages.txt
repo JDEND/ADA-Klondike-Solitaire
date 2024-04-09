@@ -1,4 +1,5 @@
 
+
 Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
 gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
 Compile
@@ -8,4 +9,56 @@ Bind
    [Ada]          main.ali
 Link
    [link]         main.adb
-[2024-04-08 21:32:47] process terminated successfully, elapsed time: 00.79s
+[2024-04-09 14:17:27] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 14:18:11] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 14:18:51] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 14:19:55] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 14:50:14] process terminated successfully, elapsed time: 00.70s
