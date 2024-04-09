@@ -165,5 +165,4 @@ package body cards is
       end if;
    end getCardSelf;
 
-
 end cards;

@@ -7,6 +7,4 @@ package cardStack is
    package Stack is new ada.Containers.Vectors(Index_Type => Natural, 
                                                Element_Type => cards.suit,
                                               "=" => cardStack."=");
-   
-
 end cardStack;

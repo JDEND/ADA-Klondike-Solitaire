@@ -1,25 +1,26 @@
 with Gtk.Main;
 package body buttons is
 
+   --starts a new game clock, resets and shuffles the game deck, and sets the
+   --initial draw location back to zero 04/02/24 - GV6507
    procedure New_Game_Callback (Button : access Gtk_Button_Record'Class) is
    begin
-
-      --starts a new game clock, resets and shuffles the game deck, and sets the
-      --initial draw location back to zero, will have other functions in the
-      --future 04/02/24 - GV6507
       startTime := Clock;
       --  Put_Line(Image(startTime));
-      shuffleDeck;
-      drawPileLocation := -1;
+
       DiscardPile.Set_Text("");
       Stock.Set_Text("[*]");
-      makeButtonsStart;
 
+      shuffleDeck;
+      drawPileLocation := -1;
+      makeButtonsStart;
       dealCards;
+
+      pos_x := 0; pos_y := 0;
       
    end New_Game_Callback;
 
-   --sets button visibility on game start
+   --sets button visibility on game start 04/05/24 - GV6507
    procedure makeButtonsStart is
    begin
       Btn_Draw.Set_Visible(True);
@@ -31,7 +32,6 @@ package body buttons is
       Btn_SelectDrop.Set_Visible(True);
    end;
    
-
    procedure Quit_Callback (Button : access Gtk_Button_Record'Class) is
    begin
       -- Code for the exit button functionality, may have additional functions
@@ -65,7 +65,8 @@ package body buttons is
       end if;
    end Draw_Callback;
 
-   --returns all cards in the discard to the stock pile
+   --Resets the stock pile by flipping all of the cards in the discard, and
+   --returning them, in order, into the draw pile 04/03/24 - GV6507
    procedure Return_Callback (Button : access Gtk_Button_Record'Class) is
       temp : cards.suit;
    begin
@@ -94,19 +95,89 @@ package body buttons is
    --area 04/05/24 -GV6507
    procedure up_Callback (Button : access Gtk_Button_Record'Class)is
    begin
-      Put_Line("up");
+      if pos_y > -1 then
+         pos_y := pos_y - 1;
+      end if;
+
+      if pos_y >= 0 and pos_x >= 0 then
+         tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                         (255.0, 0.0, 0.0, 1.0)
+                                                        );
+         tableau(pos_y + 1, pos_x).Override_Background_Color(
+                                                             Gtk_State_Flag_Normal, 
+                                                             (255.0, 255.0,
+                                                              255.0, 1.0)
+                                                            );
+      end if;
+      
+      Put_Line("Pos_x: " & Integer'Image(pos_x));
+      Put_Line("Pos_y: " & Integer'Image(pos_y));
+      Put_Line("");
    end;
    procedure down_Callback (Button : access Gtk_Button_Record'Class)is
    begin
-      Put_Line("down");
+      if pos_y < 18 then
+         pos_y := pos_y + 1;
+      end if;
+
+      if pos_y >= 0 and pos_x >= 0 then
+         tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                         (255.0, 0.0, 0.0, 1.0)
+                                                        );
+         tableau(pos_y - 1, pos_x).Override_Background_Color(
+                                                             Gtk_State_Flag_Normal, 
+                                                             (255.0, 255.0,
+                                                              255.0,1.0)
+                                                            );
+      end if;
+
+      Put_Line("Pos_x: " & Integer'Image(pos_x));
+      Put_Line("Pos_y: " & Integer'Image(pos_y));
+      Put_Line("");
    end;
    procedure left_Callback (Button : access Gtk_Button_Record'Class)is
    begin
-      Put_Line("left");
+      if pos_x > 0 then
+         pos_x := pos_x - 1;
+      end if;
+
+      if pos_y >= 0 and pos_x >= 0 then
+         tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                         (255.0, 0.0, 0.0, 1.0)
+                                                        );
+         tableau(pos_y, pos_x + 1).Override_Background_Color(
+                                                             Gtk_State_Flag_Normal, 
+                                                             (255.0, 255.0,
+                                                              255.0, 1.0)
+                                                            );
+      end if;
+      
+      Put_Line("Pos_x: " & Integer'Image(pos_x));
+      Put_Line("Pos_y: " & Integer'Image(pos_y));
+      Put_Line("");
    end;
    procedure right_Callback (Button : access Gtk_Button_Record'Class)is
    begin
-      Put_Line("right");
+      if pos_x < 8 and pos_y = -1 then
+         pos_x := pos_x + 1;
+      elsif pos_x < 6 and pos_y >= 0 then
+         pos_x := pos_x + 1;
+      end if;
+
+      if pos_y >= 0 and pos_x >= 0 then
+         tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                         (255.0, 0.0, 0.0, 1.0)
+                                                        );
+         tableau(pos_y, pos_x - 1).Override_Background_Color(
+                                                             Gtk_State_Flag_Normal, 
+                                                             (255.0, 255.0,
+                                                              255.0, 1.0)
+                                                            );
+      end if;
+
+      Put_Line("Pos_x: " & Integer'Image(pos_x));
+      Put_Line("Pos_y: " & Integer'Image(pos_y));
+      Put_Line("");
    end;
    
 end buttons;

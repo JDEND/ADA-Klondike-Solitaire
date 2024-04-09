@@ -22,8 +22,8 @@ D a-except.ads		20230707070819 a7106115 ada.exceptions%s
 D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
 D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D cards.ads		20240405013620 010c8554 cards%s
-D deck.ads		20240321223612 3e4d350d deck%s
+D cards.ads		20240406004606 010c8554 cards%s
+D deck.ads		20240406004545 3e4d350d deck%s
 D deck.adb		20240405005903 47d6ee58 deck%b
 D system.ads		20230707070819 4635ec04 system%s
 D s-exctab.ads		20230707070819 54135002 system.exception_table%s
@@ -39,29 +39,29 @@ D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
 G a e
 G c b b b [b deck 1 1 none]
 G c s s s [s deck 2 1 none]
-G c Z s s [TcarddeckBIP deck 3 4 none]
-G c Z s b [initializedeck deck 6 14 none]
+G c Z s s [TcarddeckBIP deck 4 4 none]
+G c Z s b [initializedeck deck 7 14 none]
 G r s suit [b deck 1 1 none] [suitIP cards 15 9 none]
 G r s suit [s deck 2 1 none] [suitIP cards 15 9 none]
-G r s suit [TcarddeckBIP deck 3 4 none] [suitIP cards 15 9 none]
-G r c none [initializedeck deck 6 14 none] [setsuittype cards 23 14 none]
+G r s suit [TcarddeckBIP deck 4 4 none] [suitIP cards 15 9 none]
+G r c none [initializedeck deck 7 14 none] [setsuittype cards 23 14 none]
 X 6 cards.ads
-1K9*cards 32e10 7|1w6 3r37 8|5r16 5r40 5r66 6r17 6r41 6r65 7r18 7r44 7r69
+1K9*cards 30e10 7|1w6 4r37 8|5r16 5r40 5r66 6r17 6r41 6r65 7r18 7r44 7r69
 . 8r16 8r41 8r67 9r17 11r15 11r38 11r63 12r16 12r40 12r63 13r17 13r42 13r66
 . 14r15 14r39 14r64 15r16 17r16 17r40 17r66 18r17 18r42 18r66 19r18 19r44
 . 19r69 20r16 20r41 20r67 21r17 23r18 23r43 23r70 24r19 24r45 24r70 25r20
 . 25r47 26r19 26r44 26r70 27r20 27r46
-15R9*suit<5R9> 19e14 7|3r43 8|5r22 5r46 5r72 6r23 6r47 6r71 7r24 7r50 7r75
+15R9*suit<5R9> 19e14 7|4r43 8|5r22 5r46 5r72 6r23 6r47 6r71 7r24 7r50 7r75
 . 8r22 8r47 8r73 9r23 11r21 11r44 11r69 12r22 12r46 12r69 13r23 13r48 13r72
 . 14r21 14r45 14r70 15r22 17r22 17r46 17r72 18r23 18r48 18r72 19r24 19r50
 . 19r75 20r22 20r47 20r73 21r23 23r24 23r49 23r76 24r25 24r51 24r76 25r26
 . 25r53 26r25 26r50 26r76 27r26 27r52
 23U14*setSuitType 8|47s25 50s25 53s25 56s25
 X 7 deck.ads
-2K9*Deck 10l5 10e9 8|1b14 60l5 60t9
-3A9*cardDeck(6|15R9)<integer> 5r18
-5a4*stdCardDeck{3A9} 8|33m7 47m10 47r10 50m10 50r10 53m10 53r10 56m10 56r10
-6U14*initializeDeck 8|31b14 58t7
+2K9*Deck 9l5 9e9 8|1b14 60l5 60t9
+4A9*cardDeck(6|15R9)<integer> 6r18
+6a4*stdCardDeck{4A9} 8|33m7 47m10 47r10 50m10 50r10 53m10 53r10 56m10 56r10
+7U14*initializeDeck 8|31b14 58t7
 X 8 deck.adb
 5r4 aceSpades{6|15R9} 33r23
 5r28 twoSpades{6|15R9} 33r34

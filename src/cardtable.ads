@@ -51,7 +51,6 @@ package CardTable is
    procedure initDrawPile;
    procedure shuffleDeck;
    procedure swapCard(index : Integer; swapLocation : Integer);
-   procedure resetStock;
    procedure initializeTable;
    procedure dealCards;
 

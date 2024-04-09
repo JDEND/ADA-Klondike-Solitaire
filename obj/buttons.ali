@@ -7,28 +7,33 @@ P SS ZX
 RN
 RV NO_CALENDAR
 RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_DISPATCH
 RV NO_DISPATCHING_CALLS
+RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U buttons%b		buttons.adb		ed144d5f NE OO PK IL
+U buttons%b		buttons.adb		73366906 NE OO PK IL
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W gtk%s			gtk.ads			gtk.ali
 W gtk.main%s		gtk-main.adb		gtk-main.ali
 Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
 
-U buttons%s		buttons.ads		43863575 EE NE OO PK IL
+U buttons%s		buttons.ads		7c8b1384 EE NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.calendar%s	a-calend.adb		a-calend.ali
 W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
@@ -37,6 +42,7 @@ W cards%s		cards.adb		cards.ali
 W cardtable%s		cardtable.adb		cardtable.ali
 W gtk%s			gtk.ads			gtk.ali
 W gtk.button%s		gtk-button.adb		gtk-button.ali
+W gtk.enums%s		gtk-enums.adb		gtk-enums.ali
 W gtk.label%s		gtk-label.adb		gtk-label.ali
 
 D ada.ads		20230707070819 76789da1 ada%s
@@ -59,14 +65,14 @@ D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
-D buttons.ads		20240406002937 2161df68 buttons%s
-D buttons.adb		20240406003155 2af1371f buttons%b
+D buttons.ads		20240409012524 8ce0d22e buttons%s
+D buttons.adb		20240409013244 19521e00 buttons%b
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
-D cards.ads		20240405013620 010c8554 cards%s
-D cardstack.ads		20240406000100 7b55c7a3 cardstack%s
-D cardtable.ads		20240406000326 5e0e34b6 cardtable%s
-D deck.ads		20240321223612 3e4d350d deck%s
+D cards.ads		20240406004606 010c8554 cards%s
+D cardstack.ads		20240406004309 7b55c7a3 cardstack%s
+D cardtable.ads		20240406004458 2cc812b2 cardtable%s
+D deck.ads		20240406004545 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
 D gdk-device.ads	20240229103412 873a4dfe gdk.device%s
@@ -150,11 +156,13 @@ D pango-tabs.ads	20240229103412 0c575925 pango.tabs%s
 D system.ads		20230707070819 4635ec04 system%s
 D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
 D s-exctab.ads		20230707070819 54135002 system.exception_table%s
 D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
 D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
 D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
 D s-linux.ads		20230707070818 ed0b8aee system.linux%s
 D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
 D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
@@ -182,99 +190,112 @@ D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
 G a e
-G c Z s b [new_game_callback buttons 18 14 none]
-G c Z s b [quit_callback buttons 19 14 none]
-G c Z s b [draw_callback buttons 20 14 none]
-G c Z s b [return_callback buttons 21 14 none]
-G c Z s b [select_callback buttons 22 14 none]
-G c Z s b [up_callback buttons 23 14 none]
-G c Z s b [down_callback buttons 24 14 none]
-G c Z s b [left_callback buttons 25 14 none]
-G c Z s b [right_callback buttons 26 14 none]
-G c Z s b [makebuttonsstart buttons 28 14 none]
-G r c none [new_game_callback buttons 18 14 none] [shuffledeck cardtable 52 14 none]
-G r c none [new_game_callback buttons 18 14 none] [set_text gtk__label 521 14 none]
-G r c none [new_game_callback buttons 18 14 none] [set_visible gtk__widget 2303 14 none]
-G r c none [new_game_callback buttons 18 14 none] [dealcards cardtable 56 14 none]
-G r c none [quit_callback buttons 19 14 none] [main_quit gtk__main 205 14 none]
-G r s suit [draw_callback buttons 20 14 none] [suitIP cards 15 9 none]
-G r c none [draw_callback buttons 20 14 none] [getcardself cards 28 13 none]
-G r c none [draw_callback buttons 20 14 none] [set_text gtk__label 521 14 none]
-G r c none [draw_callback buttons 20 14 none] [set_visible gtk__widget 2303 14 none]
-G r s suit [return_callback buttons 21 14 none] [suitIP cards 15 9 none]
-G r c none [return_callback buttons 21 14 none] [set_visible gtk__widget 2303 14 none]
-G r c none [return_callback buttons 21 14 none] [set_text gtk__label 521 14 none]
-G r c none [select_callback buttons 22 14 none] [get_label gtk__button 297 13 none]
-G r c none [select_callback buttons 22 14 none] [set_label gtk__button 304 14 none]
-G r c none [makebuttonsstart buttons 28 14 none] [set_visible gtk__widget 2303 14 none]
+G c Z s b [new_game_callback buttons 20 14 none]
+G c Z s b [quit_callback buttons 21 14 none]
+G c Z s b [draw_callback buttons 22 14 none]
+G c Z s b [return_callback buttons 23 14 none]
+G c Z s b [select_callback buttons 25 14 none]
+G c Z s b [up_callback buttons 26 14 none]
+G c Z s b [down_callback buttons 27 14 none]
+G c Z s b [left_callback buttons 28 14 none]
+G c Z s b [right_callback buttons 29 14 none]
+G c Z s b [makebuttonsstart buttons 31 14 none]
+G r c none [new_game_callback buttons 20 14 none] [set_text gtk__label 521 14 none]
+G r c none [new_game_callback buttons 20 14 none] [shuffledeck cardtable 52 14 none]
+G r c none [new_game_callback buttons 20 14 none] [set_visible gtk__widget 2303 14 none]
+G r c none [new_game_callback buttons 20 14 none] [dealcards cardtable 55 14 none]
+G r c none [quit_callback buttons 21 14 none] [main_quit gtk__main 205 14 none]
+G r s suit [draw_callback buttons 22 14 none] [suitIP cards 15 9 none]
+G r c none [draw_callback buttons 22 14 none] [getcardself cards 28 13 none]
+G r c none [draw_callback buttons 22 14 none] [set_text gtk__label 521 14 none]
+G r c none [draw_callback buttons 22 14 none] [set_visible gtk__widget 2303 14 none]
+G r s suit [return_callback buttons 23 14 none] [suitIP cards 15 9 none]
+G r c none [return_callback buttons 23 14 none] [set_visible gtk__widget 2303 14 none]
+G r c none [return_callback buttons 23 14 none] [set_text gtk__label 521 14 none]
+G r c none [select_callback buttons 25 14 none] [get_label gtk__button 297 13 none]
+G r c none [select_callback buttons 25 14 none] [set_label gtk__button 304 14 none]
+G r c none [up_callback buttons 26 14 none] [override_background_color gtk__widget 2701 14 none]
+G r c none [down_callback buttons 27 14 none] [override_background_color gtk__widget 2701 14 none]
+G r c none [left_callback buttons 28 14 none] [override_background_color gtk__widget 2701 14 none]
+G r c none [right_callback buttons 29 14 none] [override_background_color gtk__widget 2701 14 none]
+G r c none [makebuttonsstart buttons 31 14 none] [set_visible gtk__widget 2303 14 none]
 X 1 ada.ads
 16K9*Ada 20e8 21|1w6 1r15 3r6 3r24 4r6 4r35 5r6 5r23
 X 2 a-calend.ads
 36K13*Calendar 409e17 21|3w10 3r28 4r10 4r39
-42I9*Time<222I9> 21|30r16 31r14
-56V13*Clock{42I9} 22|10s20
+42I9*Time<222I9> 21|34r16 35r14
+56V13*Clock{42I9} 22|8s20
 222I9 Time_Rep<long_long_integer>
 X 3 a-calfor.ads
 24K22*Formatting 215e28 21|4w19 4r48
 X 8 a-cusyqu.ads
 88W19*Queue<7|40R9[27|24]>
-94Y24 Enqueue 22|59s22[27|26] 78s20[27|26]
-96Y24 Dequeue 22|56s20[27|26] 76s22[27|26]
+94Y24 Enqueue 22|59s22[27|26] 79s20[27|26]
+96Y24 Dequeue 22|56s20[27|26] 77s22[27|26]
 X 13 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[9|111]>
 X 18 a-textio.ads
 57K13*Text_IO 727e16 21|5w10 5r27
-508U14*Put_Line 22|97s7 101s7 105s7 109s7
+508U14*Put_Line 22|113s7 114s7 115s7 134s7 135s7 136s7 155s7 156s7 157s7
+. 178s7 179s7 180s7
 X 21 buttons.ads
-15K9*buttons 46l5 46e12 22|2b14 112l5 112t12
-18U14*New_Game_Callback 18^33 22|4b14 20l8 20t25
-18p33 Button(73|73R9) 22|4b33
-19U14*Quit_Callback 19^29 22|35b14 45l8 45t21
-19p29 Button(73|73R9) 22|35b29
-20U14*Draw_Callback 20^29 22|52b14 66l8 66t21
-20p29 Button(73|73R9) 22|52b29
-21U14*Return_Callback 21^31 22|69b14 81t7
-21p31 Button(73|73R9) 22|69b31
-22U14*select_Callback 22^31 22|84b14 91t7
-22p31 Button(73|73R9) 22|84b31
-23U14*up_Callback 23^27 22|95b14 98t7
-23p27 Button(73|73R9) 22|95b27
-24U14*down_Callback 24^29 22|99b14 102t7
-24p29 Button(73|73R9) 22|99b29
-25U14*left_Callback 25^29 22|103b14 106t7
-25p29 Button(73|73R9) 22|103b29
-26U14*right_Callback 26^30 22|107b14 110t7
-26p30 Button(73|73R9) 22|107b30
-28U14*makeButtonsStart 22|16s7 23b14 32t7
-30i4*startTime{2|42I9} 22|10m7
-31i4*endTime{2|42I9}
-34p4*Btn_NewGame{73|74P9}
-35p4*Btn_Quit{73|74P9}
-36p4*Btn_Draw{73|74P9} 22|25r7 62r13 80r7
-37p4*Btn_Return{73|74P9} 22|26r7 63r13 72r7
-40p4*Btn_Up{73|74P9} 22|28r7
-41p4*Btn_Down{73|74P9} 22|27r7
-42p4*Btn_Left{73|74P9} 22|29r7
-43p4*Btn_Right{73|74P9} 22|30r7
-44p4*Btn_SelectDrop{73|74P9} 22|31r7 86r10 87r10 89r10
+16K9*buttons 54l5 54e12 22|2b14 183l5 183t12
+20U14*New_Game_Callback 20^33 22|6b14 21l8 21t25
+20p33 Button(73|73R9) 22|6b33
+21U14*Quit_Callback 21^29 22|35b14 45l8 45t21
+21p29 Button(73|73R9) 22|35b29
+22U14*Draw_Callback 22^29 22|52b14 66l8 66t21
+22p29 Button(73|73R9) 22|52b29
+23U14*Return_Callback 23^31 22|70b14 82t7
+23p31 Button(73|73R9) 22|70b31
+25U14*select_Callback 25^31 22|85b14 92t7
+25p31 Button(73|73R9) 22|85b31
+26U14*up_Callback 26^27 22|96b14 116t7
+26p27 Button(73|73R9) 22|96b27
+27U14*down_Callback 27^29 22|117b14 137t7
+27p29 Button(73|73R9) 22|117b29
+28U14*left_Callback 28^29 22|138b14 158t7
+28p29 Button(73|73R9) 22|138b29
+29U14*right_Callback 29^30 22|159b14 181t7
+29p30 Button(73|73R9) 22|159b30
+31U14*makeButtonsStart 22|16s7 24b14 33t7
+34i4*startTime{2|42I9} 22|8m7
+35i4*endTime{2|42I9}
+38p4*Btn_NewGame{73|74P9}
+39p4*Btn_Quit{73|74P9}
+40p4*Btn_Draw{73|74P9} 22|26r7 62r13 81r7
+41p4*Btn_Return{73|74P9} 22|27r7 63r13 73r7
+44p4*Btn_Up{73|74P9} 22|29r7
+45p4*Btn_Down{73|74P9} 22|28r7
+46p4*Btn_Left{73|74P9} 22|30r7
+47p4*Btn_Right{73|74P9} 22|31r7
+48p4*Btn_SelectDrop{73|74P9} 22|32r7 87r10 88r10 90r10
+51i4*pos_x{integer} 22|19m7 102r25 103r25 106r29 113r42 123r25 124r25 127r29
+. 134r42 140r10 141m10 141r19 144r25 145r25 148r25 155r42 161r10 162m10 162r19
+. 163r13 164m10 164r19 167r25 168r25 171r25 178r42
+52i4*pos_y{integer} 22|19m19 98r10 99m10 99r19 102r10 103r18 106r18 114r42
+. 119r10 120m10 120r19 123r10 124r18 127r18 135r42 144r10 145r18 148r18 156r42
+. 161r24 163r27 167r10 168r18 171r18 179r42
 X 22 buttons.adb
 53r7 temp{25|15R9} 56m28 57m10 58m31 58r31 59r30
-70r7 temp{25|15R9} 76m30 77m10 78r28
+71r7 temp{25|15R9} 77m30 78m10 79r28
 X 25 cards.ads
-1K9*cards 21|12w6 12r17 22|53r14 70r14 25|32e10
-15R9*suit<5R9> 22|53r20 70r20 25|19e14
-18b7*flipped{boolean} 22|57m15 77m15
+1K9*cards 21|13w6 13r17 22|53r14 71r14 25|30e10
+15R9*suit<5R9> 22|53r20 71r20 25|19e14
+18b7*flipped{boolean} 22|57m15 78m15
 28V13*getCardSelf{string} 22|58s36
 X 27 cardtable.ads
-17K9*CardTable 21|7w6 7r21 27|58e14
-21i4*drawPileLocation{integer} 22|13m7
-29w4*cardStock{8|88W19[26]} 22|55r18 56r10 60r21 78r10
-30w4*cardDiscard{8|88W19[26]} 22|59r10 75r21 76r10
-33p4*DiscardPile{76|201P9} 22|14r7 58r10 73r7
-34p4*Stock{76|201P9} 22|15r7 61r13 74r7
-52U14*shuffleDeck 22|12s7
-56U14*dealCards 22|18s7
+17K9*CardTable 21|7w6 7r21 27|57e14
+21i4*drawPileLocation{integer} 22|15m7
+29w4*cardStock{8|88W19[26]} 22|55r18 56r10 60r21 79r10
+30w4*cardDiscard{8|88W19[26]} 22|59r10 76r21 77r10
+33p4*DiscardPile{76|201P9} 22|11r7 58r10 74r7
+34p4*Stock{76|201P9} 22|12r7 61r13 75r7
+40A9*cardSpots(76|201P9)<integer><integer>
+41a4*tableau{40A9} 22|103r10 106r10 124r10 127r10 145r10 148r10 168r10 171r10
+52U14*shuffleDeck 22|14s7
+55U14*dealCards 22|17s7
 X 29 gdk.ads
 43P9*Gdk_Window<48|153P9>
 46P9*Gdk_Visual<48|153P9>
@@ -296,22 +317,27 @@ X 56 glib-object.ads
 675V13*Convert{109|67M9} 53|58i21 54|49i21
 676V13*Convert{41P9} 53|59i21 54|50i21
 X 64 gtk.ads
-41K9*Gtk 21|9r6 9r22 10r6 10r21 22|1r6 44r7 64|79e8
+41K9*Gtk 21|9r6 9r22 10r6 10r21 11r6 11r21 22|1r6 44r7 64|79e8
 X 73 gtk-button.ads
 71K13*Button 21|9w10 9r26 73|613e15
-73R9*Gtk_Button_Record<70|45R9> 21|18r49 19r45 20r45 21r47 22r47 23r43 24r45
-. 25r45 26r46 22|4r49 35r45 52r45 69r47 84r47 95r43 99r45 103r45 107r46 73|73e65
-74P9*Gtk_Button(73R9) 21|34r18 35r15 36r15 37r17 40r13 41r15 42r15 43r16
-. 44r21
-297V13*Get_Label{48|79A12} 22|86R25
-304U14*Set_Label 22|87R25 89R25
+73R9*Gtk_Button_Record<70|45R9> 21|20r49 21r45 22r45 23r47 25r47 26r43 27r45
+. 28r45 29r46 22|6r49 35r45 52r45 70r47 85r47 96r43 117r45 138r45 159r46
+. 73|73e65
+74P9*Gtk_Button(73R9) 21|38r18 39r15 40r15 41r17 44r13 45r15 46r15 47r16
+. 48r21
+297V13*Get_Label{48|79A12} 22|87R25
+304U14*Set_Label 22|88R25 90R25
 X 75 gtk-enums.ads
+30K13*Enums 21|11w10 11r25 75|895e14
+511M9*Gtk_State_Flags
+517m4*Gtk_State_Flag_Normal{511M9} 22|103r58 107r62 124r58 128r62 145r58
+. 149r62 168r58 172r62
 882V13*Convert{109|67M9} 53|58i21 54|49i21
 883V13*Convert{string} 53|59i21 54|50i21
 X 76 gtk-label.ads
 198K13*Label 21|10w10 10r25 76|991e14
 201P9*Gtk_Label(200R9)
-521U14*Set_Text 22|14R19 15R13 58R22 61R19 73R19 74R13
+521U14*Set_Text 22|11R19 12R13 58R22 61R19 74R19 75R13
 X 77 gtk-main.ads
 33K13*Main 22|1w10 44r11 77|327e13
 205U14*Main_Quit 22|44s16
@@ -319,15 +345,17 @@ X 86 gtk-widget.ads
 351P9*Gtk_Widget(350R9)
 438V13*Convert{109|67M9} 53|58i21 54|49i21
 439V13*Convert{351P9} 53|59i21 54|50i21
-2303U14*Set_Visible 22|25R16 26R18 27R16 28R14 29R16 30R17 31R22 62R22 63R24
-. 72R18 80R16
+2303U14*Set_Visible 22|26R16 27R18 28R16 29R14 30R16 31R17 32R22 62R22 63R24
+. 73R18 81R16
+2701U14*Override_Background_Color 22|103R32 106R36 124R32 127R36 145R32 148R36
+. 168R32 171R36
 X 96 pango-attributes.ads
 41P9*Pango_Attribute<48|153P9>
 52V13*Convert{109|67M9} 54|49i21
 53V13*Convert{41P9} 54|50i21
 X 109 system.ads
 67M9*Address
-X 127 s-stausa.ads
+X 129 s-stausa.ads
 208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
 273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
 

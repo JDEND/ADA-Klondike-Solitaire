@@ -36,8 +36,8 @@ package body ada_main is
    E122 : Short_Integer; pragma Import (Ada, E122, "system__storage_pools_E");
    E115 : Short_Integer; pragma Import (Ada, E115, "system__finalization_masters_E");
    E128 : Short_Integer; pragma Import (Ada, E128, "system__storage_pools__subpools_E");
-   E360 : Short_Integer; pragma Import (Ada, E360, "system__task_info_E");
-   E352 : Short_Integer; pragma Import (Ada, E352, "system__task_primitives__operations_E");
+   E362 : Short_Integer; pragma Import (Ada, E362, "system__task_info_E");
+   E354 : Short_Integer; pragma Import (Ada, E354, "system__task_primitives__operations_E");
    E398 : Short_Integer; pragma Import (Ada, E398, "ada__calendar_E");
    E402 : Short_Integer; pragma Import (Ada, E402, "ada__calendar__time_zones_E");
    E414 : Short_Integer; pragma Import (Ada, E414, "ada__text_io_E");
@@ -940,9 +940,9 @@ package body ada_main is
       System.Storage_Pools.Subpools'Elab_Spec;
       E128 := E128 + 1;
       System.Task_Info'Elab_Spec;
-      E360 := E360 + 1;
+      E362 := E362 + 1;
       System.Task_Primitives.Operations'Elab_Body;
-      E352 := E352 + 1;
+      E354 := E354 + 1;
       Ada.Calendar'Elab_Spec;
       Ada.Calendar'Elab_Body;
       E398 := E398 + 1;

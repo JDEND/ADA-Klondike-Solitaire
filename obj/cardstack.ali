@@ -53,8 +53,8 @@ D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
 D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
-D cards.ads		20240405013620 010c8554 cards%s
-D cardstack.ads		20240406000100 7b55c7a3 cardstack%s
+D cards.ads		20240406004606 010c8554 cards%s
+D cardstack.ads		20240406004309 7b55c7a3 cardstack%s
 D cardstack.adb		20240406000142 ca27a361 cardstack%b
 D interfac.ads		20230707070819 5ab55268 interfaces%s
 D system.ads		20230707070819 4635ec04 system%s
@@ -219,12 +219,12 @@ X 10 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[6|111]>
 X 15 cards.ads
-1K9*cards 32e10 16|2w6 5r28 5r51 8r64 17|3r28 3r51
+1K9*cards 30e10 16|2w6 5r28 5r51 8r64 17|3r28 3r51
 6i7*cardValue{integer} 17|5r50 5r68
 15R9*suit<5R9> 19e14 16|5r34 5r57 8r70 17|3r34 3r57
 16e7*suitName{character} 17|5r15 5r32
 X 16 cardstack.ads
-3K9*cardStack 9r54 12l5 12e14 17|1b14 12l5 12t14
+3K9*cardStack 9r54 10l5 10e14 17|1b14 12l5 12t14
 5V14*"="{boolean} 5>18 5>40 9r65 17|3b14 10t7
 5r18 left{15|15R9} 17|3b18 5r10 5r45
 5r40 right{15|15R9} 17|3b40 5r26 5r62

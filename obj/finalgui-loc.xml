@@ -1,32 +1,31 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file />
-    <file_marker column=" 1" line=" 64" >
+  <Project >
+    <file_marker column=" 1" line=" 83" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 30" >
+    <file_marker column=" 60" line=" 28" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cards.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 64" >
+    <file_marker column=" 1" line=" 83" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 30" line=" 56" >
+    <file_marker column=" 30" line=" 54" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 38" line=" 107" >
+    <file_marker column=" 38" line=" 100" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 33" >
+    <file_marker column=" 1" line=" 55" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
@@ -34,43 +33,43 @@
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 35" line=" 49" >
+    <file_marker column=" 44" line=" 48" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 48" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 28" line=" 49" >
+    <file_marker column=" 37" line=" 48" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 8" line=" 45" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 48" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 8" line=" 45" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 48" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 15" line=" 45" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
@@ -82,25 +81,301 @@
       <vfs_project />
       <vfs_file>/usr/lib/gcc/x86_64-linux-gnu/10/adainclude/a-convec.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 40" >
+    <file_marker column=" 1" line=" 42" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 48" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 49" line=" 44" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 43" >
+    <file_marker column=" 29" line=" 44" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 4" line=" 3" >
+    <file_marker column=" 4" line=" 2" >
       <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
       <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 48" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 9" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 45" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 48" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 45" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 64" line=" 8" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 2" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 7" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 9" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 7" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 48" line=" 3" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 7" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 7" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 67" line=" 9" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 45" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardtable.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 67" line=" 9" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 78" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 3" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 3" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 3" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 12" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 3" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cardstack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 95" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 161" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 106" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cards.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/cards.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/deck.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/deck.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 137" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 5" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/deck.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 33" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 178" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 113" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 102" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 102" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 102" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 103" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 62" line=" 102" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 62" line=" 102" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 62" line=" 102" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 22" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 62" line=" 102" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 113" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 116" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 112" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 58" line=" 103" >
+      <vfs_project>/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr</vfs_project>
+      <vfs_file>/home/jared/Documents/Wayne/CSC3200/Final/src/buttons.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

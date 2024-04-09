@@ -1,7 +1,11 @@
 with Ada; use Ada;
-with Gdk.Color; use Gdk.Color;
 
 with buttons; use buttons;
+
+with CardTable; use CardTable;
+
+with Gdk.Color; use Gdk.Color;
+With GDK.RGBA; use GDK.RGBA;
 
 with Glib; use Glib;
 
@@ -13,7 +17,7 @@ with Gtk.Table; use Gtk.Table;
 with Gtk.Widget; use Gtk.Widget;
 with Gtk.Window; use Gtk.Window;
 
-with CardTable; use CardTable;
+
 
 procedure main is
    -- Define your variables here
@@ -81,7 +85,6 @@ procedure main is
       Gtk_New(Blank, "");
       Attach_Defaults(Table_Main, Blank, 1,10,2,10);
 
-
       Gtk_New(Stock, "");
       Attach_Defaults(Table_Main, Stock, 2,3,1,2);
       Gtk_New(DiscardPile, "");
@@ -96,6 +99,8 @@ procedure main is
       Gtk_New(clubs, "clubs");
       Attach_Defaults(Table_Main, clubs, 9,10,1,2);
 
+      clubs.Override_Background_Color(Gtk_State_Flag_Normal, (255.0,
+                                      0.0, 0.0, 1.0));
       --initializes card deck
       initDrawPile;
       initializeTable;
@@ -127,12 +132,9 @@ procedure main is
       Btn_Right.Set_Visible(False);
       Btn_SelectDrop.Set_Visible(False);
 
-
       -- Start the main loop
       Gtk.Main.Main;
    end Main;
-
-
 begin
    Main;
 end main;

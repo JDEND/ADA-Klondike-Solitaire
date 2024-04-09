@@ -36,13 +36,6 @@ package body CardTable is
       drawPile(index) := drawPile(swapLocation);
       drawPile(swapLocation) := tempSwapVar;
    end;
-
-   --resets the stock after a player has drawn all of the cards,
-   --sets flipped back to false, and prepares for next draw 04/03/24 - GV6507
-   procedure resetStock is
-   begin
-      ada.Text_IO.Put_Line("there");
-   end;
    
    procedure initializeTable is
    begin
