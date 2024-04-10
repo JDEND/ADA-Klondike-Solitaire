@@ -28,6 +28,7 @@ package CardTable is
 
    cardStock : card_containers.Queue;
    cardDiscard : card_containers.Queue;
+   cardSelected : card_containers.Queue;
 
 
    DiscardPile : Gtk_Label;

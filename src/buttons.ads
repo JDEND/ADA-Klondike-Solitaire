@@ -12,6 +12,9 @@ with Gtk.Enums; use Gtk.Enums;
 
 with cards; use cards;
 
+with ada.Containers.Synchronized_Queue_Interfaces;
+with ada.Containers.Unbounded_Synchronized_Queues;
+
 
 package buttons is
 
@@ -50,5 +53,7 @@ package buttons is
    --position markers
    pos_x : Integer;
    pos_y : Integer;
+   selection_x : Integer;
+   selection_y : Integer;
 
 end buttons;

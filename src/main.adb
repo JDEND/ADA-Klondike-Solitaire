@@ -89,6 +89,10 @@ procedure main is
       Gtk_New(clubs, "clubs");
       Attach_Defaults(Table_Main, clubs, 9,10,1,2);
 
+      --set background color
+      Window_Main.Override_Background_Color(Gtk_State_Flag_Normal,
+                                            (0.25, 0.75, 0.38, 0.8));
+
       --initializes card deck
       initDrawPile;
       initializeTable;

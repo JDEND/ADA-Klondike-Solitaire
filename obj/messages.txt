@@ -62,3 +62,623 @@ Bind
 Link
    [link]         main.adb
 [2024-04-09 14:50:14] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 14:51:28] process terminated successfully, elapsed time: 01.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+   [Ada]          buttons.adb
+buttons.adb:100:03: missing "end if;" for "if" at line 90
+gprbuild: *** compilation phase failed
+[2024-04-09 14:53:17] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 14:53:30] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:08:33] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:09:03] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+main.adb:94:46: expected type "Gdouble" defined at glib.ads:59
+main.adb:94:46: found type universal integer
+main.adb:94:50: expected type "Gdouble" defined at glib.ads:59
+main.adb:94:50: found type universal integer
+main.adb:94:55: expected type "Gdouble" defined at glib.ads:59
+main.adb:94:55: found type universal integer
+gprbuild: *** compilation phase failed
+[2024-04-09 15:14:52] process exited with status 4, elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:15:03] process terminated successfully, elapsed time: 00.96s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:15:38] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:16:53] process terminated successfully, elapsed time: 00.92s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:17:26] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:17:34] process terminated successfully, elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:19:23] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:19:34] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:20:35] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:21:49] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:22:36] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 15:24:41] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+   [Ada]          buttons.adb
+buttons.adb:94:45: missing "in"
+buttons.adb:95:58: missing ")"
+gprbuild: *** compilation phase failed
+[2024-04-09 18:51:41] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:94:58: missing operand
+gprbuild: *** compilation phase failed
+[2024-04-09 18:53:37] process exited with status 4, 13% (2/15), elapsed time: 00.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:94:58: missing operand
+gprbuild: *** compilation phase failed
+[2024-04-09 18:53:40] process exited with status 4, 13% (2/15), elapsed time: 00.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:94:55: missing "in"
+gprbuild: *** compilation phase failed
+[2024-04-09 18:53:55] process exited with status 4, 13% (2/15), elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:94:59: subtype mark required in this context
+gprbuild: *** compilation phase failed
+[2024-04-09 18:54:07] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:94:55: missing "in"
+gprbuild: *** compilation phase failed
+[2024-04-09 18:54:16] process exited with status 4, 13% (2/15), elapsed time: 00.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:95:51: missing "in"
+buttons.adb:97:15: statement expected
+gprbuild: *** compilation phase failed
+[2024-04-09 19:00:36] process exited with status 4, 13% (2/15), elapsed time: 00.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:96:48: invalid operand types for operator "="
+buttons.adb:96:48: left operand has type "suit" defined at cards.ads:15
+buttons.adb:96:48: right operand has an access type
+buttons.adb:100:48: expected type "suit" defined at cards.ads:15
+buttons.adb:100:48: found an access type
+gprbuild: *** compilation phase failed
+[2024-04-09 19:19:14] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+   [Ada]          cardtable.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 19:21:00] process terminated successfully, elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+gprbuild: "main" up to date
+[2024-04-09 19:21:32] process terminated successfully, elapsed time: 00.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:22: invisible selector "List" for "cardSelected"
+gprbuild: *** compilation phase failed
+[2024-04-09 19:27:51] process exited with status 4, 13% (2/15), elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:28: missing operand
+gprbuild: *** compilation phase failed
+[2024-04-09 19:28:04] process exited with status 4, 13% (2/15), elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:40: missing operand
+gprbuild: *** compilation phase failed
+[2024-04-09 19:32:46] process exited with status 4, 13% (2/15), elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+   [Ada]          buttons.adb
+buttons.adb:109:37: missing operand
+gprbuild: *** compilation phase failed
+[2024-04-09 19:33:37] process exited with status 4, 13% (2/15), elapsed time: 01.10s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:31: invisible selector "List" for "cardSelected"
+gprbuild: *** compilation phase failed
+[2024-04-09 19:33:41] process exited with status 4, 13% (2/15), elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:22: invisible selector "List" for "cardSelected"
+gprbuild: *** compilation phase failed
+[2024-04-09 19:34:39] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:22: missing argument for parameter "Element" in call to "dequeue" (inherited) at a-cusyqu.ads:96, instance at cardtable.ads:26
+buttons.adb:109:22: missing argument for parameter "Element" in call to "dequeue" declared at a-cusyqu.ads:96, instance at cardtable.ads:26
+gprbuild: *** compilation phase failed
+[2024-04-09 19:35:01] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:54: missing ")"
+gprbuild: *** compilation phase failed
+[2024-04-09 19:35:42] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 19:35:48] process terminated successfully, elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 19:36:53] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:22: invisible selector "list" for "cardSelected"
+gprbuild: *** compilation phase failed
+[2024-04-09 19:38:23] process exited with status 4, 13% (2/15), elapsed time: 00.90s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:22: invisible selector "list" for "cardSelected"
+gprbuild: *** compilation phase failed
+[2024-04-09 19:39:38] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:109:22: invisible selector "list" for "cardSelected"
+buttons.adb:109:28: uninitialized unconstrained allocation not allowed
+buttons.adb:109:28: qualified expression or constraint with array bounds required
+gprbuild: *** compilation phase failed
+[2024-04-09 19:40:07] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:117:44: operator for type "Ada.Containers.Count_Type" is not directly visible
+buttons.adb:117:44: use clause would make operation legal
+buttons.adb:121:41: operator for type "Ada.Containers.Count_Type" is not directly visible
+buttons.adb:121:41: use clause would make operation legal
+gprbuild: *** compilation phase failed
+[2024-04-09 19:46:52] process exited with status 4, 13% (2/15), elapsed time: 00.50s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+main.adb:3:06: "ada.containers.count_type" is not a predefined library unit
+main.adb:3:06: "main (body)" depends on "buttons (spec)"
+main.adb:3:06: "buttons (spec)" depends on "ada.containers.count_type (spec)"
+gprbuild: *** compilation phase failed
+[2024-04-09 19:47:14] process exited with status 4, elapsed time: 00.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          main.adb
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 19:48:07] process terminated successfully, elapsed time: 01.00s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+gprbuild: "main" up to date
+[2024-04-09 19:48:50] process terminated successfully, elapsed time: 00.30s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 19:58:48] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 19:59:51] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 20:00:51] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 20:04:00] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 20:05:29] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 20:07:46] process terminated successfully, elapsed time: 00.70s
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-09 20:11:08] process terminated successfully, elapsed time: 00.70s

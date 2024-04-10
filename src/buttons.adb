@@ -18,8 +18,8 @@ package body buttons is
 
       pos_x := 0; pos_y := 0;
       tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                         (255.0, 0.0, 0.0, 1.0)
-                                                        );
+                                                      (1.0, 1.0, 1.0, 1.0)
+                                                     );
       
    end New_Game_Callback;
 
@@ -86,13 +86,54 @@ package body buttons is
 
    --Functionality for selecting card(s) to be moved 04/05/24 - GV6507
    procedure select_Callback (Button : access Gtk_Button_Record'Class) is
+      tempQueue : card_containers.Queue;
+      tempCard : cards.suit;
    begin
       if Btn_SelectDrop.Get_Label = "Select" then
          if pos_x >= 0 and pos_y >= 0 then
-            Btn_SelectDrop.Set_Label("Drop");
+            if table(pos_y, pos_x).isFlipped = True then
+               selection_x := pos_x; selection_y := pos_y;
+
+               loop
+                  if selection_y = 18 then
+                     exit;
+                  end if;
+                  cardSelected.Enqueue(table(selection_y, pos_x));
+                  tableau(selection_y, pos_x).Set_Text("");
+                  selection_y := selection_y + 1;
+               end loop;
+
+               Btn_SelectDrop.Set_Label("Drop");
+            end if;
          end if;
-      else
-         Btn_SelectDrop.Set_Label("Select");
+
+      else --this all still does not work right
+         cardSelected.Dequeue(tempCard);
+         if tempCard.isValidPlace(table(pos_y - 1, pos_x)) then
+            selection_y := pos_y;
+            table(selection_y, pos_x) := tempCard;
+            tableau(selection_y, pos_x).Set_Text(table(selection_y, 
+                                                 pos_x).getCardSelf);
+            selection_y := selection_y + 1;    
+            while Integer(cardSelected.Current_Use) < 0 loop
+               cardSelected.Dequeue(tempCard);
+               table(selection_y, pos_x) := tempCard;
+               tableau(selection_y, pos_x).Set_Text(table(selection_y, 
+                                                    pos_x).getCardSelf);
+               selection_y := selection_y + 1;                                     
+            end loop;
+            Btn_SelectDrop.Set_Label("Select");
+         else
+            tempQueue.Enqueue(tempCard);
+            while Integer(cardSelected.Current_Use) > 0 loop
+               cardSelected.Dequeue(tempCard);
+               tempQueue.Enqueue(tempCard);
+            end loop;
+            while Integer(tempQueue.Current_Use) > 0 loop
+               tempQueue.Dequeue(tempCard);
+               cardSelected.Enqueue(tempCard);
+            end loop;
+         end if;
       end if;    
    end;
    
@@ -102,27 +143,29 @@ package body buttons is
    begin
       if pos_y > -1 then
          pos_y := pos_y - 1;
-         tableau(pos_y + 1, pos_x).Override_Background_Color(
-                                                             Gtk_State_Flag_Normal, 
-                                                             (255.0, 255.0,
-                                                              255.0, 1.0)
-                                                            );
+         tableau(pos_y + 1, 
+                 pos_x).Override_Background_Color(
+                                                  Gtk_State_Flag_Normal, 
+                                                  (0.0, 0.0, 0.0, 0.0)
+                                                 );
          if pos_y = -1 then
+            pos_x := 0;
             diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                               (255.0, 0.0, 0.0, 1.0)
+                                               (1.0, 1.0, 1.0, 1.0)
                                               );
          end if;
       end if;
 
       if pos_y >= 0 and pos_x >= 0 then
-         tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                         (255.0, 0.0, 0.0, 1.0)
-                                                        );
-         tableau(pos_y + 1, pos_x).Override_Background_Color(
-                                                             Gtk_State_Flag_Normal, 
-                                                             (255.0, 255.0,
-                                                              255.0, 1.0)
-                                                            );
+         tableau(pos_y, 
+                 pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (1.0, 1.0, 1.0, 1.0)
+                                                 );
+         tableau(pos_y + 1, 
+                 pos_x).Override_Background_Color(
+                                                  Gtk_State_Flag_Normal, 
+                                                  (0.0, 0.0, 0.0, 0.0)
+                                                 );
       end if;
       
       Put_Line("Pos_x: " & Integer'Image(pos_x));
@@ -134,24 +177,21 @@ package body buttons is
       if pos_y = -1 then
          diamonds.Override_Background_Color(
                                             Gtk_State_Flag_Normal, 
-                                            (255.0, 255.0,
-                                             255.0, 1.0)
+                                            (0.25, 0.75, 0.38, 0.0)
                                            );
          hearts.Override_Background_Color(
                                           Gtk_State_Flag_Normal, 
-                                          (255.0, 255.0,
-                                           255.0, 1.0)
+                                          (0.25, 0.75, 0.38, 0.0)
                                          );
          clubs.Override_Background_Color(
                                          Gtk_State_Flag_Normal, 
-                                         (255.0, 255.0,
-                                          255.0, 1.0)
+                                         (0.25, 0.75, 0.38, 0.0)
                                         );
          spades.Override_Background_Color(
                                           Gtk_State_Flag_Normal, 
-                                          (255.0, 255.0,
-                                           255.0, 1.0)
+                                          (0.25, 0.75, 0.38, 0.0)
                                          );
+         pos_x := 0;
       end if;
 
       if pos_y < 18 then
@@ -161,14 +201,13 @@ package body buttons is
 
       if pos_y >= 0 and pos_x >= 0 then
          tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                         (255.0, 0.0, 0.0, 1.0)
+                                                         (1.0, 1.0, 1.0, 1.0)
                                                         );
          if pos_y > 0 then
             tableau(pos_y - 1, 
                     pos_x).Override_Background_Color(
                                                      Gtk_State_Flag_Normal, 
-                                                     (255.0, 255.0,
-                                                      255.0,1.0)
+                                                     (0.25, 0.75, 0.38, 0.0)
                                                     );
          end if;
       end if;
@@ -187,46 +226,44 @@ package body buttons is
          case pos_x is
             when 3 =>
                clubs.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                  (255.0, 0.0, 0.0, 1.0)
-                                                 );
+                                               (1.0, 1.0, 1.0, 1.0)
+                                              );
             when 2 =>
                clubs.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                  (255.0, 255.0,
-                                                   255.0, 1.0)
-                                                 );
+                                               (0.25, 0.75, 0.38, 0.0)
+                                              );
                spades.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                (255.0, 0.0, 0.0, 1.0)
+                                                (1.0, 1.0, 1.0, 1.0)
                                                );
             when 1 =>
                spades.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                (255.0, 255.0,
-                                                 255.0, 1.0)
+                                                (0.25, 0.75, 0.38, 0.0)
                                                );
                hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                (255.0, 0.0, 0.0, 1.0)
+                                                (1.0, 1.0, 1.0, 1.0)
                                                );
             when 0 =>
                hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                (255.0, 255.0,
-                                                 255.0, 1.0)
+                                                (0.25, 0.75, 0.38, 0.0)
                                                );
                diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                               (255.0, 0.0, 0.0, 1.0)
-                                              );
+                                                  (1.0, 1.0, 1.0, 1.0)
+                                                 );
             when others =>
                Put_Line("Broke");
          end case;
       end if;
 
       if pos_y >= 0 and pos_x >= 0 then
-         tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                         (255.0, 0.0, 0.0, 1.0)
-                                                        );
-         tableau(pos_y, pos_x + 1).Override_Background_Color(
-                                                             Gtk_State_Flag_Normal, 
-                                                             (255.0, 255.0,
-                                                              255.0, 1.0)
-                                                            );
+         tableau(pos_y, 
+                 pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (1.0, 1.0, 1.0, 1.0)
+                                                 );
+         tableau(pos_y, 
+                 pos_x + 1).Override_Background_Color(
+                                                      Gtk_State_Flag_Normal, 
+                                                      (0.0, 0.0, 0.0, 0.0)
+                                                     );
       end if;
       
       Put_Line("Pos_x: " & Integer'Image(pos_x));
@@ -245,32 +282,29 @@ package body buttons is
          case pos_x is
             when 0 =>
                diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                         (255.0, 0.0, 0.0, 1.0)
-                                                        );
+                                                  (1.0, 1.0, 1.0, 1.0)
+                                                 );
             when 1 =>
                diamonds.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                  (255.0, 255.0,
-                                                   255.0, 1.0)
+                                                  (0.0, 0.0, 0.0, 0.0)
                                                  );
                hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                (255.0, 0.0, 0.0, 1.0)
+                                                (1.0, 1.0, 1.0, 1.0)
                                                );
             when 2 =>
                hearts.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                  (255.0, 255.0,
-                                                   255.0, 1.0)
-                                                 );
+                                                (0.0, 0.0, 0.0, 0.0)
+                                               );
                spades.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                (255.0, 0.0, 0.0, 1.0)
+                                                (1.0, 1.0, 1.0, 1.0)
                                                );
             when 3 =>
                spades.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                  (255.0, 255.0,
-                                                   255.0, 1.0)
-                                                 );
-               clubs.Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                (255.0, 0.0, 0.0, 1.0)
+                                                (0.0, 0.0, 0.0, 0.0)
                                                );
+               clubs.Override_Background_Color(Gtk_State_Flag_Normal, 
+                                               (1.0, 1.0, 1.0, 1.0)
+                                              );
             when others =>
                Put_Line("Broke");
          end case;
@@ -278,14 +312,15 @@ package body buttons is
 
 
       if pos_y >= 0 and pos_x >= 0 then
-         tableau(pos_y, pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
-                                                         (255.0, 0.0, 0.0, 1.0)
-                                                        );
-         tableau(pos_y, pos_x - 1).Override_Background_Color(
-                                                             Gtk_State_Flag_Normal, 
-                                                             (255.0, 255.0,
-                                                              255.0, 1.0)
-                                                            );
+         tableau(pos_y, 
+                 pos_x).Override_Background_Color(Gtk_State_Flag_Normal, 
+                                                  (1.0, 1.0, 1.0, 1.0)
+                                                 );
+         tableau(pos_y, 
+                 pos_x - 1).Override_Background_Color(
+                                                      Gtk_State_Flag_Normal, 
+                                                      (0.0, 0.0, 0.0, 0.0)
+                                                     );
       end if;
 
       Put_Line("Pos_x: " & Integer'Image(pos_x));
