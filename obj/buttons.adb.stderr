@@ -1,0 +1,1 @@
+buttons.adb:98:07: warning: variable "temp_x" is never read and never assigned

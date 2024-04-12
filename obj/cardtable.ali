@@ -9,6 +9,7 @@ RV NO_DISPATCHING_CALLS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
@@ -20,7 +21,7 @@ RV NO_ELABORATION_CODE
 RV SPARK_05
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U cardtable%b		cardtable.adb		ce37b500 OO PK
+U cardtable%b		cardtable.adb		1bd8c7dd OO PK
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W system%s		system.ads		system.ali
@@ -30,7 +31,7 @@ Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
 
-U cardtable%s		cardtable.ads		dba3d271 EE OO PF PK IL
+U cardtable%s		cardtable.ads		a9c1ba8c EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 W ada.containers.synchronized_queue_interfaces%s
@@ -47,6 +48,7 @@ W cards%s		cards.adb		cards.ali
 W cardstack%s		cardstack.adb		cardstack.ali
 W deck%s		deck.adb		deck.ali
 W gtk%s			gtk.ads			gtk.ali
+W gtk.enums%s		gtk-enums.adb		gtk-enums.ali
 W gtk.label%s		gtk-label.adb		gtk-label.ali
 Z system%s		system.ads		system.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
@@ -78,10 +80,10 @@ D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
-D cards.ads		20240406004606 010c8554 cards%s
-D cardstack.ads		20240406004309 7b55c7a3 cardstack%s
-D cardtable.ads		20240409224847 a762b6ec cardtable%s
-D cardtable.adb		20240406004450 695503ec cardtable%b
+D cards.ads		20240410222355 010c8554 cards%s
+D cardstack.ads		20240411004851 7b55c7a3 cardstack%s
+D cardtable.ads		20240412003239 354ad3a2 cardtable%s
+D cardtable.adb		20240412003144 2e92147f cardtable%b
 D deck.ads		20240406004545 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
@@ -203,38 +205,39 @@ D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
 D s-valuns.ads		20230707070819 35067db9 system.val_uns%s
 D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
 G a e
-G c s s s [s cardtable 17 1 none]
-G c Z s s [enqueue cardtable__card_containers__implementation 56 17 26_4]
-G c Z s s [dequeue cardtable__card_containers__implementation 60 17 26_4]
-G c Z s s [length cardtable__card_containers__implementation 64 16 26_4]
-G c Z s s [max_length cardtable__card_containers__implementation 66 16 26_4]
-G c Z s s [finalize cardtable__card_containers__implementation 84 28 26_4]
-G c Z s s [free cardtable__card_containers__implementation 40 17 26_4]
-G c Z s s [enqueue cardtable__card_containers__queue 94 24 26_4]
-G c Z s s [dequeue cardtable__card_containers__queue 96 24 26_4]
-G c Z s s [current_use cardtable__card_containers__queue 98 27 26_4]
-G c Z s s [peak_use cardtable__card_containers__queue 100 27 26_4]
-G c Z s s [queue__current_useN cardtable__card_containers 98 18 26_4]
-G c Z s s [queue__current_useP cardtable__card_containers 98 18 26_4]
-G c Z s s [queue__peak_useN cardtable__card_containers 100 18 26_4]
-G c Z s s [queue__peak_useP cardtable__card_containers 100 18 26_4]
-G c Z s s [list_typeDF cardtable__card_containers__implementation 78 12 26_4]
-G c Z s s [list_typeIP cardtable__card_containers__implementation 78 12 26_4]
-G c Z s s [node_typeIP cardtable__card_containers__implementation 73 12 26_4]
-G c Z s s [queueVDF cardtable__card_containers 88 4 26_4]
-G c Z s s [queueVDI cardtable__card_containers 88 4 26_4]
-G c Z s s [queueVIP cardtable__card_containers 88 4 26_4]
-G c Z s s [P19sIP cardtable__card_containers 94 18 26_4]
-G c Z s s [P22sIP cardtable__card_containers 96 18 26_4]
-G c Z s s [queue__current_use cardtable__card_containers 138 7 26_4]
-G c Z s s [queue__peak_use cardtable__card_containers 167 7 26_4]
-G c Z s s [TtableaurowsBIP cardtable 38 4 none]
-G c Z s s [TcardspotsBIP cardtable 41 4 none]
-G c Z s b [initdrawpile cardtable 52 14 none]
-G c Z s b [shuffledeck cardtable 53 14 none]
-G c Z s b [swapcard cardtable 54 14 none]
-G c Z s b [initializetable cardtable 55 14 none]
-G c Z s b [dealcards cardtable 56 14 none]
+G c s s s [s cardtable 18 1 none]
+G c Z s s [enqueue cardtable__card_containers__implementation 56 17 27_4]
+G c Z s s [dequeue cardtable__card_containers__implementation 60 17 27_4]
+G c Z s s [length cardtable__card_containers__implementation 64 16 27_4]
+G c Z s s [max_length cardtable__card_containers__implementation 66 16 27_4]
+G c Z s s [finalize cardtable__card_containers__implementation 84 28 27_4]
+G c Z s s [free cardtable__card_containers__implementation 40 17 27_4]
+G c Z s s [enqueue cardtable__card_containers__queue 94 24 27_4]
+G c Z s s [dequeue cardtable__card_containers__queue 96 24 27_4]
+G c Z s s [current_use cardtable__card_containers__queue 98 27 27_4]
+G c Z s s [peak_use cardtable__card_containers__queue 100 27 27_4]
+G c Z s s [queue__current_useN cardtable__card_containers 98 18 27_4]
+G c Z s s [queue__current_useP cardtable__card_containers 98 18 27_4]
+G c Z s s [queue__peak_useN cardtable__card_containers 100 18 27_4]
+G c Z s s [queue__peak_useP cardtable__card_containers 100 18 27_4]
+G c Z s s [list_typeDF cardtable__card_containers__implementation 78 12 27_4]
+G c Z s s [list_typeIP cardtable__card_containers__implementation 78 12 27_4]
+G c Z s s [node_typeIP cardtable__card_containers__implementation 73 12 27_4]
+G c Z s s [queueVDF cardtable__card_containers 88 4 27_4]
+G c Z s s [queueVDI cardtable__card_containers 88 4 27_4]
+G c Z s s [queueVIP cardtable__card_containers 88 4 27_4]
+G c Z s s [P19sIP cardtable__card_containers 94 18 27_4]
+G c Z s s [P22sIP cardtable__card_containers 96 18 27_4]
+G c Z s s [queue__current_use cardtable__card_containers 138 7 27_4]
+G c Z s s [queue__peak_use cardtable__card_containers 167 7 27_4]
+G c Z s s [TtableaurowsBIP cardtable 39 4 none]
+G c Z s s [TcardspotsBIP cardtable 42 4 none]
+G c Z s b [initdrawpile cardtable 53 14 none]
+G c Z s b [shuffledeck cardtable 54 14 none]
+G c Z s b [swapcard cardtable 55 14 none]
+G c Z s b [initializetable cardtable 56 14 none]
+G c Z s b [dealcards cardtable 57 14 none]
+G c Z s b [setlabelcolors cardtable 58 14 none]
 G c Z b b [random cardtable__rand 52 13 14_4]
 G c Z b b [reset cardtable__rand 54 14 14_4]
 G c Z b b [reset cardtable__rand 55 14 14_4]
@@ -242,29 +245,30 @@ G c Z b b [save cardtable__rand 61 14 14_4]
 G c Z b b [reset cardtable__rand 62 14 14_4]
 G c Z b b [image cardtable__rand 66 13 14_4]
 G c Z b b [value cardtable__rand 67 13 14_4]
-G r s suit [s cardtable 17 1 none] [suitIP cards 15 9 none]
-G r s TcarddeckB [s cardtable 17 1 none] [TcarddeckBIP deck 4 4 none]
-G r s suit [TtableaurowsBIP cardtable 38 4 none] [suitIP cards 15 9 none]
-G r c none [initdrawpile cardtable 52 14 none] [initializedeck deck 7 14 none]
-G r s suit [shuffledeck cardtable 53 14 none] [suitIP cards 15 9 none]
-G r s suit [swapcard cardtable 54 14 none] [suitIP cards 15 9 none]
-G r c none [initializetable cardtable 55 14 none] [gtk_label_new gtk__label 217 13 none]
-G r c none [dealcards cardtable 56 14 none] [getcardself cards 28 13 none]
-G r c none [dealcards cardtable 56 14 none] [set_text gtk__label 521 14 none]
-G r c none [dealcards cardtable 56 14 none] [invertcard cards 25 19 none]
+G r s suit [s cardtable 18 1 none] [suitIP cards 15 9 none]
+G r s TcarddeckB [s cardtable 18 1 none] [TcarddeckBIP deck 4 4 none]
+G r s suit [TtableaurowsBIP cardtable 39 4 none] [suitIP cards 15 9 none]
+G r c none [initdrawpile cardtable 53 14 none] [initializedeck deck 7 14 none]
+G r s suit [shuffledeck cardtable 54 14 none] [suitIP cards 15 9 none]
+G r s suit [swapcard cardtable 55 14 none] [suitIP cards 15 9 none]
+G r c none [initializetable cardtable 56 14 none] [gtk_label_new gtk__label 217 13 none]
+G r c none [dealcards cardtable 57 14 none] [getcardself cards 28 13 none]
+G r c none [dealcards cardtable 57 14 none] [set_text gtk__label 521 14 none]
+G r c none [dealcards cardtable 57 14 none] [invertcard cards 25 19 none]
+G r c none [setlabelcolors cardtable 58 14 none] [override_background_color gtk__widget 2701 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 24|1r6 2r6 3r6 4r6 5r6 25r6 27r6 25|15r6
+16K9*Ada 20e8 24|1r6 2r6 3r6 4r6 5r6 26r6 28r6 25|15r6
 X 2 a-contai.ads
-16K13*Containers 28e19 24|1r10 2r10 3r10 25r10 27r10
+16K13*Containers 28e19 24|1r10 2r10 3r10 26r10 28r10
 X 4 a-csquin.ads
-37k24*Synchronized_Queue_Interfaces 56e49 24|1w21 25r21
+37k24*Synchronized_Queue_Interfaces 56e49 24|1w21 26r21
 X 5 a-cusyqu.ads
-44k24*Unbounded_Synchronized_Queues 106e49 24|2w21 27r21
-88W19*Queue<4|40R9[24|24]> 24|29r32[26] 30r34[26] 31r35[26]
-94Y24 Enqueue 25|97s20[24|26]
+44k24*Unbounded_Synchronized_Queues 106e49 24|2w21 28r21
+88W19*Queue<4|40R9[24|25]> 24|30r32[27] 31r34[27] 32r35[27]
+94Y24 Enqueue 25|97s20[24|27]
 X 7 a-convec.ads
 73k24*Vectors 824e27 24|3w21
-88R9*Vector<9|43R9> 24|46r37[23|7] 47r39[23|7] 48r39[23|7] 49r38[23|7]
+88R9*Vector<9|43R9> 24|47r31[23|7] 48r29[23|7] 49r29[23|7] 50r28[23|7]
 X 11 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[7|111]>
@@ -280,50 +284,51 @@ X 14 a-nudira.adb
 X 17 a-textio.ads
 57K13*Text_IO 727e16 24|5w10
 X 22 cards.ads
-1K9*cards 30e10 24|9w6 25r51 38r46 25|33r21
-15R9*suit<5R9> 19e14 24|25r57 38r52 25|33r27
+1K9*cards 30e10 24|7w6 26r51 39r46 25|33r21
+15R9*suit<5R9> 19e14 24|26r57 39r52 25|33r27
 25U19*invertCard 25|101s18 101s41 101s64 102s18 102s41 102s64 103s18
 28V13*getCardSelf{string} 25|79s56 81s56 83s56 85s56 87s56 89s56 91s56 105s40
 . 106s40 107s40 108s40 109s40 110s40 111s40
 X 23 cardstack.ads
-3K9*cardStack 10e14 24|7w6 46r21 47r23 48r23 49r22
-7K12*Stack[7|73] 24|46r31 47r33 48r33 49r32
+3K9*cardStack 10e14 24|9w6 9r21
+7K12*Stack[7|73] 24|47r25 48r23 49r23 50r22
 X 24 cardtable.ads
-17K9*CardTable 65l5 65e14 25|1b14 115l5 115t14
-19a4*drawPile{26|4A9} 25|9m7 35r22 36m7 36r26 37m7 58r36 60r36 62r36 64r36
+18K9*CardTable 67l5 67e14 25|1b14 152l5 152t14
+20a4*drawPile{26|4A9} 25|9m7 35r22 36m7 36r26 37m7 58r36 60r36 62r36 64r36
 . 66r36 68r36 70r36 79m44 79r44 81m44 81r44 83m44 83r44 85m44 85r44 87m44
 . 87r44 89m44 89r44 91m44 91r44 97r28
-21i4*drawPileLocation{integer}
-24K12*queue_interface[4|37] 27r51
-26K12*card_containers[5|44] 29r16 30r18 31r19
-29w4*cardStock{5|88W19[26]} 25|97r10
-30w4*cardDiscard{5|88W19[26]}
-31w4*cardSelected{5|88W19[26]}
-34p4*DiscardPile{73|201P9}
-35p4*Stock{73|201P9}
-38A9*tableauRows(22|15R9)<integer><integer> 39r12
-39a4*table{38A9} 25|58m13 60m13 62m13 64m13 66m13 68m13 70m13 101m7 101r7
+22i4*drawPileLocation{integer}
+25K12*queue_interface[4|37] 28r51
+27K12*card_containers[5|44] 30r16 31r18 32r19
+30w4*cardStock{5|88W19[27]} 25|97r10
+31w4*cardDiscard{5|88W19[27]}
+32w4*cardSelected{5|88W19[27]}
+35p4*DiscardPile{73|201P9} 25|116r7
+36p4*Stock{73|201P9} 25|120r7
+39A9*tableauRows(22|15R9)<integer><integer> 40r12
+40a4*table{39A9} 25|58m13 60m13 62m13 64m13 66m13 68m13 70m13 101m7 101r7
 . 101m30 101r30 101m53 101r53 102m7 102r7 102m30 102r30 102m53 102r53 103m7
 . 103r7 105m29 105r29 106m29 106r29 107m29 107r29 108m29 108r29 109m29 109r29
 . 110m29 110r29 111m29 111r29
-41A9*cardSpots(73|201P9)<integer><integer> 42r14
-42a4*tableau{41A9} 25|44m13 79r13 81r13 83r13 85r13 87r13 89r13 91r13 105r7
-. 106r7 107r7 108r7 109r7 110r7 111r7
-46r4*acesFoundation{7|88R9[23|7]}
-47r4*heartsFoundation{7|88R9[23|7]}
-48r4*spadesFoundation{7|88R9[23|7]}
-49r4*clubsFoundation{7|88R9[23|7]}
-52U14*initDrawPile 25|6b14 10t7
-53U14*shuffleDeck 25|22b14 29t7
-54U14*swapCard 54>23 54>40 25|27s10 32b14 38t7
-54i23 index{integer} 25|32b23 35r31 36r16
-54i40 swapLocation{integer} 25|32b40 36r35 37r16
-55U14*initializeTable 25|40b14 47t7
-56U14*dealCards 25|51b14 112t7
-59p4*diamonds{73|201P9}
-60p4*hearts{73|201P9}
-61p4*spades{73|201P9}
-62p4*clubs{73|201P9}
+42A9*cardSpots(73|201P9)<integer><integer> 43r14
+43a4*tableau{42A9} 25|44m13 79r13 81r13 83r13 85r13 87r13 89r13 91r13 105r7
+. 106r7 107r7 108r7 109r7 110r7 111r7 127r13
+47r4*diamondsFoundation{7|88R9[23|7]}
+48r4*heartsFoundation{7|88R9[23|7]}
+49r4*spadesFoundation{7|88R9[23|7]}
+50r4*clubsFoundation{7|88R9[23|7]}
+53U14*initDrawPile 25|6b14 10t7
+54U14*shuffleDeck 25|22b14 29t7
+55U14*swapCard 55>23 55>40 25|27s10 32b14 38t7
+55i23 index{integer} 25|32b23 35r31 36r16
+55i40 swapLocation{integer} 25|32b40 36r35 37r16
+56U14*initializeTable 25|40b14 47t7
+57U14*dealCards 25|51b14 112t7
+58U14*setLabelColors 25|114b14 149t7
+61p4*diamonds{73|201P9} 25|133r7
+62p4*hearts{73|201P9} 25|137r7
+63p4*spades{73|201P9} 25|141r7
+64p4*clubs{73|201P9} 25|145r7
 X 25 cardtable.adb
 13I12 randomRange{integer} 15r35 18r8
 14K12 Rand[13|44] 16r8
@@ -340,9 +345,11 @@ X 25 cardtable.adb
 77i11 i{integer} 79r25 79r53 81r25 81r53 83r25 83r53 85r25 85r53 87r25 87r53
 . 89r25 89r53 91r25 91r53
 96i11 i{integer} 97r37
+125i11 i{integer} 127r21
+126i14 j{integer} 127r23
 X 26 deck.ads
-2K9*Deck 24|11w6 19r15 25|8r7 9r19 26|9e9
-4A9*cardDeck(22|15R9)<integer> 24|19r20
+2K9*Deck 24|11w6 20r15 25|8r7 9r19 26|9e9
+4A9*cardDeck(22|15R9)<integer> 24|20r20
 6a4*stdCardDeck{4A9} 25|9r24
 7U14*initializeDeck 25|8s12
 X 27 gdk.ads
@@ -365,13 +372,17 @@ X 54 glib-object.ads
 675V13*Convert{105|67M9} 51|58i21 52|49i21
 676V13*Convert{41P9} 51|59i21 52|50i21
 X 62 gtk.ads
-41K9*Gtk 24|13r6 13r21 62|79e8
+41K9*Gtk 24|13r6 13r21 14r6 14r21 62|79e8
 X 72 gtk-enums.ads
+30K13*Enums 24|13w10 13r25 72|895e14
+511M9*Gtk_State_Flags
+517m4*Gtk_State_Flag_Normal{511M9} 25|117r45 121r39 128r52 134r42 138r40
+. 142r40 146r39
 882V13*Convert{105|67M9} 51|58i21 52|49i21
 883V13*Convert{string} 51|59i21 52|50i21
 X 73 gtk-label.ads
-198K13*Label 24|13w10 13r25 73|991e14
-201P9*Gtk_Label(200R9) 24|34r18 35r12 41r44 59r15 60r13 61r13 62r12
+198K13*Label 24|14w10 14r25 73|991e14
+201P9*Gtk_Label(200R9) 24|35r18 36r12 42r44 61r15 62r13 63r13 64r12
 217V13*Gtk_Label_New{201P9} 25|44s29
 521U14*Set_Text 25|79R35 81R35 83R35 85R35 87R35 89R35 91R35 105R20 106R20
 . 107R20 108R20 109R20 110R20 111R20
@@ -379,6 +390,8 @@ X 82 gtk-widget.ads
 351P9*Gtk_Widget(350R9)
 438V13*Convert{105|67M9} 51|58i21 52|49i21
 439V13*Convert{351P9} 51|59i21 52|50i21
+2701U14*Override_Background_Color 25|116R19 120R13 127R26 133R16 137R14 141R14
+. 145R13
 X 87 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64

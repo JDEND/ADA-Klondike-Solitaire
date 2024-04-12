@@ -16,7 +16,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U cards%b		cards.adb		1a2eca92 OO PK IL
+U cards%b		cards.adb		f8ed0daa OO PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -38,8 +38,8 @@ D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
 D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D cards.ads		20240406004606 010c8554 cards%s
-D cards.adb		20240406025255 b5d69aab cards%b
+D cards.ads		20240410222355 010c8554 cards%s
+D cards.adb		20240410233702 57155d93 cards%b
 D interfac.ads		20230707070819 5ab55268 interfaces%s
 D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
 D system.ads		20230707070819 4635ec04 system%s
@@ -83,7 +83,7 @@ X 6 a-textio.ads
 508U14*Put_Line 9|15s25 17s25 19s25 21s25 23s25 25s25 27s25 29s25 31s25 33s25
 . 35s25 37s25 39s25 41s25
 X 8 cards.ads
-1K9*cards 30l5 30e10 9|3b14 168l5 168t10
+1K9*cards 30l5 30e10 9|3b14 172l5 172t10
 5R9*card 7e14 9p14 9r50 10p14 10r41 11p13 11r40 12p13 12r50 15r21 9|9r50
 . 47r40 55r41 63r50
 6i7*cardValue{integer} 9|12r19 49r19 57m22 66r19 109r21 109r39
@@ -94,12 +94,12 @@ X 8 cards.ads
 10i47 newVal{integer} 9|55b47 57r35
 11V13*getCardValue{integer} 11=26 9|47b13 50l8 50t20
 11r26 Self{5R9} 9|47b26 49r14
-12V13*getCardRepresentation{string} 12=36 9|63b13 97t7 162s38
+12V13*getCardRepresentation{string} 12=36 9|63b13 97t7 163s41
 12r36 Self{5R9} 9|63b36 66r14
 15R9*suit<5R9> 9p14 10p14 11p13 12p13 19e14 21p13 21r40 21r61 23p14 23r40
 . 25p19 25r44 26p13 26r37 28p13 28r40 9|104r40 104r61 120r40 130r37 140r38
 . 159r40
-16e7*suitName{character} 9|124m12 162r22
+16e7*suitName{character} 9|124m12 162r18 163r25
 17e7*suitColor{character} 9|108r18 108r37 123m12
 18b7*flipped{boolean} 9|132r15 142m12 142r32
 21V13*isValidPlace{boolean} 21=26 21=46 9|104b13 116t12
@@ -114,8 +114,8 @@ X 8 cards.ads
 25r30 Self{15R9} 9|140b24 142m7 142r27
 26V13*isFlipped{boolean} 26=23 9|107s15 107s42 130b13 137t7 161s15
 26r23 Self{15R9} 9|130b23 132r10
-28V13*getCardSelf{string} 28=26 9|159b13 166l8 166t19
-28r26 Self{15R9} 9|159b26 161m10 161r10 162r17 162m33 162r33
+28V13*getCardSelf{string} 28=26 9|159b13 170l8 170t19
+28r26 Self{15R9} 9|159b26 161m10 161r10 162r13 163r20 163m36 163r36
 X 9 cards.adb
 10i7 Val{integer} 12m7 13r12
 64i7 Val{integer} 66m7 67r12

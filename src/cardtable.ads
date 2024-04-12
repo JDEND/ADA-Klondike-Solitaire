@@ -4,12 +4,13 @@ with ada.Containers.Vectors;
 with Ada.Numerics.Discrete_Random;
 with Ada.Text_IO;
 
-with cardStack;
-
 with cards;
+
+with cardStack; use cardStack;
 
 with deck;
 
+with Gtk.Enums; use Gtk.Enums;
 with Gtk.Label; use Gtk.Label;
 
 
@@ -43,10 +44,10 @@ package CardTable is
 
 
    --foundations declaration
-   acesFoundation : cardStack.Stack.Vector;
-   heartsFoundation : cardStack.Stack.Vector;
-   spadesFoundation : cardStack.Stack.Vector;
-   clubsFoundation : cardStack.Stack.Vector;
+   diamondsFoundation : Stack.Vector;
+   heartsFoundation : Stack.Vector;
+   spadesFoundation : Stack.Vector;
+   clubsFoundation : Stack.Vector;
 
    --card table functions
    procedure initDrawPile;
@@ -54,6 +55,7 @@ package CardTable is
    procedure swapCard(index : Integer; swapLocation : Integer);
    procedure initializeTable;
    procedure dealCards;
+   procedure setLabelColors;
 
    --Pile Placeholders
    diamonds : Gtk_Label;

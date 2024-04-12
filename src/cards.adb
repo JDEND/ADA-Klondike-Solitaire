@@ -159,7 +159,11 @@ package body cards is
    function getCardSelf (Self : in out suit) return String is
    begin
       if Self.isFlipped = True then
-         return(Self.suitName & Self.getCardRepresentation);
+         if Self.suitName /= 'x' then
+            return(Self.suitName & Self.getCardRepresentation);
+         else
+            return("");
+         end if;
       else
          return("[*]");
       end if;

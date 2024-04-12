@@ -110,6 +110,43 @@ package body CardTable is
       tableau(5,1).Set_Text(table(5,1).getCardSelf);
       tableau(6,0).Set_Text(table(6,0).getCardSelf);
    end;
+
+   procedure setLabelColors is
+   begin
+      DiscardPile.Override_Background_Color(
+                                            Gtk_State_Flag_Normal, 
+                                            (0.0, 0.0, 0.0, 0.0)
+                                           );
+      Stock.Override_Background_Color(
+                                      Gtk_State_Flag_Normal, 
+                                      (0.0, 0.0, 0.0, 0.0)
+                                     );
+          
+      for i in 0..18 loop
+         for j in 0..6 loop
+            tableau(i,j).Override_Background_Color(
+                                                   Gtk_State_Flag_Normal, 
+                                                   (0.0, 0.0, 0.0, 0.0)
+                                                  );
+         end loop;        
+      end loop;
+      diamonds.Override_Background_Color(
+                                         Gtk_State_Flag_Normal, 
+                                         (0.0, 0.0, 0.0, 0.0)
+                                        );
+      hearts.Override_Background_Color(
+                                       Gtk_State_Flag_Normal, 
+                                       (0.0, 0.0, 0.0, 0.0)
+                                      );
+      spades.Override_Background_Color(
+                                       Gtk_State_Flag_Normal, 
+                                       (0.0, 0.0, 0.0, 0.0)
+                                      );
+      clubs.Override_Background_Color(
+                                      Gtk_State_Flag_Normal, 
+                                      (0.0, 0.0, 0.0, 0.0)
+                                     );
+   end;
    
    
 end CardTable;

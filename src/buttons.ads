@@ -32,6 +32,7 @@ package buttons is
    procedure right_Callback (Button : access Gtk_Button_Record'Class);
 
    procedure makeButtonsStart;
+   procedure delCard;
 
    --timers
    startTime : Time;
