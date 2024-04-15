@@ -65,7 +65,7 @@ package body buttons is
          cardStock.Dequeue(temp);
          temp.flipped := True; --replace this with function in future
          DiscardPile.Set_Text(temp.getCardSelf);
-         cardDiscard.Enqueue(temp);
+         cardDiscard.Append(temp);
          if Integer(cardStock.Current_Use) = 0 then
             Stock.Set_Text("");
             Btn_Draw.Set_Visible(False);
@@ -82,11 +82,11 @@ package body buttons is
       Btn_Return.Set_Visible(False);
       DiscardPile.Set_Text("");
       Stock.Set_Text("[*]");
-      while Integer(cardDiscard.Current_Use) > 0 loop
-         cardDiscard.Dequeue(temp);
-         temp.flipped := False;
-         cardStock.Enqueue(temp);
+      for i of cardDiscard loop
+         i.flipped := False;
+         cardStock.Enqueue(i);
       end loop;
+      cardDiscard.Clear;
       Btn_Draw.Set_Visible(True);
    end;
 
@@ -115,10 +115,10 @@ package body buttons is
             end if;
          elsif pos_x = -1 and pos_y = -1 then
             if Integer(cardSelected.Current_Use) = 0 then
-               cardDiscard.Dequeue(tempCard);
+               tempCard := cardDiscard.Last_Element;
                cardSelected.Enqueue(tempCard);
                Btn_SelectDrop.Set_Label("Drop");
-               selection_y := pos_y; selection_x := pos_x;
+               selection_y := -1; selection_x := -1;
             end if;
          end if;
       elsif Btn_SelectDrop.Get_Label = "Drop" then
@@ -135,7 +135,8 @@ package body buttons is
                            diamonds.Set_Text(tempCard.getCardSelf);
                            delCard;
                         elsif tempCard.cardValue - 
-                          diamondsFoundation(0).cardValue = 1 
+                          diamondsFoundation(diamondsFoundation.First_Index
+                                            ).cardValue = 1 
                         then
                            diamondsFoundation.Append(tempCard);
                            diamonds.Set_Text(tempCard.getCardSelf);
@@ -154,7 +155,8 @@ package body buttons is
                            hearts.Set_Text(tempCard.getCardSelf);
                            delCard;
                         elsif tempCard.cardValue - 
-                          heartsFoundation(0).cardValue = 1
+                          heartsFoundation(heartsFoundation.First_Index
+                                          ).cardValue = 1
                         then
                            heartsFoundation.Append(tempCard);
                            hearts.Set_Text(tempCard.getCardSelf);
@@ -173,7 +175,8 @@ package body buttons is
                            spades.Set_Text(tempCard.getCardSelf);
                            delCard;
                         elsif tempCard.cardValue - 
-                          spadesFoundation(0).cardValue = 1
+                          spadesFoundation(spadesFoundation.First_Index
+                                          ).cardValue = 1
                         then
                            spadesFoundation.Append(tempCard);
                            spades.Set_Text(tempCard.getCardSelf);
@@ -192,7 +195,8 @@ package body buttons is
                            clubs.Set_Text(tempCard.getCardSelf);
                            delCard;
                         elsif tempCard.cardValue - 
-                          clubsFoundation(0).cardValue = 1
+                          clubsFoundation(clubsFoundation.First_Index
+                                         ).cardValue = 1
                         then
                            clubsFoundation.Append(tempCard);
                            clubs.Set_Text(tempCard.getCardSelf);
@@ -224,6 +228,7 @@ package body buttons is
                   table(pos_y, pos_x).flipped := True;
                   tableau(pos_y, pos_x).Set_Text(table(pos_y,
                                                  pos_x).getCardSelf);
+                  delCard;
                else
                   cardSelected.Enqueue(tempCard);
                end if;
@@ -266,21 +271,15 @@ package body buttons is
             selection_y := selection_y + 1;
          end loop;
       elsif selection_y = -1 and selection_x = -1 then
-         cardDiscard.Dequeue(tempCard);
-         cardDiscard.Dequeue(tempCard);
-         DiscardPile.Set_Label(tempCard.getCardSelf);
-         cardDiscard.Enqueue(tempCard);
-         
-         i := (Integer(cardDiscard.Current_Use) - 1);
-         j := 0;
-         while j < i loop
-            cardDiscard.Dequeue(tempCard);
-            cardDiscard.Enqueue(tempCard);
-            j := j+1;
+         cardDiscard.Delete_Last;
+         tempCard := cardDiscard.Last_Element;
+         DiscardPile.Set_Text(tempCard.getCardSelf);
+      elsif selection_y = 0 then
+         while table(selection_y, selection_x).getCardSelf /= "[*]" loop
+            tableau(selection_y, selection_x).Set_Text("");
+            table(selection_y, selection_x).setSuitType('x','x',-1);
+            selection_y := selection_y + 1;
          end loop;
-      elsif selection_y = 0 and selection_x = 0 then
-         tableau(selection_y, selection_x).Set_Text("");
-         table(selection_y, selection_x).setSuitType('x','x',-1);
       end if;
          
       Btn_SelectDrop.Set_Label("Select");
@@ -340,6 +339,10 @@ package body buttons is
                                           Gtk_State_Flag_Normal, 
                                           (0.25, 0.75, 0.38, 0.0)
                                          );
+         DiscardPile.Override_Background_Color(
+                                               Gtk_State_Flag_Normal, 
+                                               (0.25, 0.75, 0.38, 0.0)
+                                              );
          pos_x := 0;
       end if;
 
@@ -367,13 +370,13 @@ package body buttons is
    end;
    procedure left_Callback (Button : access Gtk_Button_Record'Class)is
    begin
-      if pos_x > 0 then
-         pos_x := pos_x - 1;
-      end if;
       if pos_x > -1 and pos_y = -1
       then
          pos_x := pos_x - 1;
+      elsif pos_x > 0 and pos_y > -1 then
+         pos_x := pos_x - 1;
       end if;
+
 
       if pos_y = -1 then
          case pos_x is

@@ -28,7 +28,7 @@ package CardTable is
      ada.Containers.Unbounded_Synchronized_Queues(queue_interface);
 
    cardStock : card_containers.Queue;
-   cardDiscard : card_containers.Queue;
+   cardDiscard : Stack.Vector;
    cardSelected : card_containers.Queue;
 
 

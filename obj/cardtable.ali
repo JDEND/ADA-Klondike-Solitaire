@@ -21,7 +21,7 @@ RV NO_ELABORATION_CODE
 RV SPARK_05
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U cardtable%b		cardtable.adb		1bd8c7dd OO PK
+U cardtable%b		cardtable.adb		f4fadb26 OO PK
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W system%s		system.ads		system.ali
@@ -31,7 +31,7 @@ Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
 Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
 
-U cardtable%s		cardtable.ads		a9c1ba8c EE OO PF PK IL
+U cardtable%s		cardtable.ads		46e3a677 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 W ada.containers.synchronized_queue_interfaces%s
@@ -82,7 +82,7 @@ D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
 D cards.ads		20240410222355 010c8554 cards%s
 D cardstack.ads		20240411004851 7b55c7a3 cardstack%s
-D cardtable.ads		20240412003239 354ad3a2 cardtable%s
+D cardtable.ads		20240415203934 da68cf59 cardtable%s
 D cardtable.adb		20240412003144 2e92147f cardtable%b
 D deck.ads		20240406004545 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
@@ -264,11 +264,11 @@ X 4 a-csquin.ads
 37k24*Synchronized_Queue_Interfaces 56e49 24|1w21 26r21
 X 5 a-cusyqu.ads
 44k24*Unbounded_Synchronized_Queues 106e49 24|2w21 28r21
-88W19*Queue<4|40R9[24|25]> 24|30r32[27] 31r34[27] 32r35[27]
+88W19*Queue<4|40R9[24|25]> 24|30r32[27] 32r35[27]
 94Y24 Enqueue 25|97s20[24|27]
 X 7 a-convec.ads
 73k24*Vectors 824e27 24|3w21
-88R9*Vector<9|43R9> 24|47r31[23|7] 48r29[23|7] 49r29[23|7] 50r28[23|7]
+88R9*Vector<9|43R9> 24|31r24[23|7] 47r31[23|7] 48r29[23|7] 49r29[23|7] 50r28[23|7]
 X 11 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[7|111]>
@@ -291,7 +291,7 @@ X 22 cards.ads
 . 106s40 107s40 108s40 109s40 110s40 111s40
 X 23 cardstack.ads
 3K9*cardStack 10e14 24|9w6 9r21
-7K12*Stack[7|73] 24|47r25 48r23 49r23 50r22
+7K12*Stack[7|73] 24|31r18 47r25 48r23 49r23 50r22
 X 24 cardtable.ads
 18K9*CardTable 67l5 67e14 25|1b14 152l5 152t14
 20a4*drawPile{26|4A9} 25|9m7 35r22 36m7 36r26 37m7 58r36 60r36 62r36 64r36
@@ -299,9 +299,9 @@ X 24 cardtable.ads
 . 87r44 89m44 89r44 91m44 91r44 97r28
 22i4*drawPileLocation{integer}
 25K12*queue_interface[4|37] 28r51
-27K12*card_containers[5|44] 30r16 31r18 32r19
+27K12*card_containers[5|44] 30r16 32r19
 30w4*cardStock{5|88W19[27]} 25|97r10
-31w4*cardDiscard{5|88W19[27]}
+31r4*cardDiscard{7|88R9[23|7]}
 32w4*cardSelected{5|88W19[27]}
 35p4*DiscardPile{73|201P9} 25|116r7
 36p4*Stock{73|201P9} 25|120r7

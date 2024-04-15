@@ -13,7 +13,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U main%b		main.adb		e7835aa9 NE OO SU IL
+U main%b		main.adb		08a14652 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W buttons%s		buttons.adb		buttons.ali
@@ -56,7 +56,7 @@ D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
 D cards.ads		20240410222355 010c8554 cards%s
 D cardstack.ads		20240411004851 7b55c7a3 cardstack%s
-D cardtable.ads		20240412003239 354ad3a2 cardtable%s
+D cardtable.ads		20240415203934 da68cf59 cardtable%s
 D deck.ads		20240406004545 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s

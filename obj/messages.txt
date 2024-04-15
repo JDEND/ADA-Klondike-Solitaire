@@ -1,0 +1,15 @@
+
+Output saved in /home/jared/Documents/Wayne/CSC3200/Final/obj/messages.txt
+gprbuild -d -P/home/jared/Documents/Wayne/CSC3200/Final/finalgui.gpr -XGTKADA_BUILD=static -XLIBRARY_TYPE=static /home/jared/Documents/Wayne/CSC3200/Final/src/main.adb
+Compile
+   [Ada]          buttons.adb
+buttons.adb:80:07: warning: variable "temp" is never read and never assigned
+buttons.adb:98:07: warning: variable "temp_x" is never read and never assigned
+buttons.adb:256:07: warning: variable "i" is never read and never assigned
+buttons.adb:257:07: warning: variable "J" is never read and never assigned
+Bind
+   [gprbind]      main.bexch
+   [Ada]          main.ali
+Link
+   [link]         main.adb
+[2024-04-15 18:52:05] process terminated successfully, elapsed time: 00.70s
