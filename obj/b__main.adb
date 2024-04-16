@@ -156,15 +156,15 @@ package body ada_main is
    E442 : Short_Integer; pragma Import (Ada, E442, "glib__menu_model_E");
    E446 : Short_Integer; pragma Import (Ada, E446, "gtk__action_E");
    E450 : Short_Integer; pragma Import (Ada, E450, "gtk__activatable_E");
-   E454 : Short_Integer; pragma Import (Ada, E454, "gtk__button_E");
+   E456 : Short_Integer; pragma Import (Ada, E456, "gtk__button_E");
    E154 : Short_Integer; pragma Import (Ada, E154, "gtk__main_E");
    E444 : Short_Integer; pragma Import (Ada, E444, "gtk__menu_item_E");
    E452 : Short_Integer; pragma Import (Ada, E452, "gtk__menu_shell_E");
    E440 : Short_Integer; pragma Import (Ada, E440, "gtk__menu_E");
    E438 : Short_Integer; pragma Import (Ada, E438, "gtk__label_E");
+   E454 : Short_Integer; pragma Import (Ada, E454, "gtk__table_E");
    E423 : Short_Integer; pragma Import (Ada, E423, "cardtable_E");
    E103 : Short_Integer; pragma Import (Ada, E103, "buttons_E");
-   E456 : Short_Integer; pragma Import (Ada, E456, "gtk__table_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -175,17 +175,17 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E456 := E456 - 1;
+      E423 := E423 - 1;
       declare
          procedure F1;
-         pragma Import (Ada, F1, "gtk__table__finalize_spec");
+         pragma Import (Ada, F1, "cardtable__finalize_spec");
       begin
          F1;
       end;
-      E423 := E423 - 1;
+      E454 := E454 - 1;
       declare
          procedure F2;
-         pragma Import (Ada, F2, "cardtable__finalize_spec");
+         pragma Import (Ada, F2, "gtk__table__finalize_spec");
       begin
          F2;
       end;
@@ -217,7 +217,7 @@ package body ada_main is
       begin
          F6;
       end;
-      E454 := E454 - 1;
+      E456 := E456 - 1;
       declare
          procedure F7;
          pragma Import (Ada, F7, "gtk__button__finalize_spec");
@@ -1223,7 +1223,7 @@ package body ada_main is
       E450 := E450 + 1;
       Gtk.Button'Elab_Spec;
       Gtk.Button'Elab_Body;
-      E454 := E454 + 1;
+      E456 := E456 + 1;
       E154 := E154 + 1;
       Gtk.Menu_Item'Elab_Spec;
       Gtk.Menu_Item'Elab_Body;
@@ -1237,13 +1237,13 @@ package body ada_main is
       Gtk.Label'Elab_Spec;
       Gtk.Label'Elab_Body;
       E438 := E438 + 1;
+      Gtk.Table'Elab_Spec;
+      Gtk.Table'Elab_Body;
+      E454 := E454 + 1;
       cardtable'elab_spec;
       Cardtable'Elab_Body;
       E423 := E423 + 1;
       E103 := E103 + 1;
-      Gtk.Table'Elab_Spec;
-      Gtk.Table'Elab_Body;
-      E456 := E456 + 1;
    end adainit;
 
    procedure Ada_Main_Program;

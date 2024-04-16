@@ -13,7 +13,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U main%b		main.adb		08a14652 NE OO SU IL
+U main%b		main.adb		9a2b6767 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W buttons%s		buttons.adb		buttons.ali
@@ -51,12 +51,12 @@ D a-tags.ads		20230707070819 491b781d ada.tags%s
 D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
 D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
-D buttons.ads		20240411005221 ee076f52 buttons%s
+D buttons.ads		20240416001239 49959311 buttons%s
 D cairo.ads		20240229103412 925d4aaa cairo%s
 D cairo-region.ads	20240229103412 b7133728 cairo.region%s
 D cards.ads		20240410222355 010c8554 cards%s
 D cardstack.ads		20240411004851 7b55c7a3 cardstack%s
-D cardtable.ads		20240415203934 da68cf59 cardtable%s
+D cardtable.ads		20240416001245 ef70122f cardtable%s
 D deck.ads		20240406004545 3e4d350d deck%s
 D gdk.ads		20240229103412 96d821f3 gdk%s
 D gdk-color.ads		20240229103412 ef57bc34 gdk.color%s
@@ -188,8 +188,8 @@ G r c none [main standard 22 11 none] [gtk_new gtk__button 137 14 none]
 G r c none [main standard 22 11 none] [attach_defaults gtk__table 149 14 none]
 G r c none [main standard 22 11 none] [gtk_new gtk__label 207 14 none]
 G r c none [main standard 22 11 none] [override_background_color gtk__widget 2701 14 none]
-G r c none [main standard 22 11 none] [initdrawpile cardtable 53 14 none]
-G r c none [main standard 22 11 none] [initializetable cardtable 56 14 none]
+G r c none [main standard 22 11 none] [initdrawpile cardtable 55 14 none]
+G r c none [main standard 22 11 none] [initializetable cardtable 58 14 none]
 G r c none [main standard 22 11 none] [on_clicked gtk__button 491 14 none]
 G r c none [main standard 22 11 none] [show_all gtk__widget 3104 14 none]
 G r c none [main standard 22 11 none] [set_visible gtk__widget 2303 14 none]
@@ -200,37 +200,37 @@ X 13 a-iteint.ads
 24h9 Forward_Iterator
 32h9 Reversible_Iterator<24R9[9|111]>
 X 21 buttons.ads
-19K9*buttons 60e12 96|3w6 3r19
-23U14*New_Game_Callback 96|106r30
-24U14*Quit_Callback 96|107r27
-25U14*Draw_Callback 96|108r27
-26U14*Return_Callback 96|109r29
-28U14*select_Callback 96|110r33
-29U14*up_Callback 96|112r25
-30U14*down_Callback 96|111r27
-31U14*left_Callback 96|113r27
-32U14*right_Callback 96|114r28
-42p4*Btn_NewGame{72|74P9} 96|47m15 47r15 48r35 106r7
-43p4*Btn_Quit{72|74P9} 96|50m15 50r15 51r35 107r7
-44p4*Btn_Draw{72|74P9} 96|53m15 53r15 54r35 108r7 119r7
-45p4*Btn_Return{72|74P9} 96|56m15 56r15 57r35 109r7 120r7
-48p4*Btn_Up{72|74P9} 96|59m15 59r15 60r35 112r7 122r7
-49p4*Btn_Down{72|74P9} 96|62m15 62r15 63r35 111r7 121r7
-50p4*Btn_Left{72|74P9} 96|65m15 65r15 66r35 113r7 123r7
-51p4*Btn_Right{72|74P9} 96|68m15 68r15 69r35 114r7 124r7
-52p4*Btn_SelectDrop{72|74P9} 96|71m15 71r15 72r35 110r7 125r7
+21K9*buttons 67e12 96|3w6 3r19
+25U14*New_Game_Callback 96|106r30
+26U14*Quit_Callback 96|107r27
+27U14*Draw_Callback 96|108r27
+28U14*Return_Callback 96|109r29
+30U14*select_Callback 96|110r33
+31U14*up_Callback 96|112r25
+32U14*down_Callback 96|111r27
+33U14*left_Callback 96|113r27
+34U14*right_Callback 96|114r28
+44p4*Btn_NewGame{72|74P9} 96|47m15 47r15 48r35 106r7
+45p4*Btn_Quit{72|74P9} 96|50m15 50r15 51r35 107r7
+46p4*Btn_Draw{72|74P9} 96|53m15 53r15 54r35 108r7 119r7
+47p4*Btn_Return{72|74P9} 96|56m15 56r15 57r35 109r7 120r7
+50p4*Btn_Up{72|74P9} 96|59m15 59r15 60r35 112r7 122r7
+51p4*Btn_Down{72|74P9} 96|62m15 62r15 63r35 111r7 121r7
+52p4*Btn_Left{72|74P9} 96|65m15 65r15 66r35 113r7 123r7
+53p4*Btn_Right{72|74P9} 96|68m15 68r15 69r35 114r7 124r7
+54p4*Btn_SelectDrop{72|74P9} 96|71m15 71r15 72r35 110r7 125r7
 X 26 cardtable.ads
-18K9*CardTable 67e14 96|5w6 5r21
-35p4*DiscardPile{75|201P9} 96|80m15 80r15 81r35
-36p4*Stock{75|201P9} 96|78m15 78r15 79r35
-42A9*cardSpots(75|201P9)<integer><integer>
-43a4*tableau{42A9} 96|101r41
-53U14*initDrawPile 96|97s7
-56U14*initializeTable 96|98s7
-61p4*diamonds{75|201P9} 96|83m15 83r15 84r35
-62p4*hearts{75|201P9} 96|85m15 85r15 86r35
-63p4*spades{75|201P9} 96|87m15 87r15 88r35
-64p4*clubs{75|201P9} 96|89m15 89r15 90r35
+20K9*CardTable 68e14 96|5w6 5r21
+37p4*DiscardPile{75|201P9} 96|80m15 80r15 81r35
+38p4*Stock{75|201P9} 96|78m15 78r15 79r35
+44A9*cardSpots(75|201P9)<integer><integer>
+45a4*tableau{44A9} 96|101r41
+55U14*initDrawPile 96|97s7
+58U14*initializeTable 96|98s7
+63p4*diamonds{75|201P9} 96|83m15 83r15 84r35
+64p4*hearts{75|201P9} 96|85m15 85r15 86r35
+65p4*spades{75|201P9} 96|87m15 87r15 88r35
+66p4*clubs{75|201P9} 96|89m15 89r15 90r35
 X 28 gdk.ads
 38K9*Gdk 48e8 96|7r6 7r21 8r6 8r20
 43P9*Gdk_Window<47|153P9>

@@ -12,6 +12,8 @@ with deck;
 
 with Gtk.Enums; use Gtk.Enums;
 with Gtk.Label; use Gtk.Label;
+with Gtk.Table; use Gtk.Table;
+with Gtk.Window; use Gtk.Window;
 
 
 
@@ -62,6 +64,5 @@ package CardTable is
    hearts : Gtk_Label;
    spades : Gtk_Label;
    clubs : Gtk_Label;
-
 
 end CardTable;

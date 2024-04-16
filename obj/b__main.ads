@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#08a14652#;
+   u00001 : constant Version_32 := 16#9a2b6767#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -239,9 +239,9 @@ package ada_main is
    pragma Export (C, u00100, "system__string_hashB");
    u00101 : constant Version_32 := 16#60a93490#;
    pragma Export (C, u00101, "system__string_hashS");
-   u00102 : constant Version_32 := 16#7f656af9#;
+   u00102 : constant Version_32 := 16#c0fc481c#;
    pragma Export (C, u00102, "buttonsB");
-   u00103 : constant Version_32 := 16#a3d51a66#;
+   u00103 : constant Version_32 := 16#3c2a1463#;
    pragma Export (C, u00103, "buttonsS");
    u00104 : constant Version_32 := 16#0fa5c191#;
    pragma Export (C, u00104, "gtkS");
@@ -879,9 +879,9 @@ package ada_main is
    pragma Export (C, u00420, "cardsB");
    u00421 : constant Version_32 := 16#010c8554#;
    pragma Export (C, u00421, "cardsS");
-   u00422 : constant Version_32 := 16#f4fadb26#;
+   u00422 : constant Version_32 := 16#c1e20650#;
    pragma Export (C, u00422, "cardtableB");
-   u00423 : constant Version_32 := 16#46e3a677#;
+   u00423 : constant Version_32 := 16#7e8e5431#;
    pragma Export (C, u00423, "cardtableS");
    u00424 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00424, "ada__numericsS");
@@ -941,14 +941,14 @@ package ada_main is
    pragma Export (C, u00451, "gtk__menu_shellB");
    u00452 : constant Version_32 := 16#a70cde2e#;
    pragma Export (C, u00452, "gtk__menu_shellS");
-   u00453 : constant Version_32 := 16#c3a22529#;
-   pragma Export (C, u00453, "gtk__buttonB");
-   u00454 : constant Version_32 := 16#afb64caa#;
-   pragma Export (C, u00454, "gtk__buttonS");
-   u00455 : constant Version_32 := 16#9bfe8abc#;
-   pragma Export (C, u00455, "gtk__tableB");
-   u00456 : constant Version_32 := 16#98298123#;
-   pragma Export (C, u00456, "gtk__tableS");
+   u00453 : constant Version_32 := 16#9bfe8abc#;
+   pragma Export (C, u00453, "gtk__tableB");
+   u00454 : constant Version_32 := 16#98298123#;
+   pragma Export (C, u00454, "gtk__tableS");
+   u00455 : constant Version_32 := 16#c3a22529#;
+   pragma Export (C, u00455, "gtk__buttonB");
+   u00456 : constant Version_32 := 16#afb64caa#;
+   pragma Export (C, u00456, "gtk__buttonS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -1400,12 +1400,12 @@ package ada_main is
    --  gtk.menu%b
    --  gtk.label%s
    --  gtk.label%b
+   --  gtk.table%s
+   --  gtk.table%b
    --  cardtable%s
    --  cardtable%b
    --  buttons%s
    --  buttons%b
-   --  gtk.table%s
-   --  gtk.table%b
    --  main%b
    --  END ELABORATION ORDER
 

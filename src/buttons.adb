@@ -208,6 +208,7 @@ package body buttons is
                   when others =>
                      Put_Line("Hello");
                end case;
+               didWin;
             end if;
          elsif selection_x = -1 and selection_y = -1 then
             cardSelected.Dequeue(tempCard);
@@ -492,6 +493,27 @@ package body buttons is
       Put_Line("Pos_x: " & Integer'Image(pos_x));
       Put_Line("Pos_y: " & Integer'Image(pos_y));
       Put_Line("");
+   end;
+
+   --checks if all foundations are full(i.e. game win condition)
+   procedure didWin is
+      winnerText : Gtk_Label;
+   begin
+      if diamondsFoundation.Capacity = 13 and heartsFoundation.Capacity = 13
+        and spadesFoundation.Capacity = 13 and clubsFoundation.Capacity = 13
+      then
+         Gtk_New(Window_Win);
+         Set_Title(Window_Win, "Winner");
+         set_default_size(Window_Win, 800, 600);
+         set_border_width(Window_Win, 10);
+         Gtk_New(Table_Win, 2, 3, False);
+         add(Window_Win, Table_Win);
+         Gtk_New(winnerText, "You Win!");
+         Attach_Defaults(Table_Win, winnerText, 1,2,0,1);
+      
+         Show_All(Window_Win);
+      
+      end if;
    end;
    
 end buttons;

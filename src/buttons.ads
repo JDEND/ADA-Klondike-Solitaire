@@ -14,6 +14,8 @@ with cards; use cards;
 
 with ada.Containers.Synchronized_Queue_Interfaces;
 with ada.Containers.Unbounded_Synchronized_Queues;
+with Gtk.Table; use Gtk.Table;
+with Gtk.Window; use Gtk.Window;
 
 
 package buttons is
@@ -56,5 +58,10 @@ package buttons is
    pos_y : Integer;
    selection_x : Integer;
    selection_y : Integer;
+
+   --check for game win
+   procedure didWin;
+   Window_Win : Gtk_window;
+   Table_Win : Gtk_Table;
 
 end buttons;
