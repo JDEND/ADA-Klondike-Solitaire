@@ -5,7 +5,7 @@ An implementation of the classic single player card game 1-Draw Klondike solitai
 
 ## Authors
 
-- [@JDEND](https://github.com/JDEND)
+- [@JDEND](https://github.com/JDEND) - [LinkedIn](https://www.linkedin.com/in/endicottj/)
 
 
 ## Acknowledgements
