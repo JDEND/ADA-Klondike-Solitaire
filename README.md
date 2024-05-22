@@ -1,4 +1,4 @@
-# 1-Draw Klondike solitaire in ADA [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://github.com/JDEND/ADA-Klondike-Solitaire/blob/main/LICENSE)
+# 1-Draw Klondike solitaire in ADA [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://github.com/JDEND/ADA-Klondike-Solitaire?tab=GPL-3.0-1-ov-file)
 
 An implementation of the classic single player card game 1-Draw Klondike solitaire. This version was developed using the ADA programming language (Standard ADA 2022), with the front-end GUI created utilizing the GTKADA+ library.
 
